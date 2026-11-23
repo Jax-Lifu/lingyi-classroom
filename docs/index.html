@@ -29,7 +29,7 @@
       html { color-scheme: light; background: #faf8ef; color: #2a4738; }
       html[data-theme="dark"] { color-scheme: dark; background: #d8d2be; color: #1d3326; }
     </style>
-    <script type="module" crossorigin src="./assets/index-A4ci5WqZ.js"></script>
+    <script type="module" crossorigin src="./assets/index-Drld4-bN.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/vendor-BxpfO-MN.js">
     <link rel="modulepreload" crossorigin href="./assets/content-hanzi-LhW_5Zcy.js">
     <link rel="modulepreload" crossorigin href="./assets/content-poems-DdiNiI4G.js">
@@ -38,5 +38,209 @@
   </head>
   <body>
     <div id="root"></div>
-  </body>
+  <style>
+#resource-dialog{box-sizing:border-box;position:fixed;inset:0;margin:auto;width:min(380px,calc(100% - 32px));max-height:calc(100% - 40px);overflow:auto;padding:26px;border:1px solid #adbaa3;border-radius:18px;background:#fffaf0;color:#223f31;box-shadow:0 12px 38px #16291c42;font:16px/1.55 system-ui,sans-serif;text-align:left}
+#resource-dialog:not([open]),#resource-dialog [hidden]{display:none}
+#resource-dialog::backdrop{background:#20332877}
+#resource-dialog h2{margin:0 0 9px;font:700 26px/1.3 "Songti SC",serif;color:inherit}
+#resource-dialog p{margin:0 0 16px;font:inherit}
+#resource-dialog progress{display:block;width:100%;height:12px;accent-color:#365e43;margin:10px 0}
+#resource-dialog button{display:block;width:100%;min-height:46px;border-radius:10px;border:1px solid #395d45;background:#365d44;color:white;font:600 16px/1.4 system-ui,sans-serif;cursor:pointer}
+#resource-dialog button+button{margin-top:7px;background:transparent;border-color:transparent;color:inherit}
+#resource-dialog button:focus-visible{outline:3px solid #147895;outline-offset:2px}
+:root[data-theme=dark] #resource-dialog{background:#e5decb;color:#203429}
+</style>
+<dialog id="resource-dialog" data-version="0d70e54919b05df8505f" aria-labelledby="resource-title" aria-describedby="resource-copy">
+  <h2 id="resource-title">把课堂下载到手机？</h2>
+  <p id="resource-copy">约 36.7 MB，含绘本、朗读和笔顺。下载一次，下次打开更快。建议连接 Wi-Fi。</p>
+  <progress hidden aria-label="课程资源下载进度" value="0" max="100"></progress>
+  <p id="resource-status" hidden role="status"></p>
+  <button type="button" id="resource-start" autofocus>下载课程资源</button>
+  <button type="button" id="resource-close">先进入课堂</button>
+</dialog>
+
+<script>(() => {
+  const dialog = document.getElementById("resource-dialog");
+  if (!dialog || typeof dialog.showModal !== "function") return;
+  const title = dialog.querySelector("h2");
+  const copy = document.getElementById("resource-copy");
+  const status = document.getElementById("resource-status");
+  const start = document.getElementById("resource-start");
+  const close = document.getElementById("resource-close");
+  const progress = dialog.querySelector("progress");
+  const base = new URL(".", location.href).href;
+  const prefix = "01class-resources:" + base;
+  const activeKey = base + "resource-active";
+  const secure = window.isSecureContext && "serviceWorker" in navigator && "caches" in window;
+  const mobile = matchMedia("(max-width: 760px), (pointer: coarse)").matches;
+  const version = dialog.dataset.version;
+  let target = version;
+  let busy, saved, finished = false;
+  const read = (key) => { try { return localStorage.getItem(prefix + key); } catch { return null; } };
+  const write = (key, value) => { try { localStorage.setItem(prefix + key, value); } catch {} };
+  const note = (message) => { status.hidden = !message; status.textContent = message; };
+  const urlFor = (pack) => base + "resource-packs/" + pack.hash + ".bin";
+  const show = () => { if (!dialog.open) dialog.showModal(); };
+
+  if (!mobile) title.textContent = "下载课堂资源？";
+  if (!secure) copy.textContent += " 局域网 HTTP 地址会使用浏览器的普通缓存。";
+  document.addEventListener("classroom-open-download", show);
+  function dismiss() {
+    busy?.abort();
+    write(":dismissed", target);
+    dialog.close();
+    if (finished && secure && target !== version) location.reload();
+  }
+  close.onclick = dismiss;
+  dialog.addEventListener("cancel", (event) => { event.preventDefault(); dismiss(); });
+
+  // Show the offer from the HTML while the larger application modules are loading.
+  if (mobile && !read(":saved") && read(":dismissed") !== version) show();
+  function complete(id) {
+    saved = id;
+    finished = true;
+    write(":saved", id);
+    title.textContent = secure ? "课堂资源已下载" : "课堂资源已预载";
+    copy.textContent = secure ? "绘本、朗读和笔顺已存到这台设备，下次可以直接打开。" : "课程文件已交给浏览器缓存，下次打开时可复用。";
+    progress.hidden = true;
+    start.hidden = secure;
+    start.textContent = "重新预载";
+    close.textContent = "进入课堂";
+    note("");
+    if (dialog.open) close.focus();
+  }
+
+  async function discover() {
+    if (secure && read(":saved")) {
+      const cache = await caches.open(prefix);
+      const active = await (await cache.match(activeKey))?.json();
+      const keys = new Set((await cache.keys()).map((k) => k.url));
+      if (active && active.packs.every((p) => keys.has(urlFor(p)))) {
+        if (!(await navigator.serviceWorker.getRegistration(base))?.active) {
+          await navigator.serviceWorker.register(base + "resource-worker.js", { scope: base, updateViaCache: "none" });
+        }
+        complete(active.id);
+      } else {
+        write(":saved", "");
+        if (mobile) show();
+      }
+    } else if (!secure && read(":saved") === version) complete(version);
+    if (!saved) return;
+    const response = await fetch(base + "resource-version.json", { cache: "no-store" });
+    if (!response.ok) return;
+    const latest = await response.json();
+    if (latest.id === saved || busy) return;
+    target = latest.id;
+    finished = false;
+    title.textContent = "课堂资源有更新";
+    copy.textContent = secure ? "下载更新后，再次打开就能用上新内容。已保存的相同资源会直接复用。" : "重新预载，在局域网中更新这台设备的浏览器缓存。";
+    start.textContent = "下载更新";
+    start.hidden = false;
+    close.textContent = "以后再说";
+    if (mobile && read(":dismissed") !== target) show();
+  }
+  const discovered = discover().catch(() => {});
+
+  async function download(signal) {
+    let response = await fetch(base + "resource-packs/" + target + ".json", { signal, cache: "no-cache" });
+    if (response.status === 404) {
+      const latest = await fetch(base + "resource-version.json", { signal, cache: "no-store" });
+      if (latest.ok) {
+        target = (await latest.json()).id;
+        response = await fetch(base + "resource-packs/" + target + ".json", { signal, cache: "no-store" });
+      }
+    }
+    if (!response.ok) throw new Error("manifest");
+    const plan = await response.json();
+    if (plan.id !== target) throw new Error("manifest");
+    const total = plan.packs.reduce((sum, p) => sum + p.size, 0);
+    let done = 0;
+    function advance(bytes) {
+      done += bytes;
+      progress.value = 100 * done / total;
+      status.textContent = (done / 1e6).toFixed(1) + " / " + (total / 1e6).toFixed(1) + " MB";
+    }
+    advance(0);
+    if (!secure) {
+      // Plain HTTP on a NAS has no service worker; warm the exact URLs that the app uses.
+      let cursor = 0;
+      const entries = Object.entries(plan.files);
+      async function loadFiles() {
+        while (cursor < entries.length) {
+          const [path, entry] = entries[cursor++];
+          const res = await fetch(new URL(path, base), { signal, cache: read(":saved") && read(":saved") !== target ? "reload" : "default" });
+          if (!res.ok || (await res.arrayBuffer()).byteLength !== entry[2]) throw new Error("file");
+          advance(entry[2]);
+        }
+      }
+      await Promise.all(Array.from({ length: 5 }, loadFiles));
+      return;
+    }
+    const reg = await navigator.serviceWorker.register(base + "resource-worker.js", { scope: base, updateViaCache: "none" });
+    await navigator.serviceWorker.ready;
+    const cache = await caches.open(prefix);
+    const present = new Set((await cache.keys()).map((k) => k.url));
+    for (const pack of plan.packs) {
+      signal.throwIfAborted();
+      const url = urlFor(pack);
+      if (!present.has(url)) {
+        const res = await fetch(url, { signal, cache: "no-store" });
+        if (!res.ok) throw new Error("pack");
+        const bytes = await res.arrayBuffer();
+        const sha = new Uint8Array(await crypto.subtle.digest("SHA-256", bytes));
+        const hash = Array.from(sha, (n) => n.toString(16).padStart(2, "0")).join("");
+        if (bytes.byteLength !== pack.size || hash !== pack.hash) throw new Error("pack");
+        await cache.put(url, new Response(bytes));
+      }
+      advance(pack.size);
+    }
+    signal.throwIfAborted();
+    const previousKey = base + "resource-previous";
+    let previous = await (await cache.match(activeKey))?.json();
+    if (previous?.id === plan.id) previous = await (await cache.match(previousKey))?.json();
+    else if (previous) await cache.put(previousKey, new Response(JSON.stringify(previous)));
+    await cache.put(activeKey, new Response(JSON.stringify(plan)));
+    reg.active?.postMessage("resources-updated");
+    // Keep the previous version's packs through the handoff to any open tabs.
+    const keep = new Set([activeKey, previousKey, ...plan.packs.map(urlFor), ...(previous?.packs || []).map(urlFor)]);
+    if (navigator.locks) {
+      for (const key of present) if (!keep.has(key)) await cache.delete(key);
+    }
+  }
+  start.onclick = async () => {
+    if (busy) return;
+    const controller = new AbortController();
+    busy = controller;
+    start.hidden = true;
+    progress.hidden = false;
+    status.hidden = false;
+    finished = false;
+    close.textContent = "暂停，先进入课堂";
+    close.focus();
+    title.textContent = "正在下载课堂资源";
+    try {
+      await discovered;
+      const run = () => download(controller.signal);
+      if (navigator.locks) await navigator.locks.request(prefix, { signal: controller.signal }, run);
+      else await run();
+      complete(target);
+    } catch (error) {
+      const paused = controller.signal.aborted;
+      controller.abort();
+      finished = false;
+      title.textContent = paused ? "下载已暂停" : "下载未完成";
+      note(error.name === "QuotaExceededError" ? "设备空间不足。请清出一些空间，再继续下载。" :
+        ["SecurityError", "NotAllowedError"].includes(error.name) ? "浏览器限制了本地存储。可以先进入课堂，或在普通浏览窗口重试。" :
+        paused ? "可以稍后回来继续。" : "请检查网络后重试。已下载的资源会尽量复用。");
+      start.hidden = false;
+      start.textContent = "继续下载";
+      close.textContent = "先进入课堂";
+      if (dialog.open) start.focus();
+    } finally {
+      busy = undefined;
+    }
+  };
+})();
+</script>
+</body>
 </html>

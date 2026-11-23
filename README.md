@@ -12,6 +12,8 @@
 
 插画、语音和课程随包提供。孩子点开剧场、听读或笔顺时，浏览器从 NAS 加载相应资源。学习印章按浏览器及访问地址保存；请为孩子收藏一个固定地址。
 
+手机首次打开时可选择「下载课程资源」。GitHub Pages 或 HTTPS NAS 地址支持分包续传和离线重开。在普通 HTTP 局域网地址，预载使用浏览器的 HTTP 缓存。跳过后可以从「家长选课 → 设置 → 管理资源下载」重新打开。清理浏览器网站数据后需重新下载。
+
 ### 离线导入
 
 在 [版本下载页](https://github.com/Jax-Lifu/lingyi-classroom/releases/latest) 选择适合 NAS 的离线包。Intel / AMD 选择 `amd64`，ARM64 选择 `arm64`。解压后在绿联 Docker 的「镜像」页导入 `classroom.tar`，再到「项目」中选择解压目录并导入同包的 `compose.yaml`。离线包中的镜像已包含站点和服务器。
