@@ -2,6 +2,12 @@
 
 [打开森森森林](https://jax-lifu.github.io/lingyi-classroom/) · [下载绿联 NAS 版](https://github.com/Jax-Lifu/lingyi-classroom/releases/latest/download/lingyi-classroom-nas.zip)
 
+[查看源码和资源下载实现](https://github.com/Jax-Lifu/lingyi-classroom/tree/source)
+
+## 本版变化
+
+普通话朗读已更新为 04 旁白，包括汉字绘本、互动提示和古诗逐句听读。手机上已经下载过旧版本时，打开课堂，选择「下载更新」。相同的素材分包会直接复用。
+
 ## 在绿联云 NAS 上使用
 
 适用于已安装 Docker 应用的 UGOS Pro。通用包适配 Intel、AMD 和 ARM64 机型。

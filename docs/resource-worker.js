@@ -27,12 +27,18 @@ function ranged(blob, range, type) {
   } });
 }
 
-async function fromPack(path, request) {
+async function fromPack(path, request, revision) {
   const cache = await caches.open(cacheName);
   manifest ??= cache.match(manifestKey).then((r) => r?.json());
   let snapshot = await manifest;
-  if (path.startsWith("assets/") && !snapshot?.files[path]) {
+  if ((revision && revision !== snapshot?.id) || (path.startsWith("assets/") && !snapshot?.files[path])) {
     snapshot = await (await cache.match(new URL("resource-previous", base)))?.json();
+  }
+  if (revision && revision !== snapshot?.id) return null;
+  // An already-open pre-versioning tab still requests bare poem URLs with its old line offsets.
+  if (!revision && snapshot?.versionedSpeech && request.mode !== "navigate" && path.startsWith("media/poems/")) {
+    const previous = await (await cache.match(new URL("resource-previous", base)))?.json();
+    if (previous && !previous.versionedSpeech) snapshot = previous;
   }
   const entry = snapshot?.files[path];
   if (!Array.isArray(entry)) return null;
@@ -50,9 +56,10 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (request.method !== "GET" || !url.href.startsWith(base)) return;
   let path = url.pathname.slice(new URL(base).pathname.length);
+  const versionedAudio = path.startsWith("media/") && path.endsWith(".mp3") && /^\?v=[a-f0-9]{20}$/.test(url.search);
   if (request.mode === "navigate" && (!path || path === "index.html")) {
     path = "index.html";
     manifest = undefined;
-  } else if (!/^(assets|art|media)\//.test(path) || url.search) return;
-  event.respondWith(fromPack(path, request).catch(() => null).then((hit) => hit || fetch(request)));
+  } else if (!/^(assets|art|media)\//.test(path) || (url.search && !versionedAudio)) return;
+  event.respondWith(fromPack(path, request, versionedAudio ? url.searchParams.get("v") : null).catch(() => null).then((hit) => hit || fetch(request)));
 });

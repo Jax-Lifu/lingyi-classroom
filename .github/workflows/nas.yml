@@ -1,13 +1,76 @@
 name: NAS release
 on:
   push:
-    tags: ["v*"]
+    branches: [source]
+    tags: ["[0-9]*.[0-9]*.[0-9]*", "v*"]
 
 permissions:
   contents: read
 
 jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the version before packaging
+        id: version
+        run: |
+          node --input-type=commonjs <<'JS'
+          const fs = require("node:fs");
+          let version = process.env.GITHUB_REF_NAME;
+          if (fs.existsSync("package.json")) {
+            version = JSON.parse(fs.readFileSync("package.json", "utf8")).version;
+            for (const file of ["apps/web/package.json", "apps/desktop/package.json"]) {
+              if (JSON.parse(fs.readFileSync(file, "utf8")).version !== version) throw new Error(file + " version differs from " + version);
+            }
+            if (process.env.GITHUB_REF_TYPE === "tag" && process.env.GITHUB_REF_NAME !== version) {
+              throw new Error("Release tag must equal the source version " + version);
+            }
+          }
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, "version=" + version + "\n");
+          JS
+      - uses: pnpm/action-setup@v4
+        if: hashFiles('package.json') != ''
+      - uses: actions/setup-node@v4
+        if: hashFiles('package.json') != ''
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - name: Build the tagged source
+        if: hashFiles('package.json') != ''
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm typecheck
+          pnpm test
+          scripts/prepare-web-release.sh "$RUNNER_TEMP/distribution"
+          printf '%s\n' "$GITHUB_SHA" > "$RUNNER_TEMP/distribution/SOURCE_COMMIT"
+      - name: Use the existing distribution for a legacy deployment tag
+        if: hashFiles('package.json') == ''
+        run: |
+          test -f docs/index.html
+          mkdir "$RUNNER_TEMP/distribution"
+          rsync -a --exclude=.git ./ "$RUNNER_TEMP/distribution/"
+      - name: Identify the published build
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          node --input-type=commonjs <<'JS'
+          const fs = require("node:fs");
+          const info = { version: process.env.VERSION, sourceCommit: process.env.GITHUB_SHA };
+          fs.writeFileSync(process.env.RUNNER_TEMP + "/distribution/docs/build-info.json", JSON.stringify(info) + "\n");
+          JS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web-distribution
+          path: ${{ runner.temp }}/distribution/
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: error
+
   container:
+    needs: prepare
     strategy:
       matrix:
         include:
@@ -17,18 +80,24 @@ jobs:
             runner: ubuntu-24.04-arm
     runs-on: ${{ matrix.runner }}
     env:
-      VERSION: ${{ github.ref_name }}
+      VERSION: ${{ needs.prepare.outputs.version }}
       ARCH: ${{ matrix.arch }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: web-distribution
       - name: Test the universal NAS project
         run: |
           docker compose up -d --wait
           curl -fsS http://localhost:18080/ | cmp - docs/index.html
+          curl -fsSI http://localhost:18080/resource-version.json | grep -iq 'cache-control: no-cache'
+          pack=$(find docs/resource-packs -name '*.bin' -print -quit)
+          curl -fsSI "http://localhost:18080/${pack#docs/}" | grep -iq 'immutable'
           docker compose down
       - name: Build and test the offline image
         run: |
-          docker build -t "lingyi-classroom:$VERSION" .
+          docker build --build-arg VERSION="$VERSION" --build-arg REVISION="$GITHUB_SHA" -t "lingyi-classroom:$VERSION" .
+          test "$(docker inspect -f '{{index .Config.Labels "org.opencontainers.image.version"}}' "lingyi-classroom:$VERSION")" = "$VERSION"
           mkdir offline
           cat > offline/compose.yaml <<YAML
           services:
@@ -42,6 +111,7 @@ jobs:
           docker compose -f offline/compose.yaml up -d
           curl --retry 8 --retry-all-errors -fsS http://localhost:18080/ | cmp - docs/index.html
           curl -fsS http://localhost:18080/art/logo.webp | cmp - docs/art/logo.webp
+          curl -fsS http://localhost:18080/build-info.json | cmp - docs/build-info.json
           test "$(curl -fsS -H 'Range: bytes=0-31' -o /dev/null -w '%{http_code}' http://localhost:18080/media/play/lily-notes.wav)" = 206
           stroke=$(basename "$(ls docs/assets/strokes-*.js)")
           curl -fsS "http://localhost:18080/assets/$stroke" | cmp - "docs/assets/$stroke"
@@ -55,14 +125,18 @@ jobs:
           path: lingyi-classroom-offline-*.zip
           retention-days: 1
   release:
+    if: github.ref_type == 'tag'
     needs: container
     runs-on: ubuntu-24.04
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
+          name: web-distribution
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: offline-*
           path: archives
           merge-multiple: true
       - name: Publish NAS packages
@@ -72,4 +146,4 @@ jobs:
         run: |
           zip -qr archives/lingyi-classroom-nas.zip docs nginx.conf compose.yaml README.md
           (cd archives && sha256sum *.zip > SHA256SUMS)
-          gh release create "$VERSION" archives/* --verify-tag --title "01课堂 $VERSION" --notes-file README.md
+          gh release create "$VERSION" archives/* --repo "$GITHUB_REPOSITORY" --verify-tag --latest --title "01课堂 $VERSION" --notes-file README.md

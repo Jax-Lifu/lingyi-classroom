@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN" data-storage-prefix="app:com.lingyi.classroom">
+<html data-resource-version="5010148adae0d4890926" lang="zh-CN" data-storage-prefix="app:com.lingyi.classroom">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,11 +29,11 @@
       html { color-scheme: light; background: #faf8ef; color: #2a4738; }
       html[data-theme="dark"] { color-scheme: dark; background: #d8d2be; color: #1d3326; }
     </style>
-    <script type="module" crossorigin src="./assets/index-Drld4-bN.js"></script>
+    <script type="module" crossorigin src="./assets/index-Bbxa2OmN.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/vendor-BxpfO-MN.js">
     <link rel="modulepreload" crossorigin href="./assets/content-hanzi-LhW_5Zcy.js">
-    <link rel="modulepreload" crossorigin href="./assets/content-poems-DdiNiI4G.js">
-    <link rel="modulepreload" crossorigin href="./assets/content-core-uR6YkSJV.js">
+    <link rel="modulepreload" crossorigin href="./assets/content-poems-CzZAkgHu.js">
+    <link rel="modulepreload" crossorigin href="./assets/content-core-CZIC0KKw.js">
     <link rel="stylesheet" crossorigin href="./assets/index-zHZr6P0r.css">
   </head>
   <body>
@@ -50,9 +50,9 @@
 #resource-dialog button:focus-visible{outline:3px solid #147895;outline-offset:2px}
 :root[data-theme=dark] #resource-dialog{background:#e5decb;color:#203429}
 </style>
-<dialog id="resource-dialog" data-version="0d70e54919b05df8505f" aria-labelledby="resource-title" aria-describedby="resource-copy">
+<dialog id="resource-dialog" data-version="5010148adae0d4890926" aria-labelledby="resource-title" aria-describedby="resource-copy">
   <h2 id="resource-title">把课堂下载到手机？</h2>
-  <p id="resource-copy">约 36.7 MB，含绘本、朗读和笔顺。下载一次，下次打开更快。建议连接 Wi-Fi。</p>
+  <p id="resource-copy">约 33.3 MB，含绘本、朗读和笔顺。下载一次，下次打开更快。建议连接 Wi-Fi。</p>
   <progress hidden aria-label="课程资源下载进度" value="0" max="100"></progress>
   <p id="resource-status" hidden role="status"></p>
   <button type="button" id="resource-start" autofocus>下载课程资源</button>
@@ -168,7 +168,9 @@
       async function loadFiles() {
         while (cursor < entries.length) {
           const [path, entry] = entries[cursor++];
-          const res = await fetch(new URL(path, base), { signal, cache: read(":saved") && read(":saved") !== target ? "reload" : "default" });
+          const url = new URL(path, base);
+          if (plan.versionedSpeech && path.startsWith("media/") && path.endsWith(".mp3")) url.searchParams.set("v", plan.id);
+          const res = await fetch(url, { signal, cache: read(":saved") && read(":saved") !== target ? "reload" : "default" });
           if (!res.ok || (await res.arrayBuffer()).byteLength !== entry[2]) throw new Error("file");
           advance(entry[2]);
         }
