@@ -1,0 +1,482 @@
+[
+  {
+    "id": "en-cat",
+    "label": "cat",
+    "meaning": "猫",
+    "group": "动物",
+    "icon": "🐱",
+    "audio": "media/english/en-cat.mp3"
+  },
+  {
+    "id": "en-dog",
+    "label": "dog",
+    "meaning": "狗",
+    "group": "动物",
+    "icon": "🐶",
+    "audio": "media/english/en-dog.mp3"
+  },
+  {
+    "id": "en-fish",
+    "label": "fish",
+    "meaning": "鱼",
+    "group": "动物",
+    "icon": "🐟",
+    "audio": "media/english/en-fish.mp3"
+  },
+  {
+    "id": "en-bird",
+    "label": "bird",
+    "meaning": "鸟",
+    "group": "动物",
+    "icon": "🐦",
+    "audio": "media/english/en-bird.mp3"
+  },
+  {
+    "id": "en-rabbit",
+    "label": "rabbit",
+    "meaning": "兔子",
+    "group": "动物",
+    "icon": "🐇",
+    "audio": "media/english/en-rabbit.mp3"
+  },
+  {
+    "id": "en-duck",
+    "label": "duck",
+    "meaning": "鸭子",
+    "group": "动物",
+    "icon": "🦆",
+    "audio": "media/english/en-duck.mp3"
+  },
+  {
+    "id": "en-cow",
+    "label": "cow",
+    "meaning": "奶牛",
+    "group": "动物",
+    "icon": "🐄",
+    "audio": "media/english/en-cow.mp3"
+  },
+  {
+    "id": "en-horse",
+    "label": "horse",
+    "meaning": "马",
+    "group": "动物",
+    "icon": "🐴",
+    "audio": "media/english/en-horse.mp3"
+  },
+  {
+    "id": "en-pig",
+    "label": "pig",
+    "meaning": "猪",
+    "group": "动物",
+    "icon": "🐷",
+    "audio": "media/english/en-pig.mp3"
+  },
+  {
+    "id": "en-sheep",
+    "label": "sheep",
+    "meaning": "绵羊",
+    "group": "动物",
+    "icon": "🐑",
+    "audio": "media/english/en-sheep.mp3"
+  },
+  {
+    "id": "en-apple",
+    "label": "apple",
+    "meaning": "苹果",
+    "group": "食物",
+    "icon": "🍎",
+    "audio": "media/english/en-apple.mp3"
+  },
+  {
+    "id": "en-banana",
+    "label": "banana",
+    "meaning": "香蕉",
+    "group": "食物",
+    "icon": "🍌",
+    "audio": "media/english/en-banana.mp3"
+  },
+  {
+    "id": "en-orange",
+    "label": "orange",
+    "meaning": "橙子",
+    "group": "食物",
+    "icon": "🍊",
+    "audio": "media/english/en-orange.mp3"
+  },
+  {
+    "id": "en-egg",
+    "label": "egg",
+    "meaning": "鸡蛋",
+    "group": "食物",
+    "icon": "🥚",
+    "audio": "media/english/en-egg.mp3"
+  },
+  {
+    "id": "en-bread",
+    "label": "bread",
+    "meaning": "面包",
+    "group": "食物",
+    "icon": "🍞",
+    "audio": "media/english/en-bread.mp3"
+  },
+  {
+    "id": "en-rice",
+    "label": "rice",
+    "meaning": "米饭",
+    "group": "食物",
+    "icon": "🍚",
+    "audio": "media/english/en-rice.mp3"
+  },
+  {
+    "id": "en-milk",
+    "label": "milk",
+    "meaning": "牛奶",
+    "group": "食物",
+    "icon": "🥛",
+    "audio": "media/english/en-milk.mp3"
+  },
+  {
+    "id": "en-water",
+    "label": "water",
+    "meaning": "水",
+    "group": "食物",
+    "icon": "💧",
+    "audio": "media/english/en-water.mp3"
+  },
+  {
+    "id": "en-cake",
+    "label": "cake",
+    "meaning": "蛋糕",
+    "group": "食物",
+    "icon": "🎂",
+    "audio": "media/english/en-cake.mp3"
+  },
+  {
+    "id": "en-carrot",
+    "label": "carrot",
+    "meaning": "胡萝卜",
+    "group": "食物",
+    "icon": "🥕",
+    "audio": "media/english/en-carrot.mp3"
+  },
+  {
+    "id": "en-mom",
+    "label": "mom",
+    "meaning": "妈妈",
+    "group": "家人和身体",
+    "icon": "👩",
+    "audio": "media/english/en-mom.mp3"
+  },
+  {
+    "id": "en-dad",
+    "label": "dad",
+    "meaning": "爸爸",
+    "group": "家人和身体",
+    "icon": "👨",
+    "audio": "media/english/en-dad.mp3"
+  },
+  {
+    "id": "en-baby",
+    "label": "baby",
+    "meaning": "宝宝",
+    "group": "家人和身体",
+    "icon": "👶",
+    "audio": "media/english/en-baby.mp3"
+  },
+  {
+    "id": "en-hand",
+    "label": "hand",
+    "meaning": "手",
+    "group": "家人和身体",
+    "icon": "✋",
+    "audio": "media/english/en-hand.mp3"
+  },
+  {
+    "id": "en-foot",
+    "label": "foot",
+    "meaning": "脚",
+    "group": "家人和身体",
+    "icon": "🦶",
+    "audio": "media/english/en-foot.mp3"
+  },
+  {
+    "id": "en-head",
+    "label": "head",
+    "meaning": "头",
+    "group": "家人和身体",
+    "icon": "",
+    "audio": "media/english/en-head.mp3"
+  },
+  {
+    "id": "en-eye",
+    "label": "eye",
+    "meaning": "眼睛",
+    "group": "家人和身体",
+    "icon": "👁️",
+    "audio": "media/english/en-eye.mp3"
+  },
+  {
+    "id": "en-ear",
+    "label": "ear",
+    "meaning": "耳朵",
+    "group": "家人和身体",
+    "icon": "👂",
+    "audio": "media/english/en-ear.mp3"
+  },
+  {
+    "id": "en-nose",
+    "label": "nose",
+    "meaning": "鼻子",
+    "group": "家人和身体",
+    "icon": "👃",
+    "audio": "media/english/en-nose.mp3"
+  },
+  {
+    "id": "en-mouth",
+    "label": "mouth",
+    "meaning": "嘴",
+    "group": "家人和身体",
+    "icon": "👄",
+    "audio": "media/english/en-mouth.mp3"
+  },
+  {
+    "id": "en-book",
+    "label": "book",
+    "meaning": "书",
+    "group": "日常用品",
+    "icon": "📖",
+    "audio": "media/english/en-book.mp3"
+  },
+  {
+    "id": "en-pencil",
+    "label": "pencil",
+    "meaning": "铅笔",
+    "group": "日常用品",
+    "icon": "✏️",
+    "audio": "media/english/en-pencil.mp3"
+  },
+  {
+    "id": "en-bag",
+    "label": "bag",
+    "meaning": "包",
+    "group": "日常用品",
+    "icon": "👜",
+    "audio": "media/english/en-bag.mp3"
+  },
+  {
+    "id": "en-ball",
+    "label": "ball",
+    "meaning": "球",
+    "group": "日常用品",
+    "icon": "⚽",
+    "audio": "media/english/en-ball.mp3"
+  },
+  {
+    "id": "en-cup",
+    "label": "cup",
+    "meaning": "杯子",
+    "group": "日常用品",
+    "icon": "🥤",
+    "audio": "media/english/en-cup.mp3"
+  },
+  {
+    "id": "en-bed",
+    "label": "bed",
+    "meaning": "床",
+    "group": "日常用品",
+    "icon": "🛏️",
+    "audio": "media/english/en-bed.mp3"
+  },
+  {
+    "id": "en-door",
+    "label": "door",
+    "meaning": "门",
+    "group": "日常用品",
+    "icon": "🚪",
+    "audio": "media/english/en-door.mp3"
+  },
+  {
+    "id": "en-chair",
+    "label": "chair",
+    "meaning": "椅子",
+    "group": "日常用品",
+    "icon": "🪑",
+    "audio": "media/english/en-chair.mp3"
+  },
+  {
+    "id": "en-shoe",
+    "label": "shoe",
+    "meaning": "鞋子",
+    "group": "日常用品",
+    "icon": "👟",
+    "audio": "media/english/en-shoe.mp3"
+  },
+  {
+    "id": "en-hat",
+    "label": "hat",
+    "meaning": "帽子",
+    "group": "日常用品",
+    "icon": "🧢",
+    "audio": "media/english/en-hat.mp3"
+  },
+  {
+    "id": "en-red",
+    "label": "red",
+    "meaning": "红色",
+    "group": "颜色",
+    "icon": "🔴",
+    "audio": "media/english/en-red.mp3"
+  },
+  {
+    "id": "en-yellow",
+    "label": "yellow",
+    "meaning": "黄色",
+    "group": "颜色",
+    "icon": "🟡",
+    "audio": "media/english/en-yellow.mp3"
+  },
+  {
+    "id": "en-green",
+    "label": "green",
+    "meaning": "绿色",
+    "group": "颜色",
+    "icon": "🟢",
+    "audio": "media/english/en-green.mp3"
+  },
+  {
+    "id": "en-blue",
+    "label": "blue",
+    "meaning": "蓝色",
+    "group": "颜色",
+    "icon": "🔵",
+    "audio": "media/english/en-blue.mp3"
+  },
+  {
+    "id": "en-pink",
+    "label": "pink",
+    "meaning": "粉色",
+    "group": "颜色",
+    "icon": "🩷",
+    "audio": "media/english/en-pink.mp3"
+  },
+  {
+    "id": "en-purple",
+    "label": "purple",
+    "meaning": "紫色",
+    "group": "颜色",
+    "icon": "🟣",
+    "audio": "media/english/en-purple.mp3"
+  },
+  {
+    "id": "en-black",
+    "label": "black",
+    "meaning": "黑色",
+    "group": "颜色",
+    "icon": "⚫",
+    "audio": "media/english/en-black.mp3"
+  },
+  {
+    "id": "en-white",
+    "label": "white",
+    "meaning": "白色",
+    "group": "颜色",
+    "icon": "⚪",
+    "audio": "media/english/en-white.mp3"
+  },
+  {
+    "id": "en-brown",
+    "label": "brown",
+    "meaning": "棕色",
+    "group": "颜色",
+    "icon": "🟤",
+    "audio": "media/english/en-brown.mp3"
+  },
+  {
+    "id": "en-gray",
+    "label": "gray",
+    "meaning": "灰色",
+    "group": "颜色",
+    "icon": "🩶",
+    "audio": "media/english/en-gray.mp3"
+  },
+  {
+    "id": "en-run",
+    "label": "run",
+    "meaning": "跑",
+    "group": "动作和问候",
+    "icon": "🏃",
+    "audio": "media/english/en-run.mp3"
+  },
+  {
+    "id": "en-jump",
+    "label": "jump",
+    "meaning": "跳",
+    "group": "动作和问候",
+    "icon": "",
+    "audio": "media/english/en-jump.mp3"
+  },
+  {
+    "id": "en-sit",
+    "label": "sit",
+    "meaning": "坐",
+    "group": "动作和问候",
+    "icon": "🪑",
+    "audio": "media/english/en-sit.mp3"
+  },
+  {
+    "id": "en-stand",
+    "label": "stand",
+    "meaning": "站",
+    "group": "动作和问候",
+    "icon": "🧍",
+    "audio": "media/english/en-stand.mp3"
+  },
+  {
+    "id": "en-look",
+    "label": "look",
+    "meaning": "看",
+    "group": "动作和问候",
+    "icon": "👀",
+    "audio": "media/english/en-look.mp3"
+  },
+  {
+    "id": "en-listen",
+    "label": "listen",
+    "meaning": "听",
+    "group": "动作和问候",
+    "icon": "👂",
+    "audio": "media/english/en-listen.mp3"
+  },
+  {
+    "id": "en-eat",
+    "label": "eat",
+    "meaning": "吃",
+    "group": "动作和问候",
+    "icon": "🍽️",
+    "audio": "media/english/en-eat.mp3"
+  },
+  {
+    "id": "en-drink",
+    "label": "drink",
+    "meaning": "喝",
+    "group": "动作和问候",
+    "icon": "🥤",
+    "audio": "media/english/en-drink.mp3"
+  },
+  {
+    "id": "en-hello",
+    "label": "hello",
+    "meaning": "你好",
+    "group": "动作和问候",
+    "icon": "👋",
+    "audio": "media/english/en-hello.mp3"
+  },
+  {
+    "id": "en-goodbye",
+    "label": "goodbye",
+    "meaning": "再见",
+    "group": "动作和问候",
+    "icon": "👋",
+    "audio": "media/english/en-goodbye.mp3"
+  }
+]

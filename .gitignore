@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.turbo/
+target/
+apps/desktop/src-tauri/gen/
+apps/desktop/src-tauri/tauri.updater.conf.json
+output/
+.playwright-cli/
+.env
+.env.*
+!.env.example
+*.key
+*.key.pub
+*.log
+.DS_Store
+
+# Local research and household-only media
+/rea/
+apps/web/dist-household/
+
+# Local IDE project state
+/.serena/

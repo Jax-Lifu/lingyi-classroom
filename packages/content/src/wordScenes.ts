@@ -1,0 +1,1291 @@
+export type WordMotion =
+  | "approach"
+  | "arc"
+  | "beat"
+  | "bloom"
+  | "bob"
+  | "bolt"
+  | "bounce"
+  | "bow"
+  | "brush"
+  | "closeDoor"
+  | "crawl"
+  | "depart"
+  | "draw"
+  | "drift"
+  | "drop"
+  | "fall"
+  | "flicker"
+  | "flutter"
+  | "gallop"
+  | "glide"
+  | "grow"
+  | "hop"
+  | "inside"
+  | "leap"
+  | "light"
+  | "nod"
+  | "open"
+  | "openDoor"
+  | "peck"
+  | "recede"
+  | "reveal"
+  | "ride"
+  | "ring"
+  | "rise"
+  | "rock"
+  | "roll"
+  | "rumble"
+  | "sail"
+  | "scoop"
+  | "scrub"
+  | "serve"
+  | "settle"
+  | "shake"
+  | "shiver"
+  | "shrink"
+  | "slide"
+  | "step"
+  | "sway"
+  | "swim"
+  | "tilt"
+  | "tip"
+  | "twinkle"
+  | "twirl"
+  | "unfold"
+  | "vanish"
+  | "walk"
+  | "wave";
+
+export type SceneSetting = "clearing" | "dawn" | "meadow" | "night" | "night-sky" | "dawn-sky" | "storm-sky" | "paper" | "pond" | "storm" | "warm";
+
+// Coordinates, height and travel are percentages of the illustrated panel.
+export type SceneLayer = readonly [
+  picture: string, x: number, y: number, height: number,
+  motion?: WordMotion, travelX?: number, travelY?: number,
+];
+export interface WordScene {
+  sentence: string;
+  setting: SceneSetting;
+  layers: readonly SceneLayer[];
+}
+
+export const wordScenes: Readonly<Record<string, WordScene>> = {
+  一: { sentence: "池塘里游来一条鱼。", setting: "pond", layers: [
+    ["art/fish.webp", 32, 62, 33, "swim", 18, 0],
+  ] },
+  二: { sentence: "一颗、两颗，篮子里有两颗草莓。", setting: "clearing", layers: [
+    ["art/play/basket.webp", 50, 69, 38],
+    ["art/berry.webp", 45, 39, 18, "fall", 0, 16],
+    ["art/berry.webp", 56, 36, 18, "fall", 0, 17],
+  ] },
+  三: { sentence: "三颗栗子，一颗一颗排好队。", setting: "clearing", layers: [
+    ["art/nut.webp", 22, 30, 23, "hop", 4, 30],
+    ["art/nut.webp", 48, 30, 23, "hop", 2, 30],
+    ["art/nut.webp", 78, 30, 23, "hop", -4, 30],
+  ] },
+  四: { sentence: "四只蝴蝶，飞到花丛上。", setting: "meadow", layers: [
+    ["art/wordbook/painted/butterfly.webp", 21, 52, 21, "flutter"],
+    ["art/wordbook/painted/butterfly.webp", 40, 52, 21, "flutter"],
+    ["art/wordbook/painted/butterfly.webp", 60, 52, 21, "flutter"],
+    ["art/wordbook/painted/butterfly.webp", 79, 52, 21, "flutter"],
+  ] },
+  五: { sentence: "五颗星星，轮流亮起来。", setting: "night", layers: [
+    ["art/wordbook/painted/star.webp", 18, 52, 17, "twinkle"],
+    ["art/wordbook/painted/star.webp", 34, 52, 17, "twinkle"],
+    ["art/wordbook/painted/star.webp", 50, 52, 17, "twinkle"],
+    ["art/wordbook/painted/star.webp", 66, 52, 17, "twinkle"],
+    ["art/wordbook/painted/star.webp", 82, 52, 17, "twinkle"],
+  ] },
+  六: { sentence: "六朵小花，在草地上开放。", setting: "meadow", layers: [
+    ["art/wordbook/painted/daisy.webp", 27, 40, 25, "bloom"],
+    ["art/wordbook/painted/daisy.webp", 50, 40, 25, "bloom"],
+    ["art/wordbook/painted/daisy.webp", 73, 40, 25, "bloom"],
+    ["art/wordbook/painted/daisy.webp", 27, 64, 25, "bloom"],
+    ["art/wordbook/painted/daisy.webp", 50, 64, 25, "bloom"],
+    ["art/wordbook/painted/daisy.webp", 73, 64, 25, "bloom"],
+  ] },
+  七: { sentence: "七片叶子，从树上飘下来。", setting: "meadow", layers: [
+    ["art/wordbook/painted/green-leaf.webp", 21, 40, 21, "drift"],
+    ["art/wordbook/painted/green-leaf.webp", 40, 40, 21, "drift"],
+    ["art/wordbook/painted/green-leaf.webp", 60, 40, 21, "drift"],
+    ["art/wordbook/painted/green-leaf.webp", 79, 40, 21, "drift"],
+    ["art/wordbook/painted/green-leaf.webp", 31, 64, 21, "drift"],
+    ["art/wordbook/painted/green-leaf.webp", 50, 64, 21, "drift"],
+    ["art/wordbook/painted/green-leaf.webp", 69, 64, 21, "drift"],
+  ] },
+  八: { sentence: "八颗豆子，一个接一个跳起来。", setting: "clearing", layers: [
+    ["art/wordbook/painted/beans.webp", 21, 40, 21, "hop"],
+    ["art/wordbook/painted/beans.webp", 40, 40, 21, "hop"],
+    ["art/wordbook/painted/beans.webp", 60, 40, 21, "hop"],
+    ["art/wordbook/painted/beans.webp", 79, 40, 21, "hop"],
+    ["art/wordbook/painted/beans.webp", 21, 64, 21, "hop"],
+    ["art/wordbook/painted/beans.webp", 40, 64, 21, "hop"],
+    ["art/wordbook/painted/beans.webp", 60, 64, 21, "hop"],
+    ["art/wordbook/painted/beans.webp", 79, 64, 21, "hop"],
+  ] },
+  九: { sentence: "九条小鱼，摇着尾巴游过来。", setting: "pond", layers: [
+    ["art/fish.webp", 18, 40, 17, "swim"],
+    ["art/fish.webp", 34, 40, 17, "swim"],
+    ["art/fish.webp", 50, 40, 17, "swim"],
+    ["art/fish.webp", 66, 40, 17, "swim"],
+    ["art/fish.webp", 82, 40, 17, "swim"],
+    ["art/fish.webp", 26, 64, 17, "swim"],
+    ["art/fish.webp", 42, 64, 17, "swim"],
+    ["art/fish.webp", 58, 64, 17, "swim"],
+    ["art/fish.webp", 74, 64, 17, "swim"],
+  ] },
+  十: { sentence: "十颗草莓，一起数到十。", setting: "clearing", layers: [
+    ["art/berry.webp", 18, 40, 17, "bloom"],
+    ["art/berry.webp", 34, 40, 17, "bloom"],
+    ["art/berry.webp", 50, 40, 17, "bloom"],
+    ["art/berry.webp", 66, 40, 17, "bloom"],
+    ["art/berry.webp", 82, 40, 17, "bloom"],
+    ["art/berry.webp", 18, 64, 17, "bloom"],
+    ["art/berry.webp", 34, 64, 17, "bloom"],
+    ["art/berry.webp", 50, 64, 17, "bloom"],
+    ["art/berry.webp", 66, 64, 17, "bloom"],
+    ["art/berry.webp", 82, 64, 17, "bloom"],
+  ] },
+  人: { sentence: "一个人迈开两条腿，朝前走。", setting: "meadow", layers: [
+    ["art/wordbook/child.webp", 33, 57, 56, "walk", 24, 0],
+  ] },
+  家: { sentence: "走过小路，回到自己的家。", setting: "meadow", layers: [
+    ["art/wordbook/painted/house.webp", 64, 57, 52],
+    ["art/wordbook/child.webp", 22, 70, 32, "walk", 29, -2],
+  ] },
+  爸: { sentence: "爸爸抱起宝宝，轻轻摇。", setting: "paper", layers: [
+    ["art/wordbook/painted/father.webp", 48, 50, 56],
+    ["art/wordbook/painted/baby.webp", 63, 75, 25, "rock", -5, -15],
+  ] },
+  妈: { sentence: "妈妈把牛奶递给宝宝。", setting: "paper", layers: [
+    ["art/wordbook/painted/mother.webp", 29, 53, 43],
+    ["art/wordbook/painted/baby.webp", 73, 61, 34],
+    ["art/wordbook/painted/milk-glass.webp", 40, 54, 20, "tip", 23, 4],
+  ] },
+  爷: { sentence: "爷爷戴上眼镜，看清了。", setting: "paper", layers: [
+    ["art/wordbook/painted/grandfather.webp", 50, 52, 55],
+    ["art/wordbook/painted/spectacles.webp", 50, 25, 15, "settle", 0, 15],
+  ] },
+  奶: { sentence: "奶奶把毛线绕成一个团。", setting: "paper", layers: [
+    ["art/wordbook/painted/grandmother.webp", 36, 53, 48],
+    ["art/wordbook/painted/yarn.webp", 64, 66, 30, "roll", -8, 0],
+  ] },
+  哥: { sentence: "哥哥的球滚过来了。", setting: "meadow", layers: [
+    ["art/wordbook/painted/boy.webp", 33, 48, 46],
+    ["art/wordbook/painted/football.webp", 40, 69, 25, "roll", 32, 0],
+  ] },
+  姐: { sentence: "姐姐把画好的花送给我。", setting: "paper", layers: [
+    ["art/wordbook/painted/girl.webp", 33, 54, 45],
+    ["art/wordbook/painted/tulip.webp", 41, 56, 31, "tilt", 25, 0],
+  ] },
+  弟: { sentence: "弟弟的小车开过积木旁。", setting: "paper", layers: [
+    ["art/wordbook/painted/boy.webp", 23, 49, 32],
+    ["art/wordbook/painted/block-tower.webp", 71, 67, 25],
+    ["art/wordbook/painted/car.webp", 29, 69, 25, "ride", 29, 0],
+  ] },
+  妹: { sentence: "妹妹把蝴蝶结戴在头上。", setting: "paper", layers: [
+    ["art/wordbook/painted/girl.webp", 50, 55, 54],
+    ["art/wordbook/painted/hair-bow.webp", 68, 28, 22, "settle", -11, 4],
+  ] },
+  手: { sentence: "张开五根手指，挥挥手。", setting: "warm", layers: [
+    ["art/wordbook/palm.webp", 50, 52, 63, "wave"],
+  ] },
+  口: { sentence: "张大嘴巴，一起说「啊」。", setting: "warm", layers: [
+    ["art/wordbook/mouth.webp", 50, 51, 55, "open"],
+  ] },
+  头: { sentence: "小朋友低下头，又抬起头。", setting: "paper", layers: [
+    ["art/wordbook/painted/boy.webp", 50, 51, 58, "nod"],
+  ] },
+  眼: { sentence: "一只蝴蝶飞过，眼睛跟着看。", setting: "warm", layers: [
+    ["art/wordbook/painted/eyes.webp", 50, 60, 40, "sway"],
+    ["art/wordbook/painted/butterfly.webp", 25, 32, 23, "flutter", 47, 0],
+  ] },
+  耳: { sentence: "叮铃铃，耳朵听到铃声了。", setting: "paper", layers: [
+    ["art/wordbook/painted/ear.webp", 63, 55, 51],
+    ["art/wordbook/painted/bell.webp", 35, 46, 32, "ring"],
+  ] },
+  鼻: { sentence: "鼻子凑近花朵，闻一闻。", setting: "paper", layers: [
+    ["art/wordbook/painted/tulip.webp", 60, 59, 44],
+    ["art/wordbook/painted/nose.webp", 30, 40, 36, "nod", 17, 9],
+  ] },
+  牙: { sentence: "牙刷来回刷，把牙齿刷干净。", setting: "paper", layers: [
+    ["art/wordbook/painted/tooth.webp", 52, 54, 50],
+    ["art/wordbook/painted/toothbrush.webp", 42, 45, 39, "scrub"],
+  ] },
+  脸: { sentence: "脸上慢慢露出了笑容。", setting: "warm", layers: [
+    ["art/wordbook/painted/calm-child.webp", 50, 51, 53],
+    ["art/wordbook/painted/smiling-child.webp", 50, 51, 53, "reveal"],
+  ] },
+  脚: { sentence: "小脚落下来，踩出脚印。", setting: "warm", layers: [
+    ["art/wordbook/painted/footprints.webp", 52, 66, 36, "reveal"],
+    ["art/wordbook/painted/foot.webp", 44, 38, 39, "step", 5, 15],
+  ] },
+  心: { sentence: "扑通，扑通，心在跳。", setting: "warm", layers: [
+    ["art/wordbook/painted/heart.webp", 50, 50, 55, "beat"],
+  ] },
+  日: { sentence: "太阳从山后升起来，天亮了。", setting: "dawn-sky", layers: [
+    ["art/wordbook/sun.webp", 49, 61, 37, "rise", 0, -32],
+  ] },
+  月: { sentence: "月亮爬上树梢，夜空亮了。", setting: "night-sky", layers: [
+    ["art/wordbook/moon.webp", 35, 53, 42, "glide", 21, -23],
+  ] },
+  山: { sentence: "三座山峰，一座比一座高。", setting: "dawn", layers: [
+    ["art/play/mountain.webp", 30, 67, 31, "grow"],
+    ["art/play/mountain.webp", 68, 61, 46, "grow"],
+    ["art/play/mountain.webp", 48, 54, 61, "grow"],
+  ] },
+  水: { sentence: "水滴落下，水面荡出一圈波纹。", setting: "pond", layers: [
+    ["art/wordbook/waterdrop.webp", 50, 43, 45, "drop", 0, 16],
+  ] },
+  火: { sentence: "火苗往上蹿，火星飘向夜空。", setting: "night", layers: [
+    ["art/wordbook/fire.webp", 50, 63, 51, "flicker"],
+  ] },
+  木: { sentence: "种子发芽，一棵树慢慢长高。", setting: "clearing", layers: [
+    ["art/play/seed.webp", 50, 73, 15],
+    ["art/play/tree.webp", 50, 54, 61, "grow"],
+  ] },
+  林: { sentence: "一棵树旁又长出一棵，两棵树成林。", setting: "meadow", layers: [
+    ["art/play/tree.webp", 38, 53, 60],
+    ["art/play/tree.webp", 62, 57, 52, "grow"],
+  ] },
+  土: { sentence: "小铲子翻开泥土，种子落进去。", setting: "clearing", layers: [
+    ["art/wordbook/painted/shovel.webp", 43, 57, 47, "tilt"],
+    ["art/play/seed.webp", 58, 38, 16, "fall", 0, 30],
+  ] },
+  石: { sentence: "一块石头从小坡上滚下来。", setting: "dawn", layers: [
+    ["art/wordbook/painted/stone.webp", 35, 43, 40, "roll", 21, 23],
+  ] },
+  田: { sentence: "稻田里，一排排稻穗垂下头。", setting: "dawn", layers: [
+    ["art/wordbook/painted/rice-stalks.webp", 29, 59, 43, "bow"],
+    ["art/wordbook/painted/rice-stalks.webp", 50, 58, 47, "bow"],
+    ["art/wordbook/painted/rice-stalks.webp", 71, 59, 43, "bow"],
+  ] },
+  天: { sentence: "白云飘开，露出广阔的天空。", setting: "dawn-sky", layers: [
+    ["art/wordbook/painted/cloud.webp", 47, 37, 31, "glide", -30, -4],
+    ["art/wordbook/painted/cloud.webp", 58, 41, 24, "glide", 25, 0],
+  ] },
+  云: { sentence: "一朵白云缓缓飘过山顶。", setting: "dawn-sky", layers: [
+    ["art/play/mountain.webp", 53, 68, 40],
+    ["art/wordbook/painted/cloud.webp", 28, 34, 36, "glide", 37, 0],
+  ] },
+  风: { sentence: "风吹弯了树，卷走几片叶子。", setting: "meadow", layers: [
+    ["art/wordbook/windtree.webp", 49, 57, 61, "sway"],
+    ["art/wordbook/painted/green-leaf.webp", 62, 37, 16, "drift", 18, 7],
+  ] },
+  雨: { sentence: "雨点从云里落下，落到伞面上。", setting: "storm", layers: [
+    ["art/wordbook/painted/umbrella.webp", 49, 69, 38],
+    ["art/wordbook/painted/rain-cloud.webp", 48, 34, 37, "bob"],
+    ["art/wordbook/painted/water-drop.webp", 40, 45, 13, "fall", 2, 18],
+    ["art/wordbook/painted/water-drop.webp", 57, 43, 13, "fall", 1, 16],
+  ] },
+  雪: { sentence: "雪花从天上飘到雪人身边。", setting: "storm", layers: [
+    ["art/wordbook/painted/snowman.webp", 52, 63, 44],
+    ["art/wordbook/painted/snowflake.webp", 32, 23, 17, "drift", 9, 39],
+    ["art/wordbook/painted/snowflake.webp", 71, 28, 16, "drift", -6, 32],
+  ] },
+  春: { sentence: "春天来了，小芽从土里探出头。", setting: "meadow", layers: [
+    ["art/wordbook/painted/seedling.webp", 49, 66, 42, "grow"],
+    ["art/wordbook/painted/butterfly.webp", 25, 43, 19, "flutter", 13, -10],
+  ] },
+  夏: { sentence: "夏日的太阳高高挂，扇子摇呀摇。", setting: "dawn", layers: [
+    ["art/wordbook/sun.webp", 68, 29, 28],
+    ["art/wordbook/painted/fan.webp", 44, 62, 45, "wave"],
+  ] },
+  秋: { sentence: "秋天到了，红叶离开树枝。", setting: "dawn", layers: [
+    ["art/play/tree.webp", 38, 58, 54],
+    ["art/wordbook/painted/maple-leaf.webp", 50, 33, 21, "drift", 21, 39],
+  ] },
+  冬: { sentence: "冬天好冷，给雪人围上围巾。", setting: "storm", layers: [
+    ["art/wordbook/painted/snowman.webp", 51, 58, 56],
+    ["art/wordbook/painted/scarf.webp", 75, 40, 24, "settle", -23, 15],
+  ] },
+  星: { sentence: "一颗星星，在月亮旁眨眼。", setting: "night-sky", layers: [
+    ["art/wordbook/moon.webp", 33, 46, 34],
+    ["art/wordbook/painted/star.webp", 62, 34, 28, "twinkle"],
+  ] },
+  鱼: { sentence: "小鱼摆摆尾巴，游过荷叶。", setting: "pond", layers: [
+    ["art/play/lily.webp", 65, 67, 24],
+    ["art/fish.webp", 26, 61, 32, "swim", 32, -6],
+  ] },
+  鸟: { sentence: "小鸟展开翅膀，飞离鸟窝。", setting: "meadow", layers: [
+    ["art/play/nest.webp", 35, 68, 30],
+    ["art/play/bird.webp", 35, 53, 33, "flutter", 32, -24],
+  ] },
+  猫: { sentence: "小猫探出头，追着毛线球跑。", setting: "paper", layers: [
+    ["art/wordbook/painted/ginger-cat.webp", 30, 60, 38, "walk", 20, 0],
+    ["art/wordbook/painted/yarn.webp", 51, 65, 25, "roll", 23, 0],
+  ] },
+  狗: { sentence: "小狗摇着尾巴去叼球。", setting: "meadow", layers: [
+    ["art/wordbook/painted/football.webp", 69, 68, 22],
+    ["art/wordbook/painted/puppy.webp", 29, 61, 42, "walk", 26, 0],
+  ] },
+  兔: { sentence: "小兔蹦到胡萝卜旁。", setting: "meadow", layers: [
+    ["art/wordbook/painted/carrot.webp", 69, 66, 30],
+    ["art/wordbook/painted/rabbit.webp", 30, 62, 42, "hop", 26, 0],
+  ] },
+  马: { sentence: "马儿迈开四条腿跑过草地。", setting: "meadow", layers: [
+    ["art/wordbook/painted/horse.webp", 28, 56, 49, "gallop", 40, 0],
+  ] },
+  牛: { sentence: "牛低下头来吃青草。", setting: "meadow", layers: [
+    ["art/wordbook/painted/grass.webp", 32, 72, 22],
+    ["art/wordbook/painted/cow.webp", 50, 54, 46, "bow"],
+  ] },
+  羊: { sentence: "小羊跳过一块石头。", setting: "meadow", layers: [
+    ["art/wordbook/painted/stone.webp", 51, 73, 20],
+    ["art/wordbook/painted/sheep.webp", 28, 58, 37, "leap", 41, 0],
+  ] },
+  鸡: { sentence: "小鸡低头，啄一粒谷子。", setting: "clearing", layers: [
+    ["art/wordbook/painted/rice-stalks.webp", 43, 72, 18],
+    ["art/wordbook/painted/chick.webp", 51, 55, 42, "peck"],
+  ] },
+  鸭: { sentence: "小鸭划着水，游向岸边。", setting: "pond", layers: [
+    ["art/wordbook/painted/duck.webp", 33, 56, 40, "swim", 28, 8],
+  ] },
+  米: { sentence: "一粒粒大米，来自沉甸甸的稻穗。", setting: "paper", layers: [
+    ["art/wordbook/painted/rice-stalks.webp", 34, 47, 42, "bow"],
+    ["art/wordbook/painted/rice-bowl.webp", 63, 62, 37, "reveal"],
+  ] },
+  饭: { sentence: "饭碗端上来，开饭啦。", setting: "warm", layers: [
+    ["art/wordbook/painted/rice-bowl.webp", 31, 63, 46, "serve", 19, -6],
+  ] },
+  面: { sentence: "一碗面端上桌，筷子伸过来。", setting: "paper", layers: [
+    ["art/wordbook/painted/noodles.webp", 50, 65, 52],
+    ["art/wordbook/painted/chopsticks.webp", 65, 27, 33, "tilt", -9, 14],
+  ] },
+  蛋: { sentence: "蛋壳裂开，小鸡探头啦。", setting: "meadow", layers: [
+    ["art/play/egg.webp", 50, 57, 42, "shake"],
+    ["art/wordbook/painted/hatching-chick.webp", 50, 57, 48, "reveal"],
+  ] },
+  肉: { sentence: "夹起一块肉，放到盘子上。", setting: "paper", layers: [
+    ["art/play/plate.webp", 56, 72, 40],
+    ["art/wordbook/painted/meat.webp", 37, 42, 31, "arc", 18, 18],
+  ] },
+  菜: { sentence: "绿油油的青菜放进菜篮。", setting: "paper", layers: [
+    ["art/play/basket.webp", 57, 69, 39],
+    ["art/wordbook/painted/greens.webp", 29, 36, 32, "arc", 26, 22],
+  ] },
+  果: { sentence: "树上的果子熟了，落下来。", setting: "meadow", layers: [
+    ["art/play/tree.webp", 49, 54, 62],
+    ["art/wordbook/painted/apple.webp", 57, 39, 20, "fall", 0, 35],
+  ] },
+  瓜: { sentence: "一个西瓜切开，露出红瓤。", setting: "paper", layers: [
+    ["art/wordbook/painted/watermelon.webp", 47, 55, 43, "tilt"],
+    ["art/wordbook/painted/watermelon.webp", 48, 54, 36, "glide", 19, 5],
+  ] },
+  豆: { sentence: "豆子落进碗里，一颗又一颗。", setting: "warm", layers: [
+    ["art/wordbook/painted/empty-bowl.webp", 54, 67, 44],
+    ["art/wordbook/painted/beans.webp", 40, 31, 20, "drop", 12, 26],
+  ] },
+  饼: { sentence: "一块圆饼，从盘边滚到中间。", setting: "paper", layers: [
+    ["art/play/plate.webp", 55, 71, 44],
+    ["art/wordbook/painted/biscuit.webp", 27, 56, 33, "roll", 25, 2],
+  ] },
+  门: { sentence: "门打开了，小朋友走进去。", setting: "warm", layers: [
+    ["art/wordbook/painted/door.webp", 59, 55, 57, "openDoor"],
+    ["art/wordbook/child.webp", 22, 67, 32, "inside", 31, -5],
+  ] },
+  窗: { sentence: "窗户打开，蝴蝶飞进来。", setting: "meadow", layers: [
+    ["art/wordbook/painted/window.webp", 57, 49, 54],
+    ["art/wordbook/painted/butterfly.webp", 27, 56, 20, "flutter", 29, -8],
+  ] },
+  床: { sentence: "睡觉了，把小熊放到床上。", setting: "warm", layers: [
+    ["art/wordbook/painted/bed.webp", 55, 65, 50],
+    ["art/bear.webp", 29, 38, 27, "arc", 23, 11],
+  ] },
+  灯: { sentence: "按一下开关，灯亮起来。", setting: "night", layers: [
+    ["art/wordbook/painted/lamp.webp", 50, 46, 48, "light"],
+  ] },
+  桌: { sentence: "把书放上书桌。", setting: "warm", layers: [
+    ["art/wordbook/desk.webp", 52, 66, 37],
+    ["art/wordbook/painted/book.webp", 32, 34, 30, "settle", 18, 12],
+  ] },
+  椅: { sentence: "把椅子拉过来，坐下休息。", setting: "paper", layers: [
+    ["art/wordbook/painted/chair.webp", 65, 58, 52, "slide", -23, 0],
+  ] },
+  书: { sentence: "把书打开，一页页读。", setting: "warm", layers: [
+    ["art/wordbook/painted/closed-book.webp", 50, 56, 49, "vanish"],
+    ["art/wordbook/painted/book.webp", 50, 56, 53, "unfold"],
+  ] },
+  笔: { sentence: "画笔走过纸面，画出一朵花。", setting: "paper", layers: [
+    ["art/wordbook/painted/daisy.webp", 48, 58, 38, "reveal"],
+    ["art/wordbook/painted/paintbrush.webp", 32, 49, 36, "draw", 26, -4],
+  ] },
+  杯: { sentence: "把杯子挪到水滴下面接水。", setting: "paper", layers: [
+    ["art/wordbook/painted/water-drop.webp", 52, 29, 20, "drop", 0, 24],
+    ["art/wordbook/painted/milk-glass.webp", 31, 69, 37, "slide", 20, 0],
+  ] },
+  碗: { sentence: "勺子轻轻放进碗里。", setting: "warm", layers: [
+    ["art/wordbook/painted/empty-bowl.webp", 53, 66, 49],
+    ["art/wordbook/painted/spoon.webp", 34, 29, 33, "tip", 15, 20],
+  ] },
+  走: { sentence: "一步，一步，小朋友慢慢往前走。", setting: "dawn", layers: [
+    ["art/wordbook/child.webp", 27, 59, 49, "walk", 41, 0],
+  ] },
+  跑: { sentence: "跑步的小朋友很快冲过终点。", setting: "meadow", layers: [
+    ["art/wordbook/painted/finish-flag.webp", 74, 52, 36],
+    ["art/wordbook/painted/runner.webp", 25, 61, 44, "gallop", 43, 0],
+  ] },
+  跳: { sentence: "弯弯腿，往上一跳，越过石头。", setting: "meadow", layers: [
+    ["art/wordbook/painted/stone.webp", 50, 73, 21],
+    ["art/wordbook/child.webp", 28, 55, 42, "leap", 43, 0],
+  ] },
+  看: { sentence: "眼睛看着书，读到下一页。", setting: "paper", layers: [
+    ["art/wordbook/painted/girl.webp", 50, 47, 50, "nod"],
+    ["art/wordbook/painted/book.webp", 50, 70, 37, "unfold"],
+  ] },
+  听: { sentence: "音符飘过来，耳朵仔细听。", setting: "warm", layers: [
+    ["art/wordbook/painted/ear.webp", 64, 53, 46],
+    ["art/wordbook/painted/music.webp", 27, 45, 25, "glide", 24, 0],
+  ] },
+  说: { sentence: "张开嘴，说出一句问候。", setting: "warm", layers: [
+    ["art/wordbook/mouth.webp", 38, 59, 37, "open"],
+    ["art/wordbook/painted/talk.webp", 67, 37, 29, "bloom"],
+  ] },
+  笑: { sentence: "听到好玩的事，笑得眯起眼。", setting: "paper", layers: [
+    ["art/wordbook/painted/laughing-child.webp", 50, 52, 55, "hop"],
+  ] },
+  吃: { sentence: "勺子舀着饭，送到嘴边。", setting: "warm", layers: [
+    ["art/wordbook/mouth.webp", 62, 47, 39],
+    ["art/wordbook/painted/spoon.webp", 30, 67, 31, "tip", 23, -14],
+  ] },
+  喝: { sentence: "举起杯子，喝一口水。", setting: "paper", layers: [
+    ["art/wordbook/mouth.webp", 59, 41, 35],
+    ["art/wordbook/painted/milk-glass.webp", 34, 66, 34, "tip", 18, -14],
+  ] },
+  洗: { sentence: "抹上肥皂搓一搓，洗出小泡泡。", setting: "paper", layers: [
+    ["art/wordbook/palm.webp", 48, 58, 47],
+    ["art/wordbook/painted/soap.webp", 51, 51, 27, "scrub"],
+    ["art/wordbook/painted/bubbles.webp", 62, 43, 23, "rise", 3, -17],
+  ] },
+  大: { sentence: "大象和小老鼠站一起，大象真大！", setting: "meadow", layers: [
+    ["art/wordbook/painted/field-mouse.webp", 73, 74, 14],
+    ["art/wordbook/painted/elephant.webp", 43, 55, 56, "grow"],
+  ] },
+  小: { sentence: "大手旁边，伸出一只小手。", setting: "warm", layers: [
+    ["art/wordbook/palm.webp", 35, 51, 58],
+    ["art/wordbook/palm.webp", 68, 68, 25, "wave"],
+  ] },
+  上: { sentence: "气球往上飞，飞过了树梢。", setting: "meadow", layers: [
+    ["art/play/tree.webp", 63, 60, 49],
+    ["art/wordbook/painted/balloon.webp", 36, 65, 27, "rise", 2, -43],
+  ] },
+  下: { sentence: "苹果从树上掉到树下。", setting: "meadow", layers: [
+    ["art/play/tree.webp", 47, 54, 60],
+    ["art/wordbook/painted/apple.webp", 56, 37, 19, "drop", 1, 39],
+  ] },
+  左: { sentence: "小球从中间滚到左边。", setting: "paper", layers: [
+    ["art/wordbook/painted/football.webp", 53, 60, 35, "roll", -29, 0],
+  ] },
+  右: { sentence: "小车向右开，到达右边。", setting: "paper", layers: [
+    ["art/wordbook/painted/car.webp", 37, 62, 36, "ride", 34, 0],
+  ] },
+  前: { sentence: "两只鸭子排队，前面的先游走。", setting: "pond", layers: [
+    ["art/wordbook/painted/duck.webp", 62, 55, 35, "swim", -29, 2],
+    ["art/wordbook/painted/duck.webp", 78, 60, 23],
+  ] },
+  后: { sentence: "小鸭跟在大鸭后面。", setting: "pond", layers: [
+    ["art/wordbook/painted/duck.webp", 41, 55, 37, "swim", -17, 0],
+    ["art/wordbook/painted/duck.webp", 73, 62, 24, "swim", -21, 0],
+  ] },
+  里: { sentence: "草莓从篮子口落到里面。", setting: "clearing", layers: [
+    ["art/berry.webp", 50, 31, 24, "inside", 0, 30],
+    ["art/play/basket.webp", 50, 68, 49],
+  ] },
+  外: { sentence: "小鸟飞出窝，来到外面。", setting: "meadow", layers: [
+    ["art/play/nest.webp", 38, 65, 36],
+    ["art/play/bird.webp", 38, 55, 30, "flutter", 33, -22],
+  ] },
+  雷: { sentence: "乌云里划过一道闪电，接着响起雷声。", setting: "storm-sky", layers: [
+    ["art/wordbook/thunder.webp", 50, 43, 54, "rumble"],
+  ] },
+  电: { sentence: "一道闪电从云底伸向地面。", setting: "storm-sky", layers: [
+    ["art/wordbook/painted/cloud.webp", 51, 34, 43],
+    ["art/wordbook/painted/lightning.webp", 50, 49, 41, "bolt"],
+  ] },
+  光: { sentence: "云朵移开，阳光照下来。", setting: "dawn-sky", layers: [
+    ["art/wordbook/sun.webp", 50, 36, 34, "light"],
+    ["art/wordbook/painted/cloud.webp", 50, 39, 36, "glide", 27, 0],
+  ] },
+  阳: { sentence: "太阳升高了，向日葵朝着它转。", setting: "dawn-sky", layers: [
+    ["art/wordbook/sun.webp", 69, 29, 30, "rise", 0, -7],
+    ["art/wordbook/painted/sunflower.webp", 42, 69, 43, "tilt"],
+  ] },
+  亮: { sentence: "小灯亮了，照亮身旁的书。", setting: "night", layers: [
+    ["art/wordbook/painted/book.webp", 52, 72, 29],
+    ["art/wordbook/painted/lamp.webp", 49, 37, 41, "light"],
+  ] },
+  黑: { sentence: "一只黑猫从树后慢慢走出来。", setting: "dawn", layers: [
+    ["art/play/tree.webp", 34, 55, 54],
+    ["art/wordbook/painted/black-cat.webp", 33, 67, 33, "walk", 29, 0],
+  ] },
+  白: { sentence: "白兔蹦到白云底下。", setting: "meadow", layers: [
+    ["art/wordbook/painted/cloud.webp", 61, 31, 29],
+    ["art/wordbook/painted/rabbit.webp", 31, 68, 35, "hop", 27, 0],
+  ] },
+  早: { sentence: "早晨太阳升起，小鸟也醒了。", setting: "dawn-sky", layers: [
+    ["art/wordbook/sun.webp", 46, 52, 31, "rise", 0, -27],
+    ["art/play/bird.webp", 68, 63, 27, "flutter", 7, -9],
+  ] },
+  晚: { sentence: "到了晚上，月亮出来，小熊睡了。", setting: "night-sky", layers: [
+    ["art/bear.webp", 40, 69, 32, "nod"],
+    ["art/wordbook/moon.webp", 61, 47, 32, "rise", 0, -17],
+  ] },
+  夜: { sentence: "夜空里，月亮旁亮起了星星。", setting: "night-sky", layers: [
+    ["art/wordbook/moon.webp", 41, 41, 40],
+    ["art/wordbook/painted/star.webp", 63, 31, 21, "twinkle"],
+  ] },
+  花: { sentence: "花瓣展开，蜜蜂到花心采蜜。", setting: "meadow", layers: [
+    ["art/wordbook/painted/blossom.webp", 48, 61, 45, "bloom"],
+    ["art/wordbook/painted/honeybee.webp", 24, 34, 21, "flutter", 21, 17],
+  ] },
+  草: { sentence: "草叶一丛丛长高，铺满小坡。", setting: "meadow", layers: [
+    ["art/wordbook/painted/grass.webp", 30, 68, 28, "grow"],
+    ["art/wordbook/painted/grass.webp", 50, 64, 36, "grow"],
+    ["art/wordbook/painted/grass.webp", 70, 67, 31, "grow"],
+  ] },
+  树: { sentence: "一棵大树长高，为小熊遮阳。", setting: "meadow", layers: [
+    ["art/bear.webp", 60, 74, 25],
+    ["art/play/tree.webp", 49, 53, 65, "grow"],
+  ] },
+  叶: { sentence: "一片绿叶打着旋儿，落在草地上。", setting: "meadow", layers: [
+    ["art/wordbook/painted/green-leaf.webp", 36, 27, 26, "drift", 23, 42],
+  ] },
+  竹: { sentence: "细细的竹子一节节长高。", setting: "meadow", layers: [
+    ["art/wordbook/painted/bamboo.webp", 48, 54, 58, "grow"],
+  ] },
+  苗: { sentence: "水滴落在根边，小苗挺起身。", setting: "clearing", layers: [
+    ["art/wordbook/painted/seedling.webp", 50, 66, 37, "grow"],
+    ["art/wordbook/painted/water-drop.webp", 57, 37, 18, "drop", -3, 19],
+  ] },
+  根: { sentence: "雨水沿着树干，流到树根旁。", setting: "meadow", layers: [
+    ["art/play/tree.webp", 50, 52, 61],
+    ["art/wordbook/painted/water-drop.webp", 48, 41, 17, "fall", 2, 32],
+  ] },
+  枝: { sentence: "小鸟飞到树枝上停下来。", setting: "meadow", layers: [
+    ["art/play/tree.webp", 54, 54, 61],
+    ["art/play/bird.webp", 23, 33, 23, "arc", 30, 9],
+  ] },
+  朵: { sentence: "花苞舒展开，开出一朵花。", setting: "warm", layers: [
+    ["art/wordbook/painted/tulip.webp", 50, 55, 43, "vanish"],
+    ["art/wordbook/painted/daisy.webp", 50, 53, 49, "bloom"],
+  ] },
+  河: { sentence: "一条小船顺着河水漂向远处。", setting: "dawn", layers: [
+    ["art/play/boat.webp", 31, 68, 27, "sail", 32, -5],
+  ] },
+  海: { sentence: "海浪涌来，把贝壳推向岸边。", setting: "pond", layers: [
+    ["art/wordbook/painted/wave.webp", 33, 54, 43, "sway"],
+    ["art/wordbook/painted/seashell.webp", 49, 68, 23, "roll", 21, 5],
+  ] },
+  沙: { sentence: "沙滩上留下了一串脚印。", setting: "dawn", layers: [
+    ["art/wordbook/painted/footprints.webp", 31, 65, 20, "reveal"],
+    ["art/wordbook/painted/footprints.webp", 50, 58, 18, "reveal"],
+    ["art/wordbook/painted/footprints.webp", 68, 51, 16, "reveal"],
+  ] },
+  地: { sentence: "小球落到地上，弹了两下。", setting: "meadow", layers: [
+    ["art/wordbook/painted/football.webp", 46, 32, 30, "bounce", 2, 35],
+  ] },
+  虫: { sentence: "小虫扭一扭，爬上绿叶。", setting: "meadow", layers: [
+    ["art/wordbook/painted/green-leaf.webp", 59, 61, 38],
+    ["art/wordbook/painted/caterpillar.webp", 28, 65, 23, "crawl", 27, -12],
+  ] },
+  蝶: { sentence: "蝴蝶绕过花朵，轻轻停下。", setting: "meadow", layers: [
+    ["art/wordbook/painted/tulip.webp", 59, 68, 36],
+    ["art/wordbook/painted/butterfly.webp", 28, 43, 30, "flutter", 28, 4],
+  ] },
+  蜂: { sentence: "蜜蜂飞近花心，低头采蜜。", setting: "meadow", layers: [
+    ["art/wordbook/painted/sunflower.webp", 60, 63, 45],
+    ["art/wordbook/painted/honeybee.webp", 27, 33, 24, "arc", 30, 17],
+  ] },
+  蚂: { sentence: "小蚂蚁爬到面包屑旁。", setting: "paper", layers: [
+    ["art/wordbook/painted/bread.webp", 67, 67, 22],
+    ["art/wordbook/painted/ant.webp", 27, 65, 28, "crawl", 29, 0],
+  ] },
+  蚁: { sentence: "两只蚂蚁跟着队伍搬食物。", setting: "paper", layers: [
+    ["art/wordbook/painted/ant.webp", 39, 63, 24, "crawl", 21, 0],
+    ["art/wordbook/painted/ant.webp", 22, 69, 22, "crawl", 21, 0],
+    ["art/wordbook/painted/rice-stalks.webp", 43, 55, 16, "slide", 21, 0],
+  ] },
+  蛇: { sentence: "小蛇弯着身体穿过草丛。", setting: "meadow", layers: [
+    ["art/wordbook/painted/grass.webp", 65, 69, 27],
+    ["art/wordbook/painted/snake.webp", 34, 59, 39, "crawl", 23, 0],
+  ] },
+  龟: { sentence: "乌龟背着壳，慢慢爬向水边。", setting: "pond", layers: [
+    ["art/wordbook/painted/turtle.webp", 33, 63, 40, "crawl", 24, 3],
+  ] },
+  蛙: { sentence: "青蛙一跳，落在荷叶上。", setting: "pond", layers: [
+    ["art/play/lily.webp", 65, 69, 29],
+    ["art/wordbook/painted/frog.webp", 28, 60, 30, "leap", 35, -3],
+  ] },
+  象: { sentence: "大象走到水边，甩出小水花。", setting: "pond", layers: [
+    ["art/wordbook/painted/elephant.webp", 43, 55, 52, "walk", 6, 0],
+    ["art/wordbook/waterdrop.webp", 63, 48, 20, "bloom"],
+  ] },
+  熊: { sentence: "小熊闻到蜂蜜，走到罐子旁。", setting: "clearing", layers: [
+    ["art/wordbook/painted/honey-jar.webp", 70, 67, 29],
+    ["art/bear.webp", 31, 59, 43, "walk", 25, 0],
+  ] },
+  虎: { sentence: "老虎从草丛里一跃而出。", setting: "meadow", layers: [
+    ["art/wordbook/painted/grass.webp", 31, 67, 33],
+    ["art/wordbook/painted/tiger.webp", 32, 61, 41, "leap", 31, 0],
+  ] },
+  猴: { sentence: "猴子举起香蕉，送到嘴边。", setting: "meadow", layers: [
+    ["art/wordbook/painted/monkey.webp", 53, 55, 45],
+    ["art/wordbook/painted/bananas.webp", 32, 64, 25, "tip", 13, -15],
+  ] },
+  鹿: { sentence: "小鹿迈开长腿跨过树桩。", setting: "meadow", layers: [
+    ["art/wordbook/painted/log.webp", 52, 73, 22],
+    ["art/wordbook/painted/deer.webp", 27, 54, 45, "leap", 43, 0],
+  ] },
+  猪: { sentence: "小猪走到苹果旁边拱一拱。", setting: "meadow", layers: [
+    ["art/wordbook/painted/apple.webp", 62, 70, 20, "roll", 7, 0],
+    ["art/wordbook/painted/pig.webp", 31, 62, 38, "walk", 20, 0],
+  ] },
+  鼠: { sentence: "小老鼠一路跑向奶酪。", setting: "paper", layers: [
+    ["art/wordbook/painted/cheese.webp", 65, 64, 33],
+    ["art/wordbook/painted/field-mouse.webp", 25, 67, 24, "crawl", 27, 0],
+  ] },
+  鹅: { sentence: "白鹅伸着脖子，划过池塘。", setting: "pond", layers: [
+    ["art/play/goose.webp", 29, 54, 44, "swim", 38, 3],
+  ] },
+  羽: { sentence: "一根羽毛轻轻飘落。", setting: "dawn", layers: [
+    ["art/wordbook/painted/feather.webp", 37, 30, 32, "drift", 21, 38],
+  ] },
+  毛: { sentence: "羊身旁，软软的羊毛绕成线团。", setting: "meadow", layers: [
+    ["art/wordbook/painted/sheep.webp", 36, 57, 43],
+    ["art/wordbook/painted/yarn.webp", 64, 67, 26, "roll", -5, 0],
+  ] },
+  尾: { sentence: "小鱼摆动尾巴，一下游远了。", setting: "pond", layers: [
+    ["art/fish.webp", 30, 61, 36, "swim", 40, -10],
+  ] },
+  苹: { sentence: "一只红苹果从枝头掉进篮子。", setting: "meadow", layers: [
+    ["art/play/basket.webp", 53, 72, 38],
+    ["art/wordbook/painted/apple.webp", 50, 30, 24, "drop", 2, 30],
+  ] },
+  桃: { sentence: "熟透的桃子落在手心。", setting: "meadow", layers: [
+    ["art/wordbook/palm.webp", 55, 67, 36],
+    ["art/wordbook/painted/peach.webp", 48, 31, 30, "drop", 5, 25],
+  ] },
+  梨: { sentence: "黄澄澄的梨滚到盘里。", setting: "warm", layers: [
+    ["art/play/plate.webp", 59, 70, 40],
+    ["art/wordbook/painted/pear.webp", 28, 52, 32, "roll", 26, 6],
+  ] },
+  香: { sentence: "花香飘过来，小鼻子凑过去闻。", setting: "meadow", layers: [
+    ["art/wordbook/painted/blossom.webp", 38, 55, 39],
+    ["art/wordbook/painted/nose.webp", 68, 46, 30, "nod", -13, 4],
+  ] },
+  蕉: { sentence: "把一串香蕉放进果篮。", setting: "paper", layers: [
+    ["art/play/basket.webp", 57, 69, 43],
+    ["art/wordbook/painted/bananas.webp", 32, 35, 34, "arc", 22, 20],
+  ] },
+  橙: { sentence: "橙子滚过桌面，在杯旁停下。", setting: "warm", layers: [
+    ["art/wordbook/painted/milk-glass.webp", 68, 60, 34],
+    ["art/wordbook/painted/orange.webp", 26, 63, 30, "roll", 27, 0],
+  ] },
+  莓: { sentence: "熟透的草莓落到篮底。", setting: "clearing", layers: [
+    ["art/play/basket.webp", 48, 70, 47],
+    ["art/berry.webp", 48, 31, 28, "inside", 0, 30],
+  ] },
+  葡: { sentence: "紫葡萄一串串垂下来。", setting: "meadow", layers: [
+    ["art/wordbook/painted/grapes.webp", 37, 41, 38, "settle", 0, 13],
+    ["art/wordbook/painted/grapes.webp", 63, 38, 32, "settle", 0, 10],
+  ] },
+  萄: { sentence: "一串葡萄在太阳下晒小了。", setting: "dawn", layers: [
+    ["art/wordbook/sun.webp", 68, 30, 30],
+    ["art/wordbook/painted/grapes.webp", 45, 63, 42, "shrink"],
+  ] },
+  糖: { sentence: "彩色糖果从袋口滚出来。", setting: "warm", layers: [
+    ["art/play/satchel.webp", 36, 54, 45],
+    ["art/wordbook/painted/wrapped-sweet.webp", 41, 64, 29, "roll", 26, 3],
+  ] },
+  盐: { sentence: "盐瓶轻轻倾斜，给汤调味。", setting: "paper", layers: [
+    ["art/wordbook/painted/empty-bowl.webp", 52, 71, 44],
+    ["art/wordbook/painted/salt.webp", 42, 37, 30, "tip"],
+  ] },
+  油: { sentence: "油瓶倾斜，向锅里倒油。", setting: "warm", layers: [
+    ["art/wordbook/painted/frying-pan.webp", 53, 70, 42],
+    ["art/wordbook/painted/oil-bottle.webp", 39, 36, 31, "tip"],
+  ] },
+  汤: { sentence: "勺子伸进汤里，又舀起来。", setting: "paper", layers: [
+    ["art/wordbook/painted/soup.webp", 52, 65, 51],
+    ["art/wordbook/painted/spoon.webp", 59, 34, 31, "scoop"],
+  ] },
+  茶: { sentence: "茶壶歪一歪，茶水倒进杯里。", setting: "warm", layers: [
+    ["art/wordbook/painted/tea-cup.webp", 61, 69, 32],
+    ["art/wordbook/painted/teapot.webp", 39, 43, 37, "tip"],
+  ] },
+  饺: { sentence: "一只饺子落进汤碗。", setting: "paper", layers: [
+    ["art/wordbook/painted/empty-bowl.webp", 53, 70, 42],
+    ["art/wordbook/painted/dumpling.webp", 45, 33, 32, "drop", 6, 24],
+  ] },
+  包: { sentence: "早餐盘里摆上一片面包。", setting: "warm", layers: [
+    ["art/play/plate.webp", 55, 70, 41],
+    ["art/wordbook/painted/bread.webp", 31, 39, 34, "arc", 22, 16],
+  ] },
+  饱: { sentence: "小熊吃完饭，心满意足地拍拍肚子。", setting: "clearing", layers: [
+    ["art/bear.webp", 50, 54, 55, "rock"],
+    ["art/wordbook/painted/empty-bowl.webp", 70, 74, 23],
+  ] },
+  饿: { sentence: "肚子饿了，小熊朝饭碗走。", setting: "clearing", layers: [
+    ["art/wordbook/painted/rice-bowl.webp", 69, 66, 31],
+    ["art/bear.webp", 30, 59, 44, "walk", 23, 0],
+  ] },
+  甜: { sentence: "舔一口棒棒糖，开心地笑了。", setting: "warm", layers: [
+    ["art/wordbook/painted/smiling-child.webp", 57, 51, 45],
+    ["art/wordbook/painted/lollipop.webp", 30, 64, 30, "tip", 14, -4],
+  ] },
+  酸: { sentence: "尝到酸柠檬，脸皱起来了。", setting: "warm", layers: [
+    ["art/wordbook/painted/lemon.webp", 33, 60, 30],
+    ["art/wordbook/painted/sour-child.webp", 61, 49, 43, "shake"],
+  ] },
+  辣: { sentence: "吃到辣椒，赶快喝口水。", setting: "warm", layers: [
+    ["art/wordbook/painted/chili.webp", 31, 63, 35],
+    ["art/wordbook/painted/milk-glass.webp", 68, 65, 32, "tip", -8, -17],
+  ] },
+  冰: { sentence: "冰块滑进杯里，叮当一声。", setting: "paper", layers: [
+    ["art/wordbook/painted/milk-glass.webp", 54, 67, 43],
+    ["art/wordbook/painted/ice-cube.webp", 40, 31, 24, "drop", 13, 24],
+  ] },
+  衣: { sentence: "把一件衣服挂起来。", setting: "paper", layers: [
+    ["art/wordbook/painted/shirt.webp", 44, 68, 46, "rise", 6, -19],
+  ] },
+  裤: { sentence: "把长裤叠好，放进箱子。", setting: "warm", layers: [
+    ["art/wordbook/painted/carton.webp", 57, 69, 37],
+    ["art/wordbook/painted/trousers.webp", 35, 37, 39, "inside", 19, 22],
+  ] },
+  鞋: { sentence: "小脚伸进去，穿上鞋子。", setting: "paper", layers: [
+    ["art/wordbook/painted/shoe.webp", 54, 69, 45],
+    ["art/wordbook/painted/foot.webp", 39, 33, 31, "inside", 13, 24],
+  ] },
+  袜: { sentence: "两只袜子靠在一起，配成一双。", setting: "warm", layers: [
+    ["art/wordbook/painted/socks.webp", 29, 55, 39, "slide", 12, 0],
+    ["art/wordbook/painted/socks.webp", 74, 56, 35, "slide", -12, 0],
+  ] },
+  帽: { sentence: "帽子从上面落到头顶。", setting: "paper", layers: [
+    ["art/wordbook/painted/boy.webp", 50, 61, 42],
+    ["art/wordbook/painted/cap.webp", 50, 28, 20, "settle", 0, 15],
+  ] },
+  裙: { sentence: "花裙子转了一圈，裙摆展开。", setting: "warm", layers: [
+    ["art/wordbook/painted/dress.webp", 50, 51, 54, "twirl"],
+  ] },
+  巾: { sentence: "围巾轻轻搭在脖子上。", setting: "paper", layers: [
+    ["art/wordbook/painted/girl.webp", 51, 50, 45],
+    ["art/wordbook/painted/scarf.webp", 30, 59, 28, "settle", 22, 6],
+  ] },
+  伞: { sentence: "雨点落下来，雨伞撑开了。", setting: "storm", layers: [
+    ["art/wordbook/painted/rain-cloud.webp", 51, 32, 37],
+    ["art/wordbook/painted/umbrella.webp", 50, 64, 45, "unfold"],
+  ] },
+  被: { sentence: "小熊躺下，盖上软软的被子。", setting: "warm", layers: [
+    ["art/bear.webp", 51, 55, 45],
+    ["art/wordbook/quilt.webp", 51, 77, 34, "slide", 0, -14],
+  ] },
+  枕: { sentence: "把枕头放到床头。", setting: "paper", layers: [
+    ["art/wordbook/painted/bed.webp", 52, 65, 49],
+    ["art/wordbook/pillow.webp", 28, 38, 25, "settle", 12, 11],
+  ] },
+  盆: { sentence: "水滴汇进小盆里。", setting: "paper", layers: [
+    ["art/wordbook/painted/empty-bowl.webp", 50, 68, 48],
+    ["art/wordbook/painted/water-drop.webp", 50, 29, 24, "drop", 0, 28],
+  ] },
+  刷: { sentence: "牙刷贴着牙齿，上上下下刷。", setting: "paper", layers: [
+    ["art/wordbook/painted/tooth.webp", 52, 55, 49],
+    ["art/wordbook/painted/toothbrush.webp", 52, 45, 37, "brush"],
+  ] },
+  勺: { sentence: "用小勺舀起一口汤。", setting: "warm", layers: [
+    ["art/wordbook/painted/soup.webp", 48, 68, 45],
+    ["art/wordbook/painted/spoon.webp", 58, 42, 34, "scoop"],
+  ] },
+  筷: { sentence: "筷子夹起一个饺子。", setting: "paper", layers: [
+    ["art/wordbook/painted/dumpling.webp", 49, 66, 27, "rise", 2, -17],
+    ["art/wordbook/painted/chopsticks.webp", 54, 49, 41, "rise", 2, -17],
+  ] },
+  锅: { sentence: "平底锅往上一颠，煎蛋翻个面。", setting: "warm", layers: [
+    ["art/wordbook/painted/frying-pan.webp", 49, 63, 48, "tilt"],
+    ["art/play/egg.webp", 48, 48, 22, "hop"],
+  ] },
+  瓶: { sentence: "把奶瓶放在小宝宝身旁。", setting: "paper", layers: [
+    ["art/wordbook/painted/baby.webp", 64, 55, 40],
+    ["art/wordbook/painted/baby-bottle.webp", 28, 47, 32, "serve", 18, 12],
+  ] },
+  盒: { sentence: "把礼物装进盒子里。", setting: "warm", layers: [
+    ["art/wordbook/painted/gift.webp", 41, 34, 27, "inside", 10, 25],
+    ["art/wordbook/painted/carton.webp", 51, 66, 45],
+  ] },
+  纸: { sentence: "一张白纸展开，铺在桌上。", setting: "paper", layers: [
+    ["art/wordbook/painted/paper.webp", 50, 53, 52, "unfold"],
+  ] },
+  布: { sentence: "把折好的花布展开。", setting: "warm", layers: [
+    ["art/wordbook/quilt.webp", 50, 54, 55, "unfold"],
+  ] },
+  镜: { sentence: "镜子挪到脸前，照一照。", setting: "paper", layers: [
+    ["art/wordbook/painted/girl.webp", 37, 50, 42],
+    ["art/wordbook/painted/mirror.webp", 70, 55, 42, "tilt", -14, 0],
+  ] },
+  钟: { sentence: "闹钟响了，两只小铃铛摇起来。", setting: "warm", layers: [
+    ["art/wordbook/painted/alarm-clock.webp", 50, 53, 49, "ring"],
+  ] },
+  钥: { sentence: "钥匙插进锁里，转一转。", setting: "paper", layers: [
+    ["art/wordbook/painted/locked.webp", 60, 56, 43],
+    ["art/wordbook/painted/key.webp", 30, 65, 30, "tilt", 20, -5],
+  ] },
+  锁: { sentence: "钥匙一转，锁扣打开。", setting: "warm", layers: [
+    ["art/wordbook/painted/locked.webp", 51, 54, 45, "vanish"],
+    ["art/wordbook/painted/unlocked.webp", 51, 54, 45, "reveal"],
+    ["art/wordbook/painted/key.webp", 28, 61, 24, "tilt"],
+  ] },
+  箱: { sentence: "把书搬进大箱子。", setting: "paper", layers: [
+    ["art/wordbook/painted/book.webp", 37, 34, 27, "inside", 14, 25],
+    ["art/wordbook/painted/carton.webp", 52, 66, 48],
+  ] },
+  车: { sentence: "小汽车沿着路开到树旁。", setting: "dawn", layers: [
+    ["art/play/tree.webp", 73, 54, 40],
+    ["art/wordbook/painted/car.webp", 23, 68, 34, "ride", 39, 0],
+  ] },
+  船: { sentence: "小船摇摇晃晃，漂过荷叶。", setting: "pond", layers: [
+    ["art/play/lily.webp", 68, 72, 22],
+    ["art/play/boat.webp", 29, 55, 42, "sail", 31, 4],
+  ] },
+  飞: { sentence: "飞机离开地面，飞到云上。", setting: "dawn-sky", layers: [
+    ["art/wordbook/painted/cloud.webp", 60, 40, 29],
+    ["art/wordbook/painted/plane.webp", 28, 67, 30, "glide", 37, -40],
+  ] },
+  机: { sentence: "飞机穿过两朵云。", setting: "dawn", layers: [
+    ["art/wordbook/painted/cloud.webp", 36, 40, 22],
+    ["art/wordbook/painted/cloud.webp", 69, 29, 27],
+    ["art/wordbook/painted/plane.webp", 24, 52, 32, "glide", 50, -23],
+  ] },
+  路: { sentence: "车子沿着弯弯的小路前进。", setting: "dawn", layers: [
+    ["art/wordbook/painted/blue-car.webp", 27, 65, 30, "arc", 43, -3],
+  ] },
+  桥: { sentence: "小船从桥下驶过。", setting: "pond", layers: [
+    ["art/wordbook/painted/bridge.webp", 52, 45, 47],
+    ["art/play/boat.webp", 24, 70, 22, "sail", 49, 0],
+  ] },
+  站: { sentence: "公交车开进车站，停下了。", setting: "paper", layers: [
+    ["art/wordbook/painted/bus-stop.webp", 69, 49, 39],
+    ["art/wordbook/painted/bus.webp", 25, 67, 37, "ride", 31, 0],
+  ] },
+  园: { sentence: "小朋友走进公园看花。", setting: "meadow", layers: [
+    ["art/wordbook/painted/tulip.webp", 66, 70, 28],
+    ["art/wordbook/child.webp", 26, 57, 44, "walk", 29, 0],
+  ] },
+  街: { sentence: "小车经过街边的房子。", setting: "dawn", layers: [
+    ["art/wordbook/painted/street.webp", 55, 49, 42],
+    ["art/wordbook/painted/car.webp", 22, 72, 26, "ride", 53, 0],
+  ] },
+  楼: { sentence: "高楼一层层盖起来。", setting: "paper", layers: [
+    ["art/wordbook/painted/building.webp", 50, 54, 59, "grow"],
+  ] },
+  店: { sentence: "推着购物车走进商店。", setting: "warm", layers: [
+    ["art/wordbook/painted/shop.webp", 62, 51, 51],
+    ["art/wordbook/painted/cart.webp", 25, 69, 29, "ride", 24, 0],
+  ] },
+  钱: { sentence: "买东西，把一枚硬币交到手里。", setting: "warm", layers: [
+    ["art/wordbook/palm.webp", 57, 68, 37],
+    ["art/wordbook/painted/coin.webp", 36, 39, 24, "arc", 20, 17],
+  ] },
+  买: { sentence: "付了钱，把青菜放进购物车。", setting: "paper", layers: [
+    ["art/wordbook/painted/cart.webp", 59, 64, 42],
+    ["art/wordbook/painted/greens.webp", 32, 34, 30, "arc", 24, 17],
+  ] },
+  票: { sentence: "拿着车票，准备上车。", setting: "paper", layers: [
+    ["art/wordbook/painted/bus.webp", 64, 55, 42],
+    ["art/wordbook/painted/ticket.webp", 28, 65, 27, "slide", 21, -5],
+  ] },
+  轮: { sentence: "车轮滚呀滚，一路向前。", setting: "dawn", layers: [
+    ["art/wordbook/painted/wheel.webp", 29, 61, 39, "roll", 39, 0],
+  ] },
+  骑: { sentence: "骑上自行车，沿着小路出发。", setting: "meadow", layers: [
+    ["art/wordbook/painted/cyclist.webp", 28, 59, 47, "ride", 40, 0],
+  ] },
+  学: { sentence: "翻开书本，开始学习。", setting: "warm", layers: [
+    ["art/wordbook/child.webp", 32, 56, 41],
+    ["art/wordbook/painted/book.webp", 62, 62, 37, "unfold"],
+  ] },
+  校: { sentence: "背着书包，走向学校。", setting: "meadow", layers: [
+    ["art/wordbook/painted/school.webp", 65, 51, 51],
+    ["art/play/satchel.webp", 30, 63, 29, "walk", 22, -2],
+  ] },
+  师: { sentence: "老师指着黑板讲课。", setting: "paper", layers: [
+    ["art/wordbook/painted/teacher.webp", 50, 54, 57, "nod"],
+  ] },
+  班: { sentence: "小朋友一个个来班里集合。", setting: "warm", layers: [
+    ["art/wordbook/painted/girl.webp", 31, 56, 34, "slide", 6, 0],
+    ["art/wordbook/painted/boy.webp", 52, 56, 34],
+    ["art/wordbook/painted/girl.webp", 77, 56, 32, "slide", -9, 0],
+  ] },
+  课: { sentence: "上课铃响，书本打开。", setting: "paper", layers: [
+    ["art/wordbook/painted/bell.webp", 33, 42, 29, "ring"],
+    ["art/wordbook/painted/book.webp", 61, 61, 42, "unfold"],
+  ] },
+  本: { sentence: "打开本子，拿笔画一画。", setting: "warm", layers: [
+    ["art/wordbook/painted/notebook.webp", 51, 60, 48],
+    ["art/wordbook/painted/pencil.webp", 44, 44, 28, "draw", 16, 7],
+  ] },
+  字: { sentence: "铅笔一横一竖，在纸上写个字。", setting: "paper", layers: [
+    ["art/wordbook/painted/handwriting.webp", 50, 54, 50, "draw"],
+  ] },
+  画: { sentence: "画笔转一圈，纸上开出小花。", setting: "paper", layers: [
+    ["art/wordbook/painted/blossom.webp", 51, 56, 39, "bloom"],
+    ["art/wordbook/painted/paintbrush.webp", 34, 43, 31, "draw", 23, 1],
+  ] },
+  图: { sentence: "一幅山水图展开了。", setting: "warm", layers: [
+    ["art/wordbook/painted/landscape-picture.webp", 50, 52, 54, "unfold"],
+  ] },
+  色: { sentence: "画笔沾一沾调色盘里的颜色。", setting: "warm", layers: [
+    ["art/wordbook/painted/palette.webp", 51, 63, 48],
+    ["art/wordbook/painted/paintbrush.webp", 64, 34, 34, "peck", -6, 9],
+  ] },
+  红: { sentence: "挑出红苹果，把它举高。", setting: "paper", layers: [
+    ["art/wordbook/painted/pear.webp", 70, 68, 31],
+    ["art/wordbook/painted/apple.webp", 38, 62, 36, "rise", 0, -23],
+  ] },
+  黄: { sentence: "黄香蕉从果篮里露出来。", setting: "paper", layers: [
+    ["art/play/basket.webp", 48, 69, 43],
+    ["art/wordbook/painted/bananas.webp", 49, 56, 37, "rise", 0, -18],
+  ] },
+  绿: { sentence: "绿叶从嫩芽旁舒展开。", setting: "warm", layers: [
+    ["art/wordbook/painted/seedling.webp", 36, 65, 27],
+    ["art/wordbook/painted/green-leaf.webp", 57, 51, 42, "unfold"],
+  ] },
+  蓝: { sentence: "蓝色的小鱼摇着尾巴游近了。", setting: "pond", layers: [
+    ["art/wordbook/painted/blue-fish.webp", 30, 60, 43, "swim", 30, 0],
+  ] },
+  圆: { sentence: "圆圆的球滚过来。", setting: "warm", layers: [
+    ["art/wordbook/painted/football.webp", 28, 60, 39, "roll", 38, 0],
+  ] },
+  方: { sentence: "方方的积木落下来，叠在一起。", setting: "paper", layers: [
+    ["art/wordbook/painted/blue-block.webp", 50, 67, 28],
+    ["art/wordbook/painted/red-block.webp", 50, 27, 28, "drop", 0, 19],
+  ] },
+  球: { sentence: "拍一下皮球，它弹得高高的。", setting: "meadow", layers: [
+    ["art/wordbook/palm.webp", 47, 32, 24, "nod"],
+    ["art/wordbook/painted/football.webp", 49, 59, 34, "hop"],
+  ] },
+  玩: { sentence: "把球抛给小熊，一起玩。", setting: "clearing", layers: [
+    ["art/bear.webp", 69, 59, 41],
+    ["art/wordbook/painted/football.webp", 26, 62, 25, "arc", 35, -9],
+  ] },
+  歌: { sentence: "嘴巴一开一合，音符飞出来。", setting: "warm", layers: [
+    ["art/wordbook/mouth.webp", 38, 60, 35, "open"],
+    ["art/wordbook/painted/music.webp", 52, 48, 27, "flutter", 18, -19],
+  ] },
+  舞: { sentence: "跟着音乐，裙摆转起来。", setting: "paper", layers: [
+    ["art/wordbook/painted/music.webp", 70, 32, 23, "bob"],
+    ["art/wordbook/painted/dancer.webp", 49, 55, 51, "twirl"],
+  ] },
+  拍: { sentence: "两只手合起来，拍拍手。", setting: "warm", layers: [
+    ["art/wordbook/painted/clap.webp", 50, 53, 53, "beat"],
+  ] },
+  排: { sentence: "小鸭走过来，排到队伍末尾。", setting: "meadow", layers: [
+    ["art/wordbook/painted/duck.webp", 34, 60, 32],
+    ["art/wordbook/painted/duck.webp", 52, 60, 32],
+    ["art/wordbook/painted/duck.webp", 83, 60, 30, "walk", -13, 0],
+  ] },
+  队: { sentence: "小朋友排成一队，一起往前走。", setting: "meadow", layers: [
+    ["art/wordbook/child.webp", 27, 58, 37, "walk", 11, 0],
+    ["art/wordbook/child.webp", 47, 58, 37, "walk", 11, 0],
+    ["art/wordbook/child.webp", 67, 58, 37, "walk", 11, 0],
+  ] },
+  坐: { sentence: "把小熊抱起来，坐到椅子上。", setting: "warm", layers: [
+    ["art/wordbook/painted/chair.webp", 55, 63, 44],
+    ["art/bear.webp", 38, 37, 29, "arc", 15, 11],
+  ] },
+  睡: { sentence: "小熊闭眼睡觉，呼噜声轻轻飘出。", setting: "night", layers: [
+    ["art/bear.webp", 48, 64, 49, "nod"],
+    ["art/wordbook/painted/dream-cloud.webp", 58, 38, 22, "rise", 9, -14],
+  ] },
+  醒: { sentence: "闹钟一响，睡醒了，睁开眼。", setting: "warm", layers: [
+    ["art/wordbook/painted/alarm-clock.webp", 33, 61, 29, "ring"],
+    ["art/wordbook/painted/yawning-child.webp", 64, 52, 41, "vanish"],
+    ["art/wordbook/painted/calm-child.webp", 64, 52, 41, "reveal"],
+  ] },
+  穿: { sentence: "把上衣套在身上。", setting: "paper", layers: [
+    ["art/wordbook/child.webp", 50, 58, 52],
+    ["art/wordbook/painted/shirt.webp", 51, 35, 26, "settle", 0, 24],
+  ] },
+  脱: { sentence: "把头顶的帽子摘下来。", setting: "paper", layers: [
+    ["art/wordbook/painted/boy.webp", 50, 59, 45],
+    ["art/wordbook/painted/cap.webp", 50, 40, 21, "arc", 21, -10],
+  ] },
+  拿: { sentence: "伸出小手，把苹果拿起来。", setting: "warm", layers: [
+    ["art/wordbook/palm.webp", 51, 64, 32, "rise", 0, -16],
+    ["art/wordbook/painted/apple.webp", 52, 59, 24, "rise", 0, -16],
+  ] },
+  放: { sentence: "小手把苹果放回盘子里。", setting: "warm", layers: [
+    ["art/play/plate.webp", 59, 73, 40],
+    ["art/wordbook/palm.webp", 31, 43, 26, "tilt"],
+    ["art/wordbook/painted/apple.webp", 37, 43, 26, "arc", 19, 18],
+  ] },
+  拉: { sentence: "小朋友在前面，把小车拉过来。", setting: "meadow", layers: [
+    ["art/wordbook/child.webp", 49, 57, 40, "walk", 17, 0],
+    ["art/wordbook/painted/cart.webp", 26, 65, 29, "ride", 17, 0],
+  ] },
+  推: { sentence: "小朋友跟在车后，把车向前推。", setting: "paper", layers: [
+    ["art/wordbook/child.webp", 26, 58, 40, "walk", 19, 0],
+    ["art/wordbook/painted/cart.webp", 46, 64, 32, "ride", 19, 0],
+  ] },
+  开: { sentence: "把门推开，看见屋里的小熊。", setting: "warm", layers: [
+    ["art/bear.webp", 52, 61, 33],
+    ["art/wordbook/painted/door.webp", 50, 52, 59, "openDoor"],
+  ] },
+  关: { sentence: "门扇慢慢转回来，把门关好。", setting: "warm", layers: [
+    ["art/bear.webp", 52, 60, 31],
+    ["art/wordbook/painted/door.webp", 50, 52, 59, "closeDoor"],
+  ] },
+  进: { sentence: "小朋友朝门口走，走进屋里。", setting: "meadow", layers: [
+    ["art/wordbook/painted/door.webp", 57, 53, 56],
+    ["art/wordbook/child.webp", 24, 64, 35, "inside", 32, -3],
+  ] },
+  出: { sentence: "小朋友从门口走出，来到草地上。", setting: "meadow", layers: [
+    ["art/wordbook/painted/door.webp", 36, 52, 56],
+    ["art/wordbook/child.webp", 36, 62, 34, "walk", 33, 4],
+  ] },
+  来: { sentence: "小熊招招手，小朋友走过来。", setting: "clearing", layers: [
+    ["art/bear.webp", 66, 61, 42],
+    ["art/wordbook/child.webp", 24, 62, 36, "walk", 28, 0],
+  ] },
+  去: { sentence: "离开小屋，去草地上玩球。", setting: "meadow", layers: [
+    ["art/wordbook/painted/house.webp", 27, 52, 36],
+    ["art/wordbook/painted/football.webp", 75, 70, 21],
+    ["art/wordbook/child.webp", 35, 63, 34, "walk", 29, 0],
+  ] },
+  回: { sentence: "走出去的小熊又回到了家门口。", setting: "dawn", layers: [
+    ["art/wordbook/painted/house.webp", 35, 51, 47],
+    ["art/bear.webp", 74, 64, 32, "walk", -31, 0],
+  ] },
+  起: { sentence: "天亮了，小熊从床上坐起来。", setting: "warm", layers: [
+    ["art/wordbook/painted/bed.webp", 50, 66, 48],
+    ["art/bear.webp", 50, 59, 30, "rise", 0, -18],
+  ] },
+  落: { sentence: "一片叶子旋转着落到地上。", setting: "dawn", layers: [
+    ["art/wordbook/painted/maple-leaf.webp", 51, 27, 27, "drift", 10, 44],
+  ] },
+  爬: { sentence: "小猴沿着树干往上爬。", setting: "meadow", layers: [
+    ["art/play/tree.webp", 52, 52, 66],
+    ["art/wordbook/painted/monkey.webp", 52, 70, 25, "crawl", 0, -33],
+  ] },
+  游: { sentence: "小鸭划着脚，从荷叶旁游过。", setting: "pond", layers: [
+    ["art/play/lily.webp", 56, 67, 24],
+    ["art/wordbook/painted/duck.webp", 23, 54, 33, "swim", 48, 0],
+  ] },
+  踢: { sentence: "脚尖一碰，球飞出去啦。", setting: "meadow", layers: [
+    ["art/wordbook/painted/foot.webp", 32, 59, 29, "tilt", 5, 0],
+    ["art/wordbook/painted/football.webp", 42, 65, 28, "arc", 33, -6],
+  ] },
+  抱: { sentence: "两只小熊张开手，抱在一起。", setting: "clearing", layers: [
+    ["art/bear.webp", 31, 57, 43, "slide", 12, 0],
+    ["art/bear.webp", 72, 62, 31, "slide", -16, 0],
+  ] },
+  吹: { sentence: "嘴巴吹一吹，羽毛飞远了。", setting: "paper", layers: [
+    ["art/wordbook/mouth.webp", 33, 57, 32, "open"],
+    ["art/wordbook/painted/feather.webp", 49, 49, 25, "drift", 26, -13],
+  ] },
+  擦: { sentence: "布在窗户上来回擦。", setting: "warm", layers: [
+    ["art/wordbook/painted/window.webp", 51, 54, 54],
+    ["art/wordbook/quilt.webp", 47, 57, 21, "scrub"],
+  ] },
+  扫: { sentence: "扫把扫过，把落叶扫到一堆。", setting: "meadow", layers: [
+    ["art/wordbook/painted/broom.webp", 40, 48, 44, "scrub", 12, 3],
+    ["art/wordbook/painted/dry-leaves.webp", 48, 71, 23, "slide", 15, 0],
+  ] },
+  找: { sentence: "放大镜从草地上找到一只小虫。", setting: "meadow", layers: [
+    ["art/wordbook/painted/caterpillar.webp", 61, 66, 21],
+    ["art/wordbook/painted/magnifier.webp", 31, 42, 39, "slide", 26, 12],
+  ] },
+  给: { sentence: "把花递给小熊。", setting: "clearing", layers: [
+    ["art/bear.webp", 65, 58, 42],
+    ["art/wordbook/painted/tulip.webp", 28, 55, 29, "serve", 27, 0],
+  ] },
+  接: { sentence: "小手往上一托，接住落下的球。", setting: "warm", layers: [
+    ["art/wordbook/palm.webp", 54, 69, 38],
+    ["art/wordbook/painted/football.webp", 48, 26, 24, "drop", 4, 29],
+  ] },
+  丢: { sentence: "把废纸丢进垃圾桶。", setting: "paper", layers: [
+    ["art/wordbook/painted/bin.webp", 58, 66, 42],
+    ["art/wordbook/painted/paper.webp", 28, 36, 25, "inside", 27, 24],
+  ] },
+  停: { sentence: "车开到停车牌前，稳稳停下。", setting: "dawn", layers: [
+    ["art/wordbook/painted/stop-sign.webp", 70, 43, 31],
+    ["art/wordbook/painted/car.webp", 24, 67, 33, "ride", 28, 0],
+  ] },
+  读: { sentence: "小朋友翻开书，读出声来。", setting: "warm", layers: [
+    ["art/wordbook/painted/book.webp", 53, 69, 40],
+    ["art/wordbook/mouth.webp", 49, 36, 29, "open"],
+  ] },
+  写: { sentence: "笔尖沿着本子，一笔一笔往下写。", setting: "paper", layers: [
+    ["art/wordbook/painted/notebook.webp", 52, 60, 45],
+    ["art/wordbook/painted/pencil.webp", 40, 41, 33, "draw", 19, 10],
+  ] },
+  数: { sentence: "指一指，数出三颗草莓。", setting: "warm", layers: [
+    ["art/berry.webp", 31, 55, 21],
+    ["art/berry.webp", 50, 55, 21],
+    ["art/berry.webp", 69, 55, 21],
+    ["art/wordbook/painted/point-up.webp", 30, 75, 22, "slide", 39, 0],
+  ] },
+  点: { sentence: "小手指轻轻点亮一盏灯。", setting: "night", layers: [
+    ["art/wordbook/painted/lamp.webp", 53, 45, 40, "light"],
+    ["art/wordbook/painted/point-up.webp", 39, 71, 26, "peck", 9, -10],
+  ] },
+  中: { sentence: "小熊站到两棵树的中间。", setting: "meadow", layers: [
+    ["art/play/tree.webp", 25, 52, 48],
+    ["art/play/tree.webp", 75, 52, 48],
+    ["art/bear.webp", 30, 68, 33, "walk", 20, 0],
+  ] },
+  远: { sentence: "小船越漂越远，看起来变小了。", setting: "pond", layers: [
+    ["art/play/boat.webp", 38, 68, 39, "recede", 19, -25],
+  ] },
+  近: { sentence: "小鸟从远处飞到我们跟前。", setting: "dawn", layers: [
+    ["art/play/bird.webp", 60, 36, 39, "approach", -11, 19],
+  ] },
+  高: { sentence: "小树越长越高，超过身旁的小熊。", setting: "meadow", layers: [
+    ["art/bear.webp", 69, 73, 23],
+    ["art/play/tree.webp", 44, 53, 64, "grow"],
+  ] },
+  低: { sentence: "长颈鹿低下头来喝水。", setting: "pond", layers: [
+    ["art/wordbook/painted/giraffe.webp", 50, 54, 54, "bow"],
+  ] },
+  长: { sentence: "短短的尺子展开，变得很长。", setting: "paper", layers: [
+    ["art/wordbook/painted/ruler.webp", 50, 53, 50, "unfold"],
+  ] },
+  短: { sentence: "长铅笔旁，放上一支短铅笔。", setting: "paper", layers: [
+    ["art/wordbook/painted/pencil.webp", 38, 48, 48],
+    ["art/wordbook/painted/pencil.webp", 68, 61, 25, "settle", -3, 0],
+  ] },
+  多: { sentence: "篮子旁边，又添了好几颗草莓。", setting: "clearing", layers: [
+    ["art/play/basket.webp", 28, 63, 34],
+    ["art/berry.webp", 53, 65, 20, "bloom"],
+    ["art/berry.webp", 65, 54, 20, "bloom"],
+    ["art/berry.webp", 74, 69, 20, "bloom"],
+  ] },
+  少: { sentence: "三颗栗子滚走两颗，只剩一颗。", setting: "clearing", layers: [
+    ["art/nut.webp", 33, 61, 23, "depart", -25, 0],
+    ["art/nut.webp", 51, 61, 23],
+    ["art/nut.webp", 69, 61, 23, "depart", 24, 0],
+  ] },
+  空: { sentence: "苹果拿走了，篮子空了。", setting: "warm", layers: [
+    ["art/play/basket.webp", 49, 66, 48],
+    ["art/wordbook/painted/apple.webp", 49, 55, 27, "depart", 25, -30],
+  ] },
+  满: { sentence: "把最后一个苹果放上去，篮子满啦。", setting: "warm", layers: [
+    ["art/play/basket.webp", 50, 68, 47],
+    ["art/wordbook/painted/apple.webp", 40, 57, 21],
+    ["art/wordbook/painted/apple.webp", 60, 57, 21],
+    ["art/wordbook/painted/apple.webp", 49, 28, 23, "drop", 0, 22],
+  ] },
+  快: { sentence: "小兔飞快地跑过小乌龟。", setting: "meadow", layers: [
+    ["art/wordbook/painted/turtle.webp", 52, 68, 26, "crawl", 4, 0],
+    ["art/wordbook/painted/rabbit.webp", 23, 54, 32, "gallop", 50, 0],
+  ] },
+  慢: { sentence: "小蜗牛一步一步，慢慢爬过叶子。", setting: "meadow", layers: [
+    ["art/wordbook/painted/green-leaf.webp", 50, 70, 43],
+    ["art/wordbook/painted/snail.webp", 34, 54, 26, "crawl", 19, 0],
+  ] },
+  轻: { sentence: "轻轻的羽毛，被风吹起来。", setting: "meadow", layers: [
+    ["art/wordbook/painted/feather.webp", 43, 65, 29, "drift", 20, -34],
+  ] },
+  重: { sentence: "沉沉的石头落地，纹丝不动。", setting: "clearing", layers: [
+    ["art/wordbook/painted/stone.webp", 50, 34, 43, "fall", 0, 29],
+  ] },
+  热: { sentence: "一碗热汤端上来，热气往上冒。", setting: "warm", layers: [
+    ["art/wordbook/painted/soup.webp", 50, 67, 45],
+    ["art/wordbook/painted/steam.webp", 50, 47, 24, "rise", 0, -18],
+  ] },
+  冷: { sentence: "寒风吹过，冻得浑身发抖。", setting: "storm", layers: [
+    ["art/wordbook/painted/cold-child.webp", 51, 55, 44, "shiver"],
+    ["art/wordbook/painted/snowflake.webp", 28, 32, 18, "drift", 15, 17],
+  ] },
+  我: { sentence: "小朋友指着自己说：「这是我。」", setting: "warm", layers: [
+    ["art/wordbook/child.webp", 49, 56, 55],
+    ["art/wordbook/painted/point-left.webp", 68, 54, 23, "slide", -12, 0],
+  ] },
+  你: { sentence: "我朝你挥挥手，说声「你好」。", setting: "paper", layers: [
+    ["art/wordbook/palm.webp", 50, 53, 53, "wave"],
+    ["art/wordbook/painted/talk.webp", 69, 33, 21, "bloom"],
+  ] },
+  他: { sentence: "看，那个男孩跑来了，他是我的朋友。", setting: "meadow", layers: [
+    ["art/wordbook/painted/boy.webp", 40, 52, 45, "approach", 10, 4],
+    ["art/wordbook/painted/point-left.webp", 70, 55, 21, "nod"],
+  ] },
+  她: { sentence: "看，那个女孩走来了，她是我的朋友。", setting: "meadow", layers: [
+    ["art/wordbook/painted/girl.webp", 40, 51, 44, "approach", 10, 4],
+    ["art/wordbook/painted/point-left.webp", 70, 55, 21, "nod"],
+  ] },
+  们: { sentence: "你和我站在一起，就是我们。", setting: "warm", layers: [
+    ["art/wordbook/painted/girl.webp", 28, 53, 38, "slide", 11, 0],
+    ["art/wordbook/painted/boy.webp", 73, 53, 39, "slide", -12, 0],
+  ] },
+  的: { sentence: "这是我的书包，把书包背在我身上。", setting: "paper", layers: [
+    ["art/wordbook/child.webp", 49, 57, 53],
+    ["art/play/satchel.webp", 26, 43, 23, "settle", 16, 6],
+  ] },
+  是: { sentence: "看一看，这是一只小猫。", setting: "warm", layers: [
+    ["art/wordbook/painted/ginger-cat.webp", 50, 53, 45],
+    ["art/wordbook/painted/point-up.webp", 31, 69, 22, "slide", 11, -3],
+  ] },
+  有: { sentence: "打开篮子看，里面有一个苹果。", setting: "paper", layers: [
+    ["art/play/basket.webp", 50, 68, 45],
+    ["art/wordbook/painted/apple.webp", 50, 57, 26, "rise", 0, -24],
+  ] },
+  在: { sentence: "看，小鸟就在鸟窝里。", setting: "meadow", layers: [
+    ["art/play/nest.webp", 50, 68, 41],
+    ["art/play/bird.webp", 50, 55, 31, "bob"],
+  ] },
+  不: { sentence: "不想吃了，小朋友摇摇头。", setting: "warm", layers: [
+    ["art/wordbook/painted/rice-bowl.webp", 30, 67, 29],
+    ["art/wordbook/painted/boy.webp", 62, 50, 42, "shake"],
+  ] },
+  和: { sentence: "小熊和小兔并排坐，一起看月亮。", setting: "night-sky", layers: [
+    ["art/wordbook/moon.webp", 53, 28, 25],
+    ["art/bear.webp", 36, 67, 36],
+    ["art/wordbook/painted/rabbit.webp", 73, 71, 29, "hop", -12, 0],
+  ] },
+  也: { sentence: "小熊来玩球，小兔也来了。", setting: "meadow", layers: [
+    ["art/bear.webp", 34, 59, 38],
+    ["art/wordbook/painted/football.webp", 50, 69, 23],
+    ["art/wordbook/painted/rabbit.webp", 77, 64, 30, "hop", -15, 0],
+  ] },
+  要: { sentence: "想要那个苹果，伸出小手指一指。", setting: "paper", layers: [
+    ["art/wordbook/painted/apple.webp", 62, 48, 34],
+    ["art/wordbook/painted/point-up.webp", 29, 67, 30, "slide", 19, -5],
+  ] },
+  好: { sentence: "搭好了积木，竖起拇指说真好。", setting: "warm", layers: [
+    ["art/wordbook/painted/block-tower.webp", 38, 65, 36],
+    ["art/wordbook/painted/thumbs-up.webp", 65, 52, 32, "rise", 0, -11],
+  ] },
+  爱: { sentence: "爱是抱一抱，心也暖起来。", setting: "warm", layers: [
+    ["art/bear.webp", 38, 58, 43],
+    ["art/bear.webp", 66, 64, 30, "slide", -12, 0],
+    ["art/wordbook/painted/heart.webp", 52, 36, 23, "beat"],
+  ] },
+  会: { sentence: "学会骑车啦，小朋友自己骑起来。", setting: "meadow", layers: [
+    ["art/wordbook/painted/cyclist.webp", 30, 59, 45, "ride", 37, -2],
+  ] },
+  了: { sentence: "昨天还是花苞，今天已经开花了。", setting: "meadow", layers: [
+    ["art/wordbook/painted/tulip.webp", 50, 56, 40, "vanish"],
+    ["art/wordbook/painted/blossom.webp", 50, 56, 45, "bloom"],
+  ] },
+  朋: { sentence: "好朋友见面，互相挥挥手。", setting: "meadow", layers: [
+    ["art/wordbook/painted/girl.webp", 34, 52, 37],
+    ["art/wordbook/painted/boy.webp", 66, 52, 37],
+    ["art/wordbook/palm.webp", 48, 59, 20, "wave"],
+  ] },
+  友: { sentence: "把球传给朋友，一起玩。", setting: "meadow", layers: [
+    ["art/wordbook/child.webp", 26, 53, 37],
+    ["art/bear.webp", 74, 58, 34],
+    ["art/wordbook/painted/football.webp", 38, 66, 21, "roll", 24, 0],
+  ] },
+  请: { sentence: "请坐，把椅子推到客人身边。", setting: "warm", layers: [
+    ["art/wordbook/child.webp", 64, 52, 42],
+    ["art/wordbook/painted/chair.webp", 31, 65, 32, "slide", 20, 0],
+  ] },
+  谢: { sentence: "接过礼物，点点头说谢谢。", setting: "warm", layers: [
+    ["art/wordbook/painted/girl.webp", 62, 46, 40, "nod"],
+    ["art/wordbook/painted/gift.webp", 31, 65, 26, "serve", 20, -3],
+  ] },
+  孩: { sentence: "孩子背上书包，蹦蹦跳跳去上学。", setting: "meadow", layers: [
+    ["art/wordbook/child.webp", 31, 57, 46, "hop", 25, 0],
+    ["art/play/satchel.webp", 27, 52, 19, "hop", 25, 0],
+  ] },
+};

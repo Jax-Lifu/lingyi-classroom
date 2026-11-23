@@ -1,0 +1,957 @@
+:root {
+  --in-oklab: ;
+}
+@supports (background: linear-gradient(in oklab, white, black)) {
+  :root {
+    --in-oklab: in oklab;
+  }
+}
+
+.forest-catalog {
+  padding-block: clamp(12px, 2vw, 24px) 36px;
+}
+.forest-catalog a, .learning .catalog-back {
+  color: var(--ink);
+  text-decoration: none;
+  touch-action: manipulation;
+}
+.catalog-cover {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 15px;
+  padding: 18px clamp(18px, 3.4vw, 45px);
+  border-radius: 16px;
+  background: #e9ecd9;
+}
+.cover-copy { position: relative; z-index: 1; min-width: 0; }
+.catalog-cover h1 {
+  font: 800 clamp(28px, 3.6vw, 46px)/1.16 "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+  letter-spacing: .035em;
+  color: #284837;
+  text-wrap: balance;
+}
+.catalog-cover p { margin-block: 6px; font-size: clamp(16px, 1.7vw, 19px); line-height: 1.4; }
+.catalog-count { display: inline-block; margin-right: 17px; color: #51634b; font-size: 15px; }
+.catalog-listen, .catalog-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 48px;
+  padding: 6px 15px;
+  font-weight: 700 !important;
+  border-radius: 12px;
+}
+.catalog-listen {
+  background: #365e45;
+  color: #fffdfa !important;
+  border: 1px solid #31523d;
+  margin-top: 3px;
+}
+.catalog-listen:hover { background: #294d38; }
+.catalog-listen svg { width: 21px; height: 21px; }
+.cover-friend {
+  display: block;
+  position: relative;
+  width: clamp(92px, 16vw, 168px);
+  max-height: 133px;
+  object-fit: contain;
+  margin-right: 4%;
+  flex: 0 0 auto;
+}
+.catalog-cards .catalog-cover { background: #f3edda; }
+.catalog-back {
+  min-width: 54px;
+  margin-bottom: 7px;
+  padding-inline: 4px 13px;
+  color: #365b43;
+  font-size: 17px;
+}
+.catalog-back > span { font: 32px/1 system-ui; }
+.catalog-back svg { width: 22px; height: 22px; }
+.catalog-back:hover { background-color: #eaf0de; }
+.catalog-tools {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-block: 4px;
+  margin-bottom: 6px;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+.catalog-tools .catalog-back, :is(.catalog-tools, .forest-shelves-heading) .catalog-listen { margin: 0; }
+.catalog-groups .catalog-choice, .catalog-cards .catalog-choice {
+  scroll-margin-block: 65px 8px;
+}
+.catalog-choices {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(10px, 1.45vw, 18px);
+  margin-top: clamp(16px, 2vw, 25px);
+}
+.catalog-choice {
+  --tile: #f4f0df;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  min-height: clamp(110px, 12vw, 147px);
+  gap: clamp(9px, 1.7vw, 21px);
+  padding: 14px clamp(11px, 1.6vw, 20px);
+  border-radius: 13px;
+  border: 1.5px solid #d7d9c4;
+  background: var(--tile);
+  box-shadow: 0 3px 8px -5px #53613a50;
+}
+.catalog-choice:hover { border-color: #779569; }
+.catalog-choice:active { background: #e2ebd4; }
+.catalog-choice.speaking {
+  outline: 3px solid #95702a;
+  outline-offset: -3px;
+}
+.catalog-choice:focus-visible { outline: 3px solid #08758a; outline-offset: 3px; }
+.catalog-home .catalog-choice { min-height: clamp(127px, 13vw, 155px); }
+.choice-hanzi { --tile: #f6ecd5; }
+.choice-numbers { --tile: #f0e3d6; }
+.choice-math { --tile: #e7edd7; }
+.choice-pinyin { --tile: #e3ede9; }
+.choice-poems { --tile: #e1eaf0; }
+.choice-english { --tile: #f1e4dc; }
+.choice-art {
+  display: flex; align-items: center; justify-content: center;
+  flex: 0 0 38%;
+  min-width: 0; height: 88px;
+}
+.choice-art img { width: 100%; height: 100%; object-fit: contain; }
+.catalog-home .choice-art { height: 98px; }
+.choice-label { position: relative; display: grid; min-width: 0; gap: 5px; }
+.choice-label strong {
+  font: 800 clamp(21px, 2.4vw, 31px)/1.28 "Songti SC", "STSong", serif;
+  color: #304937; overflow-wrap: anywhere;
+}
+.catalog-home .choice-label strong { font-size: clamp(28px, 3.5vw, 43px); }
+.choice-label small { color: #53644f; font-size: clamp(14px, 1.4vw, 17px); line-height: 1.4; }
+.catalog-groups .catalog-choice { background: #fffcf1; }
+.catalog-cards .catalog-choice { background: #fffaf0; }
+.catalog-choice.with-scene {
+  padding: 0; gap: 0; display: grid; grid-template-columns: minmax(0, 1fr);
+  justify-content: stretch; align-content: start; min-height: 0; overflow: hidden;
+}
+.catalog-choice .picture-window {
+  flex: none; min-height: 0; aspect-ratio: 2.35; border-bottom: 1px solid #ddd8bf;
+}
+.catalog-choice .picture-cast *, .catalog-choice .picture-cast *::before, .catalog-choice .picture-cast *::after { animation: none; }
+.with-scene .choice-label { display: flex; align-items: baseline; justify-content: center; gap: 12px; padding: 6px 10px 9px; }
+.with-scene .choice-label strong { font: 600 clamp(33px, 3.6vw, 46px)/1.2 "Kaiti SC","KaiTi","Songti SC",serif; }
+.with-scene .choice-label small { font: 500 19px/1.3 Georgia,serif; }
+.catalog-choice.with-text { justify-content: center; text-align: center; }
+.with-text .choice-label strong { font-size: clamp(23px, 3vw, 35px); }
+.learned-stamp {
+  position: absolute; top: 6px; right: 7px; display: grid; place-items: center;
+  background: #386447; color: #fffceb; border: 2px solid #fff8dc; border-radius: 100%; width: 25px; height: 25px;
+}
+.learned-stamp svg { width: 16px; height: 16px; }
+.catalog-error { padding-block: 8px; }
+
+@media (min-width: 721px) {
+  .catalog-cards .catalog-cover { padding-block: 12px; }
+  .catalog-cards .cover-friend { max-height: 87px; }
+  .catalog-cards .cover-copy h1 { font-size: 35px; }
+  .catalog-choice .picture-window { aspect-ratio: 2.6; }
+}
+@media (max-width: 720px) {
+  .catalog-choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .choice-art { height: 64px; }
+  .catalog-home .choice-art { height: 75px; }
+  .cover-friend { margin-right: 1%; }
+}
+@media (max-width: 480px) {
+  .forest-catalog { padding-block: 9px 22px; }
+  .catalog-cover { padding: 12px 16px; gap: 5px; }
+  .cover-friend { width: 68px; max-height: 84px; }
+  .catalog-count { font-size: 13px; margin-right: 8px; }
+  .catalog-listen { font-size: 15px !important; padding-inline: 10px; }
+  .catalog-choices { gap: 9px; margin-top: 12px; }
+  .catalog-choice, .catalog-home .catalog-choice {
+    flex-direction: column; justify-content: center; gap: 5px; padding: 8px 6px;
+    min-height: 108px; text-align: center;
+  }
+  .choice-art, .catalog-home .choice-art { flex: 0 0 auto; height: 54px; width: 75%; }
+  .catalog-home .choice-art { height: 64px; }
+  .choice-label { gap: 2px; }
+  .catalog-choice.with-scene { display: grid; }
+  .catalog-choice .picture-window { aspect-ratio: 2.05; }
+  .with-scene .choice-label { padding: 4px 5px 6px; gap: 8px; }
+}
+
+.speaking-badge { display: grid; place-items: center; border-radius: 50%; color: #fff9df; background: #375c43; }
+:is(.catalog-tools, .forest-shelves-heading) .catalog-listen { position: relative; width: 67px; height: 48px; padding: 0; border-radius: 16px; background: #e9efd9; border-color: #afc39d; }
+.bear-listener { width: 44px; height: 43px; object-fit: contain; margin-right: 8px; }
+:is(.catalog-tools, .forest-shelves-heading) .catalog-listen .child-icon { position:absolute; bottom: 2px; right: 1px; width: 24px; height: 24px; color:#fffbea; background:#395e44; padding:3px; border-radius:50%; }
+.catalog-tools .catalog-gesture { height: 50px; line-height: 1; }
+.catalog-gesture .picture-cue { width: 56px; height: 47px; }
+.speaking-badge { position:absolute; top: 5px; left: 6px; width: 28px; height:28px; }
+.speaking-badge .child-icon { width: 17px; height:17px; }
+.catalog-home .choice-label strong { line-height: 1.16; }
+
+/* Show the actual activity on each cover: a character in its book, fruit to count, or a photo to name. */
+.catalog-home .catalog-choice { border-radius: 18px; }
+.catalog-home .choice-hanzi { --tile: #fbecd0; }
+.catalog-home .choice-numbers { --tile: #f9e4d9; }
+.catalog-home .choice-math { --tile: #e6efd5; }
+.catalog-home .choice-pinyin { --tile: #dceee7; }
+.catalog-home .choice-poems { --tile: #dceaf0; }
+.catalog-home .choice-english { --tile: #f4e4d8; }
+.subject-art { position: relative; }
+.subject-art .subject-prop { width: 88%; height: 91%; }
+.subject-art .subject-letter {
+  position: absolute; bottom: 0; right: -3%; color: #324f3b;
+  background: #fff8e5; border: 1px solid #d3b887; border-radius: 5px;
+  padding: 1px 5px; transform: rotate(6deg); font: 650 23px/1.25 "Kaiti SC",Georgia,serif;
+}
+.subject-art-numbers .subject-prop { width: 46%; height: 63%; margin: -18% 0 0; }
+.subject-art .second-berry, .subject-art .third-berry { position: absolute; width: 39%; height: 53%; bottom: 0; left: 9%; }
+.subject-art .third-berry { left: 48%; }
+.subject-art .basket-berry { position: absolute; width: 30%; height: 43%; top: 0; right: 16%; transform: rotate(12deg); }
+.subject-art .poem-goose { position: absolute; width: 44%; height: 47%; bottom: -2%; right: -2%; }
+.subject-art .poem-scenic-frame {
+  width: 90%;
+  height: 76%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #d2c299;
+  box-shadow: 0 3px 8px -3px rgba(42, 58, 36, 0.3);
+}
+.subject-art .subject-photo { position: absolute; right: -6%; bottom: -4%; width: 41%; height: 63%; display: grid; grid-template-rows: 1fr 16px; justify-items: center; background: #fffbec; border: 1px solid #bdab88; padding: 3px; transform: rotate(8deg); }
+.subject-photo img { min-height: 0; width: 100%; height: 100%; }
+.subject-photo b { font: 600 13px/16px Georgia,serif; }
+@media (max-width:480px) {
+  .catalog-home .subject-art { height: 75px; width: 68%; }
+}
+
+/* === Child-friendly illustrated scenic group & item title cards (poems / pinyin / english) === */
+.catalog-choice.with-scenic-group,
+.catalog-choice.with-scenic-cover {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0;
+  gap: 0;
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  border: 1.5px solid #cbd2bc;
+  background: #274031;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 5px 14px -8px rgba(34, 52, 36, 0.45);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.catalog-choice.with-scenic-group:hover,
+.catalog-choice.with-scenic-cover:hover {
+  border-color: #547a4d;
+  box-shadow: 0 8px 18px -8px rgba(30, 50, 34, 0.52);
+}
+
+.poem-group-scenic,
+.poem-card-scene,
+.pinyin-card-scene,
+.english-card-scene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.poem-group-bg,
+.poem-card-bg,
+.pinyin-card-bg,
+.english-card-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.catalog-choice.with-scenic-group:hover .poem-group-bg,
+.catalog-choice.with-scenic-cover:hover .poem-card-bg,
+.catalog-choice.with-scenic-cover:hover .pinyin-card-bg,
+.catalog-choice.with-scenic-cover:hover .english-card-bg {
+  transform: scale(1.045);
+}
+
+.poem-group-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    18deg,
+    rgba(16, 32, 23, 0.92) 0%,
+    rgba(16, 32, 23, 0.62) 48%,
+    rgba(16, 32, 23, 0.12) 100%
+  );
+}
+
+.poem-group-badge {
+  position: absolute;
+  top: 9%;
+  right: 5%;
+  height: 50%;
+  width: auto;
+  max-width: 44%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(18, 30, 22, 0.42));
+}
+
+.poem-card-lighting,
+.pinyin-card-lighting,
+.english-card-lighting {
+  position: absolute;
+  inset: 0;
+}
+.poem-card-scene.time-night .poem-card-lighting,
+.pinyin-card-scene.time-night .pinyin-card-lighting,
+.english-card-scene.time-night .english-card-lighting {
+  background: rgba(16, 28, 54, 0.26);
+}
+.poem-card-scene.time-dusk .poem-card-lighting,
+.pinyin-card-scene.time-dusk .pinyin-card-lighting,
+.english-card-scene.time-dusk .english-card-lighting {
+  background: rgba(140, 74, 34, 0.16);
+}
+.poem-card-scene.time-snow .poem-card-lighting,
+.pinyin-card-scene.time-mist .pinyin-card-lighting,
+.english-card-scene.time-mist .english-card-lighting {
+  background: rgba(226, 238, 250, 0.18);
+}
+
+.english-card-color-wash {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 68% 36%,
+    color-mix(in srgb, var(--swatch-color, transparent) 38%, transparent) 0%,
+    transparent 64%
+  );
+  pointer-events: none;
+}
+
+.poem-card-waterfall {
+  position: absolute;
+  left: 68%;
+  top: 24%;
+  width: 8%;
+  height: 44%;
+  transform: translateX(-50%);
+  border-radius: 99px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(208, 240, 250, 0.72), transparent);
+  filter: drop-shadow(0 0 6px rgba(220, 244, 255, 0.8));
+}
+
+.poem-card-prop,
+.pinyin-card-prop,
+.english-card-prop {
+  position: absolute;
+  width: auto;
+  max-width: 40%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 3px 6px rgba(20, 32, 22, 0.42));
+}
+
+.poem-card-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(15, 30, 22, 0.94) 0%,
+    rgba(15, 30, 22, 0.68) 40%,
+    rgba(15, 30, 22, 0.16) 72%,
+    transparent 100%
+  );
+}
+
+.with-scenic-group .choice-label,
+.with-scenic-cover .choice-label {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 12px 15px 13px;
+  gap: 2px;
+}
+
+.with-scenic-group .choice-label strong {
+  color: #fffef4;
+  font-size: clamp(21px, 2.25vw, 27px);
+  line-height: 1.22;
+  text-shadow: 0 2px 6px rgba(10, 20, 14, 0.65);
+}
+
+.with-scenic-group .choice-label small {
+  color: #e9e4cb;
+  font-size: clamp(12.5px, 1.25vw, 14.5px);
+  line-height: 1.35;
+}
+
+.with-scenic-cover .choice-label strong {
+  color: #fffef4;
+  font-size: clamp(20px, 2.15vw, 26px);
+  line-height: 1.22;
+  text-shadow: 0 2px 8px rgba(8, 18, 12, 0.72);
+}
+
+.with-pinyin-cover .choice-label strong {
+  font-family: "Yuanti SC", "PingFang SC", ui-rounded, system-ui, sans-serif;
+  font-size: clamp(23px, 2.4vw, 30px);
+  letter-spacing: 0.01em;
+}
+
+.with-english-cover .choice-label strong {
+  font-family: ui-rounded, "SF Pro Rounded", "PingFang SC", system-ui, sans-serif;
+  font-size: clamp(21px, 2.2vw, 27px);
+}
+
+.english-card-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.color-swatch-dot {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 1px 4px rgba(10, 20, 14, 0.45);
+}
+
+.with-scenic-cover .choice-label small {
+  color: #e6e0c5;
+  font-size: clamp(12.5px, 1.2vw, 14px);
+  line-height: 1.3;
+}
+
+.scenic-card-note {
+  color: #d6e4cc;
+  font-size: clamp(11.5px, 1.1vw, 13px);
+  line-height: 1.28;
+  opacity: 0.94;
+}
+
+.with-scenic-cover .learned-stamp,
+.with-scenic-group .learned-stamp {
+  z-index: 3;
+  top: 8px;
+  right: 9px;
+}
+
+.with-scenic-cover .speaking-badge,
+.with-scenic-group .speaking-badge {
+  z-index: 3;
+  top: 8px;
+  left: 9px;
+}
+
+@media (max-width: 720px) {
+  .catalog-choice.with-scenic-group,
+  .catalog-choice.with-scenic-cover {
+    aspect-ratio: 16 / 11;
+  }
+  .with-scenic-group .choice-label,
+  .with-scenic-cover .choice-label {
+    padding: 9px 11px 10px;
+  }
+  .with-scenic-group .choice-label strong,
+  .with-scenic-cover .choice-label strong {
+    font-size: clamp(17px, 4.4vw, 22px);
+  }
+  .with-scenic-group .choice-label small,
+  .with-scenic-cover .choice-label small {
+    font-size: 12px;
+  }
+  .scenic-card-note {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog-choice.with-scenic-group,
+  .catalog-choice.with-scenic-cover {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0;
+    min-height: 112px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .catalog-choice.with-scenic-group,
+  .catalog-choice.with-scenic-cover,
+  .poem-group-bg,
+  .poem-card-bg,
+  .pinyin-card-bg,
+  .english-card-bg {
+    transition: none;
+    transform: none;
+  }
+}
+
+:root[data-reduce-motion="true"] .catalog-choice.with-scenic-group,
+:root[data-reduce-motion="true"] .catalog-choice.with-scenic-cover,
+:root[data-reduce-motion="true"] .poem-group-bg,
+:root[data-reduce-motion="true"] .poem-card-bg,
+:root[data-reduce-motion="true"] .pinyin-card-bg,
+:root[data-reduce-motion="true"] .english-card-bg {
+  transition: none;
+  transform: none;
+}
+
+@media (forced-colors: active) {
+  .with-scenic-group .choice-label,
+  .with-scenic-cover .choice-label {
+    background: Canvas;
+    color: CanvasText;
+  }
+  .with-scenic-group .choice-label strong,
+  .with-scenic-group .choice-label small,
+  .with-scenic-cover .choice-label strong,
+  .with-scenic-cover .choice-label small,
+  .scenic-card-note {
+    color: CanvasText;
+    text-shadow: none;
+  }
+}
+
+/* === Pictographic number cards === */
+.catalog-choice.with-number-art {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  gap: 0;
+  min-height: clamp(132px, 14vw, 176px);
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  border: 1.5px solid #d7d8c1;
+  background: var(--number-tint, #faf4e4);
+  text-align: left;
+  box-shadow: 0 4px 12px -7px rgba(68, 78, 46, 0.36);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.16s ease;
+}
+
+.catalog-choice.with-number-art:hover {
+  border-color: #6a8d5e;
+  box-shadow: 0 8px 18px -8px rgba(52, 72, 42, 0.44);
+}
+
+.catalog-choice.with-number-art:active {
+  border-color: #4f7748;
+  background: var(--number-tint, #faf4e4);
+  transform: scale(0.99);
+}
+
+.number-card-scene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.number-card-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  pointer-events: none;
+  transition: transform 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.catalog-choice.with-number-art:hover .number-card-bg {
+  transform: scale(1.035);
+}
+
+.number-card-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    96deg var(--in-oklab),
+    rgba(250, 244, 228, 0.94) 0%,
+    rgba(250, 244, 228, 0.84) 32%,
+    rgba(250, 244, 228, 0.25) 48%,
+    transparent 64%
+  );
+}
+
+.with-number-art .choice-label {
+  position: relative;
+  z-index: 2;
+  padding: 12px 10px 12px clamp(15px, 2vw, 22px);
+  gap: 3px;
+  align-content: center;
+  max-width: 50%;
+}
+
+.with-number-art .choice-label strong {
+  font: 800 clamp(34px, 3.8vw, 48px)/1.05 "Yuanti SC", "PingFang SC", ui-rounded, system-ui, sans-serif;
+  color: #224031;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 1px 0 rgba(255, 252, 244, 0.92);
+}
+
+.with-number-art .choice-label small {
+  font: 600 clamp(17px, 1.8vw, 21px)/1.2 "Kaiti SC", "KaiTi", "Songti SC", serif;
+  color: #365441;
+  text-shadow: 0 1px 0 rgba(255, 252, 244, 0.85);
+}
+
+.with-number-art .number-mnemonic {
+  font-size: clamp(12px, 1.25vw, 14px);
+  line-height: 1.3;
+  font-weight: 600;
+  color: #54684d;
+  white-space: nowrap;
+}
+
+.with-number-art .learned-stamp {
+  z-index: 3;
+  top: 8px;
+  right: 9px;
+}
+
+.with-number-art .speaking-badge {
+  z-index: 3;
+  top: 8px;
+  left: 9px;
+}
+
+@media (max-width: 720px) {
+  .catalog-choice.with-number-art {
+    aspect-ratio: 16 / 11;
+  }
+  .with-number-art .choice-label {
+    padding: 10px 8px 10px 13px;
+  }
+  .with-number-art .choice-label strong {
+    font-size: clamp(30px, 7.5vw, 40px);
+  }
+  .with-number-art .choice-label small {
+    font-size: 16px;
+  }
+  .with-number-art .number-mnemonic {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog-choice.with-number-art {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0;
+    min-height: 112px;
+  }
+  .with-number-art .choice-label {
+    padding: 8px 6px 8px 11px;
+  }
+  .with-number-art .choice-label strong {
+    font-size: clamp(28px, 7.5vw, 34px);
+  }
+  .with-number-art .choice-label small {
+    font-size: 15px;
+  }
+  .with-number-art .number-mnemonic {
+    font-size: 11.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .catalog-choice.with-number-art,
+  .catalog-choice.with-number-art:hover,
+  .catalog-choice.with-number-art:active,
+  .number-card-bg,
+  .catalog-choice.with-number-art:hover .number-card-bg {
+    transition: none;
+    transform: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .with-number-art .choice-label {
+    background: Canvas;
+    color: CanvasText;
+    border-radius: 10px;
+    padding: 6px 10px;
+  }
+  .with-number-art .choice-label strong,
+  .with-number-art .choice-label small,
+  .with-number-art .number-mnemonic {
+    color: CanvasText;
+    text-shadow: none;
+  }
+}
+
+/* === Mini Numberblocks preview on math equation cards === */
+.catalog-choice.with-math-blocks {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 14px 12px;
+  background: #fffcf0;
+}
+
+.math-blocks-preview {
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+}
+
+.mini-stack {
+  display: inline-grid;
+  grid-template-columns: repeat(var(--mini-cols, 1), 8px);
+  gap: 1.5px;
+}
+
+.mini-stack i {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--mini-c, #e25546);
+  border: 1px solid rgba(34, 51, 42, 0.25);
+}
+
+.mini-stack.is-ten-mini i {
+  background: #fffdf5;
+  border: 1.5px solid #d94e3f;
+}
+
+.mini-zero {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px dashed #5e8f7b;
+  align-self: center;
+}
+
+.math-mini-op {
+  align-self: center;
+  font: 800 17px/1 "Yuanti SC", system-ui, sans-serif;
+  color: #53664c;
+}
+
+.with-math-blocks .choice-label {
+  justify-items: center;
+  gap: 2px;
+}
+
+.with-math-blocks .choice-label strong {
+  font-size: clamp(24px, 2.8vw, 32px);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 480px) {
+  .catalog-choice.with-math-blocks {
+    padding: 11px 8px;
+    gap: 6px;
+  }
+  .mini-stack {
+    grid-template-columns: repeat(var(--mini-cols, 1), 7px);
+  }
+  .mini-stack i {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+.forest-pond {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--card);
+}
+.pond-water {
+  position: relative;
+  height: clamp(246px, 31vw, 342px);
+  isolation: isolate;
+  overflow: hidden;
+  background: #abcdb1;
+}
+.pond-painting {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 58%;
+}
+.pond-heading {
+  position: absolute;
+  inset: 0;
+  padding: clamp(16px, 3vw, 34px);
+  background: radial-gradient(ellipse 68% 76% at 12% 0%, #fff8e7 10%, #fff8e7e8 47%, transparent 97%);
+  pointer-events: none;
+}
+.pond-heading h1 {
+  font: 800 clamp(34px, 4.4vw, 54px)/1.12 "Songti SC", "STSong", serif;
+  letter-spacing: .025em;
+}
+.pond-heading p { margin-top: 7px; font-size: clamp(15px, 1.8vw, 18px); font-weight: 600; }
+.pond-water .pond-mute {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--card);
+}
+.pond-pad { position: absolute; translate: -50% -50%; }
+.pond-water .pond-pad {
+  width: clamp(44px, 16.8%, 124px);
+  height: clamp(44px, 19%, 72px);
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 48%;
+  background: transparent;
+  padding: 0;
+}
+.pond-pad[data-frog]::before { content: ""; position: absolute; inset: -64% 0 0; }
+.pond-pad img { position: absolute; width: 100%; height: 100%; inset: 0; }
+.pond-pad:nth-of-type(odd) img { transform: scaleX(-1); }
+.pond-pad span {
+  position: relative;
+  margin-top: 12%;
+  color: #17311d;
+  font: 700 clamp(16px, 2.2vw, 23px)/1 Georgia, serif;
+  background: #f9f0c9;
+  padding: 1px 6px 2px;
+  border-radius: 50%;
+}
+.pond-pad:focus-visible { outline-offset: 2px; outline-color: #1c4530; }
+.pond-frog {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transition: transform 220ms ease-out;
+}
+.frog-body {
+  position: absolute;
+  width: clamp(40px, 12%, 82px);
+  translate: -50% -98%;
+}
+.pond-frog img { display: block; width: 100%; }
+.frog-syllable {
+  position: absolute;
+  bottom: 100%;
+  left: 52%;
+  padding: 2px 7px;
+  border-radius: 10px 10px 10px 2px;
+  background: var(--card);
+  font-size: 15px;
+  font-weight: 700;
+}
+.frog-facing-left { transform: scaleX(-1); }
+.frog-hopping { animation: pond-hop 260ms ease-out; }
+.frog-waiting { animation: pond-hello 1.4s ease-out .8s 2; }
+@keyframes pond-hello { 22% { transform: translateY(-16%); } 42% { transform: none; } }
+@keyframes pond-hop { 45% { transform: translateY(-52%) rotate(-8deg); } }
+.pond-butterfly { position: absolute; right: 11%; top: 24%; width: clamp(32px, 6%, 64px); pointer-events: none; }
+.pond-score, .pond-book, .forest-shelves-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pond-score { padding: 8px clamp(10px, 2.2vw, 26px); }
+.pond-phrase { display: flex; align-items: center; gap: clamp(4px, 1vw, 10px); margin-right: auto; }
+.pond-phrase span {
+  display: grid;
+  place-items: center;
+  width: clamp(15px, 3.7vw, 26px);
+  height: 29px;
+  border-bottom: 2px solid #a2ae8d;
+  color: var(--ink);
+  font: bold 23px/1 Georgia, serif;
+}
+.pond-phrase .beat-playing { background: #d4e5ad; border-color: var(--green); }
+.pond-score button, .pond-book a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  gap: 5px;
+  border-radius: 9px;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.pond-score .pond-replay { background: var(--green); color: #fffdf2; padding: 4px 12px; }
+.pond-score .pond-clear { width: 44px; border: 1px solid var(--line); }
+.pond-score button:disabled { background: var(--paper); color: var(--soft); }
+.pond-score .child-icon { width: 18px; height: 18px; }
+.pond-book { padding-inline: clamp(10px, 2.2vw, 26px); justify-content: space-between; border-top: 1px solid var(--line); }
+.pond-book a { color: var(--green); font-size: 15px; }
+.pond-book .child-icon { width: 15px; height: 15px; }
+.pond-book .catalog-count { margin: 0; }
+.pond-score button:active:not(:disabled), .pond-pad:active, .pond-mute:active { scale: .96; }
+@media (hover: hover) {
+  .pond-pad:hover { filter: brightness(1.13); }
+  .pond-score button:not(:disabled):hover, .pond-mute:hover { box-shadow: 0 2px 6px #274c3c44; }
+  .pond-book a:hover { text-decoration: underline; }
+}
+.forest-shelves-heading { justify-content: space-between; margin-top: clamp(18px, 3vw, 32px); }
+.forest-shelves-heading h2 { font: 750 22px/1.3 "Songti SC", serif; }
+.forest-shelves-heading ~ .catalog-choices { margin-top: 8px; }
+.catalog-home .forest-experiments { border: 0; padding: 0; }
+.forest-experiments .lab-invitation { display: grid; gap: 3px; }
+.lab-invitation strong { font-size: 1em; }
+.lab-invitation small { font-size: 12px; font-weight: 500; color: var(--soft); }
+.catalog-home .forest-experiments a { flex: 1; justify-content: flex-start; padding: 9px 14px; }
+.catalog-home .forest-experiments a > .child-icon { margin-left: auto; }
+:root[data-theme="dark"] .pond-painting { filter: brightness(.85) saturate(.88); }
+:root[data-theme="dark"] .pond-heading { background: radial-gradient(ellipse 68% 76% at 12% 0%, #e8e2cf 10%, #e8e2cfe8 47%, transparent 97%); }
+@media (min-width: 640px) {
+  .forest-pond { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
+  .pond-water, .forest-pond .catalog-error { grid-column: 1 / -1; }
+  .pond-book { border: 0; }
+  .pond-phrase { margin-right: 12px; }
+}
+@media (max-width: 510px) {
+  .catalog-home .forest-experiments a { justify-content: center; flex-direction: column; padding: 6px 3px; text-align: center; }
+  .pond-heading { padding-right: 50px; }
+}

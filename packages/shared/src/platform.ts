@@ -1,0 +1,32 @@
+import type { Locale, ThemeMode } from "./settings";
+
+export interface KeyValueStore {
+  get<T>(key: string): Promise<T | undefined>;
+  set<T>(key: string, value: T): Promise<void>;
+  update?<T>(key: string, change: (previous: unknown) => T): Promise<T>;
+  resetVersion?(key: string): number;
+  subscribe?(key: string, changed: () => void): () => void;
+  reset?<T>(key: string, value: T): Promise<void>;
+}
+
+export interface UpdateInfo {
+  version: string;
+  notes?: string;
+  install(): Promise<void>;
+  dispose?(): Promise<void>;
+}
+
+/** Shared UI depends on capabilities, never on a native runtime. */
+export interface Platform {
+  openResourceDownload?: () => void;
+  householdStoryUrl?: string;
+  name: "desktop" | "web";
+  store: KeyValueStore;
+  getAppVersion(): Promise<string>;
+  setNativeTheme?(theme: ThemeMode): Promise<void>;
+  setNativeLocale?(locale: Locale): Promise<void>;
+  getAutostart?(): Promise<boolean>;
+  setAutostart?(enabled: boolean): Promise<void>;
+  setCloseToTray?(enabled: boolean): Promise<void>;
+  checkUpdate?(): Promise<UpdateInfo | null>;
+}

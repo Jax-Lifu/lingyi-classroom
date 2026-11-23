@@ -1,0 +1,1 @@
+{ "extends": "@lingyi-classroom/tsconfig/base.json", "include": ["src"] }

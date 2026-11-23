@@ -1,0 +1,20 @@
+<style>
+#resource-dialog{box-sizing:border-box;position:fixed;inset:0;margin:auto;width:min(380px,calc(100% - 32px));max-height:calc(100% - 40px);overflow:auto;padding:26px;border:1px solid #adbaa3;border-radius:18px;background:#fffaf0;color:#223f31;box-shadow:0 12px 38px #16291c42;font:16px/1.55 system-ui,sans-serif;text-align:left}
+#resource-dialog:not([open]),#resource-dialog [hidden]{display:none}
+#resource-dialog::backdrop{background:#20332877}
+#resource-dialog h2{margin:0 0 9px;font:700 26px/1.3 "Songti SC",serif;color:inherit}
+#resource-dialog p{margin:0 0 16px;font:inherit}
+#resource-dialog progress{display:block;width:100%;height:12px;accent-color:#365e43;margin:10px 0}
+#resource-dialog button{display:block;width:100%;min-height:46px;border-radius:10px;border:1px solid #395d45;background:#365d44;color:white;font:600 16px/1.4 system-ui,sans-serif;cursor:pointer}
+#resource-dialog button+button{margin-top:7px;background:transparent;border-color:transparent;color:inherit}
+#resource-dialog button:focus-visible{outline:3px solid #147895;outline-offset:2px}
+:root[data-theme=dark] #resource-dialog{background:#e5decb;color:#203429}
+</style>
+<dialog id="resource-dialog" data-version="__RESOURCE_VERSION__" aria-labelledby="resource-title" aria-describedby="resource-copy">
+  <h2 id="resource-title">把课堂下载到手机？</h2>
+  <p id="resource-copy">约 __RESOURCE_MB__ MB，含绘本、朗读和笔顺。下载一次，下次打开更快。建议连接 Wi-Fi。</p>
+  <progress hidden aria-label="课程资源下载进度" value="0" max="100"></progress>
+  <p id="resource-status" hidden role="status"></p>
+  <button type="button" id="resource-start" autofocus>下载课程资源</button>
+  <button type="button" id="resource-close">先进入课堂</button>
+</dialog>

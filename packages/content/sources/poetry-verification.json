@@ -1,0 +1,179 @@
+{
+  "as_of": "2026-11-20",
+  "index_source": "https://www.guwendao.net/gushi/xiaoxue.aspx",
+  "index_html_sha256": "96a4556af15dd2b372d1a6d6cc1f9805f571f5613b1c0458cf0fa1c032c5e798",
+  "work_text_sources": "原创已入公版的古人原文据篇目详情页正文段落核对；未录入译文、赏析、注音、站内朗读或后人异文提示。教育分组及题名以指定列表页为准，未当作其他版本教材的通用目录。",
+  "counts": {
+    "placements": 131,
+    "distinct_detail_urls": 125,
+    "groups": 25,
+    "published_texts": 127,
+    "distinct_recordings": 121,
+    "playable_placements": 127,
+    "offline_files": 127,
+    "lines_and_cues": 601
+  },
+  "placement_counts_by_grade": {
+    "1": 16,
+    "2": 14,
+    "3": 21,
+    "4": 23,
+    "5": 25,
+    "6": 32
+  },
+  "kinds": {
+    "诗词": 114,
+    "韵文": 3,
+    "古文": 14
+  },
+  "grade_1": {
+    "上": {
+      "total": 7,
+      "playable": 6
+    },
+    "下": {
+      "total": 9,
+      "playable": 8
+    }
+  },
+  "groups": [
+    {
+      "label": "一年级上册",
+      "entry_count": 2
+    },
+    {
+      "label": "一年级上册(日积月累)",
+      "entry_count": 5
+    },
+    {
+      "label": "一年级下册",
+      "entry_count": 5
+    },
+    {
+      "label": "一年级下册(日积月累)",
+      "entry_count": 4
+    },
+    {
+      "label": "二年级上册",
+      "entry_count": 4
+    },
+    {
+      "label": "二年级上册(日积月累)",
+      "entry_count": 3
+    },
+    {
+      "label": "二年级下册",
+      "entry_count": 4
+    },
+    {
+      "label": "二年级下册(日积月累)",
+      "entry_count": 3
+    },
+    {
+      "label": "三年级上册",
+      "entry_count": 7
+    },
+    {
+      "label": "三年级上册(日积月累)",
+      "entry_count": 4
+    },
+    {
+      "label": "三年级下册",
+      "entry_count": 7
+    },
+    {
+      "label": "三年级下册(日积月累)",
+      "entry_count": 3
+    },
+    {
+      "label": "四年级上册",
+      "entry_count": 8
+    },
+    {
+      "label": "四年级上册(日积月累)",
+      "entry_count": 3
+    },
+    {
+      "label": "四年级下册",
+      "entry_count": 8
+    },
+    {
+      "label": "四年级下册(日积月累)",
+      "entry_count": 4
+    },
+    {
+      "label": "五年级上册",
+      "entry_count": 8
+    },
+    {
+      "label": "五年级上册(日积月累)",
+      "entry_count": 4
+    },
+    {
+      "label": "五年级下册",
+      "entry_count": 8
+    },
+    {
+      "label": "五年级下册(日积月累)",
+      "entry_count": 5
+    },
+    {
+      "label": "六年级上册",
+      "entry_count": 9
+    },
+    {
+      "label": "六年级上册(日积月累)",
+      "entry_count": 4
+    },
+    {
+      "label": "六年级下册",
+      "entry_count": 8
+    },
+    {
+      "label": "六年级下册(日积月累)",
+      "entry_count": 1
+    },
+    {
+      "label": "六年级下册(古诗词诵读)",
+      "entry_count": 10
+    }
+  ],
+  "index_only": [
+    {
+      "title": "对韵歌",
+      "link": "https://www.guwendao.net/shiwenv_a2b4157395ca.aspx",
+      "reason": "来源页标为近现代佚名作品，暂收索引。"
+    },
+    {
+      "title": "古对今",
+      "link": "https://www.guwendao.net/shiwenv_e99cfd986a47.aspx",
+      "reason": "目录署车万育。此篇教材字句与清代《声律启蒙》原典的对应未获确认，暂收索引。"
+    },
+    {
+      "title": "卜算子·咏梅",
+      "link": "https://www.guwendao.net/shiwenv_e8c610c2308b.aspx",
+      "reason": "此处为毛泽东作品，暂收索引。"
+    },
+    {
+      "title": "七律·长征",
+      "link": "https://www.guwendao.net/shiwenv_a1e7559dada7.aspx",
+      "reason": "近现代作品，暂收索引。"
+    }
+  ],
+  "verification": [
+    "25 个教学分组、131 个可点击篇次与独立 HTMLParser 解出的原网页有序元组逐个相同；包含 6 次跨分组再次出现的同一链接。",
+    "验证了所有条目的字段、三种文体、同名绝句的不同首句、各年级重复来源，以及四个教材节选的边界。",
+    "每个独立朗读按句调用本机普通话 Tingting，编码为 24kHz 单声道 MP3。每句起点记录在 lineStarts 秒数数组。音频仅朗读原文；逐个 ffmpeg 解码并检查长度、音量、时间点覆盖；同一链接跨组重复复用音源。",
+    "合成语音采用现代普通话，少数古音、多音字与古典韵脚可能与教师示范不同，未进行逐篇人工审听。"
+  ],
+  "durations_unique_s": [
+    6.396,
+    64.28
+  ],
+  "total_mp3_bytes": 9880148,
+  "output": {
+    "data": "packages/content/src/data/poems.json",
+    "media": "packages/content/public/media/poems/",
+    "format": "JSON rows with source URLs and local MP3 references"
+  }
+}

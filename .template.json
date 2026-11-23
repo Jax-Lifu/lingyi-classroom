@@ -1,0 +1,6 @@
+{
+  "package": "create-tauri-monorepo",
+  "version": "0.1.3",
+  "repository": "https://github.com/Jax-Lifu/Tauri2MonoRepo",
+  "upstreamCommit": "70567a41eb545d3065d631af592286b79f684131"
+}

@@ -1,0 +1,3327 @@
+[
+  {
+    "id": "p1a-k01",
+    "title": "江南",
+    "author": "汉乐府",
+    "group": "一年级上册",
+    "grade": 1,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_ef9cd9ba44bb.aspx",
+    "lines": [
+      "江南可采莲，",
+      "莲叶何田田。",
+      "鱼戏莲叶间。",
+      "鱼戏莲叶东，",
+      "鱼戏莲叶西，",
+      "鱼戏莲叶南，",
+      "鱼戏莲叶北。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_ef9cd9ba44bb.aspx",
+    "audio": "media/poems/p1a-k01.mp3",
+    "lineStarts": [
+      0.065,
+      1.872,
+      3.78,
+      5.513,
+      7.142,
+      8.772,
+      10.425
+    ]
+  },
+  {
+    "id": "p1a-k02",
+    "title": "对韵歌",
+    "author": "佚名",
+    "group": "一年级上册",
+    "grade": 1,
+    "volume": "上",
+    "kind": "韵文",
+    "url": "https://www.guwendao.net/shiwenv_a2b4157395ca.aspx",
+    "lines": [],
+    "textSource": "",
+    "note": "来源页标为近现代佚名作品，暂收索引。"
+  },
+  {
+    "id": "p1a-j01",
+    "title": "咏鹅",
+    "author": "骆宾王",
+    "group": "一年级上册(日积月累)",
+    "grade": 1,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_eeb3869b6242.aspx",
+    "lines": [
+      "鹅，鹅，鹅，",
+      "曲项向天歌。",
+      "白毛浮绿水，",
+      "红掌拨清波。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_eeb3869b6242.aspx",
+    "audio": "media/poems/p1a-j01.mp3",
+    "lineStarts": [
+      0.065,
+      1.921,
+      3.833,
+      5.47
+    ]
+  },
+  {
+    "id": "p1a-j02",
+    "title": "画",
+    "author": "王维",
+    "group": "一年级上册(日积月累)",
+    "grade": 1,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_b6bd9a33dfd7.aspx",
+    "lines": [
+      "远看山有色，",
+      "近听水无声。",
+      "春去花还在，",
+      "人来鸟不惊。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_b6bd9a33dfd7.aspx",
+    "note": "沿用目录署名王维；此诗作者另有不同说法。",
+    "audio": "media/poems/p1a-j02.mp3",
+    "lineStarts": [
+      0.065,
+      1.753,
+      3.616,
+      5.403
+    ]
+  },
+  {
+    "id": "p1a-j03",
+    "title": "悯农二首·其二",
+    "author": "李绅",
+    "group": "一年级上册(日积月累)",
+    "grade": 1,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_6e878b858e01.aspx",
+    "lines": [
+      "锄禾日当午，",
+      "汗滴禾下土。",
+      "谁知盘中餐，",
+      "粒粒皆辛苦。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_6e878b858e01.aspx",
+    "audio": "media/poems/p1a-j03.mp3",
+    "lineStarts": [
+      0.065,
+      1.689,
+      3.461,
+      5.275
+    ]
+  },
+  {
+    "id": "p1a-j04",
+    "title": "古朗月行(节选)",
+    "author": "李白",
+    "group": "一年级上册(日积月累)",
+    "grade": 1,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_8616581bb564.aspx",
+    "lines": [
+      "小时不识月，",
+      "呼作白玉盘。",
+      "又疑瑶台镜，",
+      "飞在青云端。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_8616581bb564.aspx",
+    "note": "选原诗开头四句。",
+    "audio": "media/poems/p1a-j04.mp3",
+    "lineStarts": [
+      0.065,
+      1.695,
+      3.422,
+      5.063
+    ]
+  },
+  {
+    "id": "p1a-j05",
+    "title": "风",
+    "author": "李峤",
+    "group": "一年级上册(日积月累)",
+    "grade": 1,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_8bc9e1cc2b8f.aspx",
+    "lines": [
+      "解落三秋叶，",
+      "能开二月花。",
+      "过江千尺浪，",
+      "入竹万竿斜。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_8bc9e1cc2b8f.aspx",
+    "audio": "media/poems/p1a-j05.mp3",
+    "lineStarts": [
+      0.065,
+      1.779,
+      3.561,
+      5.268
+    ]
+  },
+  {
+    "id": "p1b-k01",
+    "title": "静夜思",
+    "author": "李白",
+    "group": "一年级下册",
+    "grade": 1,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_c35a60c1a8e2.aspx",
+    "lines": [
+      "床前明月光，",
+      "疑是地上霜。",
+      "举头望明月，",
+      "低头思故乡。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_c35a60c1a8e2.aspx",
+    "audio": "media/poems/p1b-k01.mp3",
+    "lineStarts": [
+      0.065,
+      1.852,
+      3.609,
+      5.198
+    ]
+  },
+  {
+    "id": "p1b-k02",
+    "title": "古对今",
+    "author": "车万育",
+    "group": "一年级下册",
+    "grade": 1,
+    "volume": "下",
+    "kind": "韵文",
+    "url": "https://www.guwendao.net/shiwenv_e99cfd986a47.aspx",
+    "lines": [],
+    "textSource": "",
+    "note": "目录署车万育。此篇教材字句与清代《声律启蒙》原典的对应未获确认，暂收索引。"
+  },
+  {
+    "id": "p1b-k03",
+    "title": "人之初",
+    "author": "王应麟",
+    "group": "一年级下册",
+    "grade": 1,
+    "volume": "下",
+    "kind": "韵文",
+    "url": "https://www.guwendao.net/shiwenv_63bcf81b5d09.aspx",
+    "lines": [
+      "人之初，性本善。",
+      "性相近，习相远。",
+      "苟不教，性乃迁。",
+      "教之道，贵以专。",
+      "子不学，非所宜。",
+      "幼不学，老何为。",
+      "玉不琢，不成器。",
+      "人不学，不知义。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_63bcf81b5d09.aspx",
+    "note": "选自《三字经》；按目录所列的两个段落。",
+    "audio": "media/poems/p1b-k03.mp3",
+    "lineStarts": [
+      0.065,
+      2.578,
+      5.239,
+      7.781,
+      10.155,
+      12.481,
+      14.864,
+      17.107
+    ]
+  },
+  {
+    "id": "p1b-k04",
+    "title": "池上",
+    "author": "白居易",
+    "group": "一年级下册",
+    "grade": 1,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_a8f44614071a.aspx",
+    "lines": [
+      "小娃撑小艇，",
+      "偷采白莲回。",
+      "不解藏踪迹，",
+      "浮萍一道开。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_a8f44614071a.aspx",
+    "audio": "media/poems/p1b-k04.mp3",
+    "lineStarts": [
+      0.065,
+      1.939,
+      3.753,
+      5.297
+    ]
+  },
+  {
+    "id": "p1b-k05",
+    "title": "小池",
+    "author": "杨万里",
+    "group": "一年级下册",
+    "grade": 1,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_31dd7d07323c.aspx",
+    "lines": [
+      "泉眼无声惜细流，",
+      "树阴照水爱晴柔。",
+      "小荷才露尖尖角，",
+      "早有蜻蜓立上头。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_31dd7d07323c.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p1b-k05.mp3",
+    "lineStarts": [
+      0.065,
+      2.291,
+      4.545,
+      6.825
+    ]
+  },
+  {
+    "id": "p1b-j01",
+    "title": "春晓",
+    "author": "孟浩然",
+    "group": "一年级下册(日积月累)",
+    "grade": 1,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_ccee5691ba93.aspx",
+    "lines": [
+      "春眠不觉晓，",
+      "处处闻啼鸟。",
+      "夜来风雨声，",
+      "花落知多少。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_ccee5691ba93.aspx",
+    "audio": "media/poems/p1b-j01.mp3",
+    "lineStarts": [
+      0.065,
+      1.747,
+      3.498,
+      5.104
+    ]
+  },
+  {
+    "id": "p1b-j02",
+    "title": "寻隐者不遇",
+    "author": "贾岛",
+    "group": "一年级下册(日积月累)",
+    "grade": 1,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_40954072f541.aspx",
+    "lines": [
+      "松下问童子，",
+      "言师采药去。",
+      "只在此山中，",
+      "云深不知处。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_40954072f541.aspx",
+    "audio": "media/poems/p1b-j02.mp3",
+    "lineStarts": [
+      0.065,
+      1.787,
+      3.568,
+      5.297
+    ]
+  },
+  {
+    "id": "p1b-j03",
+    "title": "赠汪伦",
+    "author": "李白",
+    "group": "一年级下册(日积月累)",
+    "grade": 1,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_ca9eaf40a6ce.aspx",
+    "lines": [
+      "李白乘舟将欲行，",
+      "忽闻岸上踏歌声。",
+      "桃花潭水深千尺，",
+      "不及汪伦送我情。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_ca9eaf40a6ce.aspx",
+    "audio": "media/poems/p1b-j03.mp3",
+    "lineStarts": [
+      0.065,
+      2.3,
+      4.515,
+      6.911
+    ]
+  },
+  {
+    "id": "p1b-j04",
+    "title": "画鸡",
+    "author": "唐寅",
+    "group": "一年级下册(日积月累)",
+    "grade": 1,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_0f6ad3fb3d95.aspx",
+    "lines": [
+      "头上红冠不用裁，",
+      "满身雪白走将来。",
+      "平生不敢轻言语，",
+      "一叫千门万户开。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_0f6ad3fb3d95.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p1b-j04.mp3",
+    "lineStarts": [
+      0.065,
+      2.287,
+      4.648,
+      6.744
+    ]
+  },
+  {
+    "id": "p2a-k01",
+    "title": "登鹳雀楼",
+    "author": "王之涣",
+    "group": "二年级上册",
+    "grade": 2,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_c90ff9ea5a71.aspx",
+    "lines": [
+      "白日依山尽，",
+      "黄河入海流。",
+      "欲穷千里目，",
+      "更上一层楼。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_c90ff9ea5a71.aspx",
+    "audio": "media/poems/p2a-k01.mp3",
+    "lineStarts": [
+      0.065,
+      1.551,
+      3.348,
+      5.013
+    ]
+  },
+  {
+    "id": "p2a-k02",
+    "title": "望庐山瀑布",
+    "author": "李白",
+    "group": "二年级上册",
+    "grade": 2,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_62802abab937.aspx",
+    "lines": [
+      "日照香炉生紫烟，",
+      "遥看瀑布挂前川。",
+      "飞流直下三千尺，",
+      "疑是银河落九天。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_62802abab937.aspx",
+    "audio": "media/poems/p2a-k02.mp3",
+    "lineStarts": [
+      0.065,
+      2.196,
+      4.719,
+      7.021
+    ]
+  },
+  {
+    "id": "p2a-k03",
+    "title": "江雪",
+    "author": "柳宗元",
+    "group": "二年级上册",
+    "grade": 2,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_58313be2d918.aspx",
+    "lines": [
+      "千山鸟飞绝，",
+      "万径人踪灭。",
+      "孤舟蓑笠翁，",
+      "独钓寒江雪。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_58313be2d918.aspx",
+    "audio": "media/poems/p2a-k03.mp3",
+    "lineStarts": [
+      0.065,
+      1.86,
+      3.582,
+      5.115
+    ]
+  },
+  {
+    "id": "p2a-k04",
+    "title": "敕勒歌",
+    "author": "佚名",
+    "group": "二年级上册",
+    "grade": 2,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_f996111bff75.aspx",
+    "lines": [
+      "敕勒川，",
+      "阴山下。",
+      "天似穹庐，",
+      "笼盖四野。",
+      "天苍苍，",
+      "野茫茫，",
+      "风吹草低见牛羊。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_f996111bff75.aspx",
+    "audio": "media/poems/p2a-k04.mp3",
+    "lineStarts": [
+      0.065,
+      1.353,
+      2.586,
+      4.113,
+      5.509,
+      6.838,
+      7.982
+    ]
+  },
+  {
+    "id": "p2a-j01",
+    "title": "梅花",
+    "author": "王安石",
+    "group": "二年级上册(日积月累)",
+    "grade": 2,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_846e626d74d3.aspx",
+    "lines": [
+      "墙角数枝梅，",
+      "凌寒独自开。",
+      "遥知不是雪，",
+      "为有暗香来。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_846e626d74d3.aspx",
+    "audio": "media/poems/p2a-j01.mp3",
+    "lineStarts": [
+      0.065,
+      1.779,
+      3.536,
+      5.143
+    ]
+  },
+  {
+    "id": "p2a-j02",
+    "title": "小儿垂钓",
+    "author": "胡令能",
+    "group": "二年级上册(日积月累)",
+    "grade": 2,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_200d28227643.aspx",
+    "lines": [
+      "蓬头稚子学垂纶，",
+      "侧坐莓苔草映身。",
+      "路人借问遥招手，",
+      "怕得鱼惊不应人。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_200d28227643.aspx",
+    "audio": "media/poems/p2a-j02.mp3",
+    "lineStarts": [
+      0.065,
+      2.438,
+      4.85,
+      6.932
+    ]
+  },
+  {
+    "id": "p2a-j03",
+    "title": "夜宿山寺",
+    "author": "李白",
+    "group": "二年级上册(日积月累)",
+    "grade": 2,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_85f036fcc038.aspx",
+    "lines": [
+      "危楼高百尺，",
+      "手可摘星辰。",
+      "不敢高声语，",
+      "恐惊天上人。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_85f036fcc038.aspx",
+    "audio": "media/poems/p2a-j03.mp3",
+    "lineStarts": [
+      0.065,
+      1.684,
+      3.647,
+      5.11
+    ]
+  },
+  {
+    "id": "p2b-k01",
+    "title": "咏柳",
+    "author": "贺知章",
+    "group": "二年级下册",
+    "grade": 2,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_9936770100ef.aspx",
+    "lines": [
+      "碧玉妆成一树高，",
+      "万条垂下绿丝绦。",
+      "不知细叶谁裁出，",
+      "二月春风似剪刀。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_9936770100ef.aspx",
+    "audio": "media/poems/p2b-k01.mp3",
+    "lineStarts": [
+      0.065,
+      2.097,
+      4.539,
+      6.698
+    ]
+  },
+  {
+    "id": "p2b-k02",
+    "title": "村居",
+    "author": "高鼎",
+    "group": "二年级下册",
+    "grade": 2,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_425fb837c387.aspx",
+    "lines": [
+      "草长莺飞二月天，",
+      "拂堤杨柳醉春烟。",
+      "儿童散学归来早，",
+      "忙趁东风放纸鸢。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_425fb837c387.aspx",
+    "audio": "media/poems/p2b-k02.mp3",
+    "lineStarts": [
+      0.065,
+      2.328,
+      4.669,
+      6.836
+    ]
+  },
+  {
+    "id": "p2b-k03",
+    "title": "绝句",
+    "author": "杜甫",
+    "group": "二年级下册",
+    "grade": 2,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_549473b5211c.aspx",
+    "lines": [
+      "两个黄鹂鸣翠柳，",
+      "一行白鹭上青天。",
+      "窗含西岭千秋雪，",
+      "门泊东吴万里船。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_549473b5211c.aspx",
+    "audio": "media/poems/p2b-k03.mp3",
+    "lineStarts": [
+      0.065,
+      2.196,
+      4.52,
+      6.923
+    ]
+  },
+  {
+    "id": "p2b-k04",
+    "title": "晓出净慈寺送林子方",
+    "author": "杨万里",
+    "group": "二年级下册",
+    "grade": 2,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_3ab4125fd0f1.aspx",
+    "lines": [
+      "毕竟西湖六月中，",
+      "风光不与四时同。",
+      "接天莲叶无穷碧，",
+      "映日荷花别样红。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_3ab4125fd0f1.aspx",
+    "audio": "media/poems/p2b-k04.mp3",
+    "lineStarts": [
+      0.065,
+      2.166,
+      4.421,
+      6.588
+    ]
+  },
+  {
+    "id": "p2b-j01",
+    "title": "赋得古原草送别(节选)",
+    "author": "白居易",
+    "group": "二年级下册(日积月累)",
+    "grade": 2,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_ad8757771ddb.aspx",
+    "lines": [
+      "离离原上草，",
+      "一岁一枯荣。",
+      "野火烧不尽，",
+      "春风吹又生。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_ad8757771ddb.aspx",
+    "note": "选原诗开头四句。",
+    "audio": "media/poems/p2b-j01.mp3",
+    "lineStarts": [
+      0.065,
+      1.812,
+      3.442,
+      5.026
+    ]
+  },
+  {
+    "id": "p2b-j02",
+    "title": "悯农二首·其一",
+    "author": "李绅",
+    "group": "二年级下册(日积月累)",
+    "grade": 2,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_4859914a4e16.aspx",
+    "lines": [
+      "春种一粒粟，",
+      "秋收万颗子。",
+      "四海无闲田，",
+      "农夫犹饿死。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_4859914a4e16.aspx",
+    "audio": "media/poems/p2b-j02.mp3",
+    "lineStarts": [
+      0.065,
+      1.643,
+      3.344,
+      5.147
+    ]
+  },
+  {
+    "id": "p2b-j03",
+    "title": "江上渔者",
+    "author": "范仲淹",
+    "group": "二年级下册(日积月累)",
+    "grade": 2,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_4b21381d3a76.aspx",
+    "lines": [
+      "江上往来人，",
+      "但爱鲈鱼美。",
+      "君看一叶舟，",
+      "出没风波里。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_4b21381d3a76.aspx",
+    "audio": "media/poems/p2b-j03.mp3",
+    "lineStarts": [
+      0.065,
+      1.744,
+      3.326,
+      4.949
+    ]
+  },
+  {
+    "id": "p3a-k01",
+    "title": "望洞庭",
+    "author": "刘禹锡",
+    "group": "三年级上册",
+    "grade": 3,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_880912218fc8.aspx",
+    "lines": [
+      "湖光秋月两相和，",
+      "潭面无风镜未磨。",
+      "遥望洞庭山水翠，",
+      "白银盘里一青螺。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_880912218fc8.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p3a-k01.mp3",
+    "lineStarts": [
+      0.065,
+      2.305,
+      4.49,
+      6.712
+    ]
+  },
+  {
+    "id": "p3a-k02",
+    "title": "山行",
+    "author": "杜牧",
+    "group": "三年级上册",
+    "grade": 3,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_3c36881bd247.aspx",
+    "lines": [
+      "远上寒山石径斜，",
+      "白云生处有人家。",
+      "停车坐爱枫林晚，",
+      "霜叶红于二月花。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_3c36881bd247.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p3a-k02.mp3",
+    "lineStarts": [
+      0.065,
+      2.426,
+      4.619,
+      6.749
+    ]
+  },
+  {
+    "id": "p3a-k03",
+    "title": "夜书所见",
+    "author": "叶绍翁",
+    "group": "三年级上册",
+    "grade": 3,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_7ccd1778ba07.aspx",
+    "lines": [
+      "萧萧梧叶送寒声，",
+      "江上秋风动客情。",
+      "知有儿童挑促织，",
+      "夜深篱落一灯明。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_7ccd1778ba07.aspx",
+    "audio": "media/poems/p3a-k03.mp3",
+    "lineStarts": [
+      0.065,
+      2.403,
+      4.928,
+      7.087
+    ]
+  },
+  {
+    "id": "p3a-k04",
+    "title": "鹿柴",
+    "author": "王维",
+    "group": "三年级上册",
+    "grade": 3,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_e9b1a8b4def0.aspx",
+    "lines": [
+      "空山不见人，",
+      "但闻人语响。",
+      "返景入深林，",
+      "复照青苔上。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_e9b1a8b4def0.aspx",
+    "audio": "media/poems/p3a-k04.mp3",
+    "lineStarts": [
+      0.065,
+      1.741,
+      3.427,
+      5.184
+    ]
+  },
+  {
+    "id": "p3a-k05",
+    "title": "望天门山",
+    "author": "李白",
+    "group": "三年级上册",
+    "grade": 3,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_97e6296bfb8d.aspx",
+    "lines": [
+      "天门中断楚江开，",
+      "碧水东流至此回。",
+      "两岸青山相对出，",
+      "孤帆一片日边来。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_97e6296bfb8d.aspx",
+    "audio": "media/poems/p3a-k05.mp3",
+    "lineStarts": [
+      0.065,
+      2.404,
+      4.609,
+      6.89
+    ]
+  },
+  {
+    "id": "p3a-k06",
+    "title": "饮湖上初晴后雨",
+    "author": "苏轼",
+    "group": "三年级上册",
+    "grade": 3,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_8949464433f0.aspx",
+    "lines": [
+      "水光潋滟晴方好，",
+      "山色空蒙雨亦奇。",
+      "欲把西湖比西子，",
+      "淡妆浓抹总相宜。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_8949464433f0.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p3a-k06.mp3",
+    "lineStarts": [
+      0.065,
+      2.424,
+      4.817,
+      6.888
+    ]
+  },
+  {
+    "id": "p3a-k07",
+    "title": "司马光",
+    "author": "脱脱等（《宋史》）",
+    "group": "三年级上册",
+    "grade": 3,
+    "volume": "上",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_d08246ab36e2.aspx",
+    "lines": [
+      "群儿戏于庭，一儿登瓮，足跌没水中。",
+      "众皆弃去，光持石击瓮破之，水迸，儿得活。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_d08246ab36e2.aspx",
+    "note": "节选自《宋史·司马光传》。",
+    "audio": "media/poems/p3a-k07.mp3",
+    "lineStarts": [
+      0.065,
+      4.751
+    ]
+  },
+  {
+    "id": "p3a-j01",
+    "title": "所见",
+    "author": "袁枚",
+    "group": "三年级上册(日积月累)",
+    "grade": 3,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_58699ebb5e93.aspx",
+    "lines": [
+      "牧童骑黄牛，",
+      "歌声振林樾。",
+      "意欲捕鸣蝉，",
+      "忽然闭口立。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_58699ebb5e93.aspx",
+    "audio": "media/poems/p3a-j01.mp3",
+    "lineStarts": [
+      0.065,
+      1.823,
+      3.448,
+      5.008
+    ]
+  },
+  {
+    "id": "p3a-j02",
+    "title": "舟夜书所见",
+    "author": "查慎行",
+    "group": "三年级上册(日积月累)",
+    "grade": 3,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_d88e3533fc4a.aspx",
+    "lines": [
+      "月黑见渔灯，",
+      "孤光一点萤。",
+      "微微风簇浪，",
+      "散作满河星。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_d88e3533fc4a.aspx",
+    "audio": "media/poems/p3a-j02.mp3",
+    "lineStarts": [
+      0.065,
+      1.741,
+      3.4,
+      5.007
+    ]
+  },
+  {
+    "id": "p3a-j03",
+    "title": "早发白帝城",
+    "author": "李白",
+    "group": "三年级上册(日积月累)",
+    "grade": 3,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_0f81015a040c.aspx",
+    "lines": [
+      "朝辞白帝彩云间，",
+      "千里江陵一日还。",
+      "两岸猿声啼不住，",
+      "轻舟已过万重山。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_0f81015a040c.aspx",
+    "audio": "media/poems/p3a-j03.mp3",
+    "lineStarts": [
+      0.065,
+      2.247,
+      4.552,
+      6.694
+    ]
+  },
+  {
+    "id": "p3a-j04",
+    "title": "采莲曲",
+    "author": "王昌龄",
+    "group": "三年级上册(日积月累)",
+    "grade": 3,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_c953220f9f52.aspx",
+    "lines": [
+      "荷叶罗裙一色裁，",
+      "芙蓉向脸两边开。",
+      "乱入池中看不见，",
+      "闻歌始觉有人来。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_c953220f9f52.aspx",
+    "audio": "media/poems/p3a-j04.mp3",
+    "lineStarts": [
+      0.065,
+      2.337,
+      4.749,
+      6.959
+    ]
+  },
+  {
+    "id": "p3b-k01",
+    "title": "绝句",
+    "author": "杜甫",
+    "group": "三年级下册",
+    "grade": 3,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_e5e7911da1d2.aspx",
+    "lines": [
+      "迟日江山丽，",
+      "春风花草香。",
+      "泥融飞燕子，",
+      "沙暖睡鸳鸯。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_e5e7911da1d2.aspx",
+    "audio": "media/poems/p3b-k01.mp3",
+    "lineStarts": [
+      0.065,
+      1.631,
+      3.591,
+      5.12
+    ]
+  },
+  {
+    "id": "p3b-k02",
+    "title": "惠崇春江晚景",
+    "author": "苏轼",
+    "group": "三年级下册",
+    "grade": 3,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_cd140bf494da.aspx",
+    "lines": [
+      "竹外桃花三两枝，",
+      "春江水暖鸭先知。",
+      "蒌蒿满地芦芽短，",
+      "正是河豚欲上时。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_cd140bf494da.aspx",
+    "audio": "media/poems/p3b-k02.mp3",
+    "lineStarts": [
+      0.065,
+      2.27,
+      4.601,
+      6.649
+    ]
+  },
+  {
+    "id": "p3b-k03",
+    "title": "三衢道中",
+    "author": "曾几",
+    "group": "三年级下册",
+    "grade": 3,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_fbbd80710c5e.aspx",
+    "lines": [
+      "梅子黄时日日晴，",
+      "小溪泛尽却山行。",
+      "绿阴不减来时路，",
+      "添得黄鹂四五声。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_fbbd80710c5e.aspx",
+    "audio": "media/poems/p3b-k03.mp3",
+    "lineStarts": [
+      0.065,
+      2.23,
+      4.764,
+      6.777
+    ]
+  },
+  {
+    "id": "p3b-k04",
+    "title": "守株待兔",
+    "author": "韩非",
+    "group": "三年级下册",
+    "grade": 3,
+    "volume": "下",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_bf758d053fca.aspx",
+    "lines": [
+      "宋人有耕者。",
+      "田中有株。",
+      "兔走触株，折颈而死。",
+      "因释其耒而守株，冀复得兔。",
+      "兔不可复得，而身为宋国笑。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_bf758d053fca.aspx",
+    "audio": "media/poems/p3b-k04.mp3",
+    "lineStarts": [
+      0.065,
+      1.751,
+      3.253,
+      6.124,
+      9.517
+    ]
+  },
+  {
+    "id": "p3b-k05",
+    "title": "元日",
+    "author": "王安石",
+    "group": "三年级下册",
+    "grade": 3,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_a167901c9c90.aspx",
+    "lines": [
+      "爆竹声中一岁除，",
+      "春风送暖入屠苏。",
+      "千门万户曈曈日，",
+      "总把新桃换旧符。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_a167901c9c90.aspx",
+    "audio": "media/poems/p3b-k05.mp3",
+    "lineStarts": [
+      0.065,
+      2.271,
+      4.649,
+      6.827
+    ]
+  },
+  {
+    "id": "p3b-k06",
+    "title": "清明",
+    "author": "杜牧",
+    "group": "三年级下册",
+    "grade": 3,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_d3e3283daac5.aspx",
+    "lines": [
+      "清明时节雨纷纷，",
+      "路上行人欲断魂。",
+      "借问酒家何处有？",
+      "牧童遥指杏花村。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_d3e3283daac5.aspx",
+    "audio": "media/poems/p3b-k06.mp3",
+    "lineStarts": [
+      0.065,
+      2.162,
+      4.533,
+      6.757
+    ]
+  },
+  {
+    "id": "p3b-k07",
+    "title": "九月九日忆山东兄弟",
+    "author": "王维",
+    "group": "三年级下册",
+    "grade": 3,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_d75a706935de.aspx",
+    "lines": [
+      "独在异乡为异客，",
+      "每逢佳节倍思亲。",
+      "遥知兄弟登高处，",
+      "遍插茱萸少一人。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_d75a706935de.aspx",
+    "audio": "media/poems/p3b-k07.mp3",
+    "lineStarts": [
+      0.065,
+      2.043,
+      4.277,
+      6.361
+    ]
+  },
+  {
+    "id": "p3b-j01",
+    "title": "忆江南",
+    "author": "白居易",
+    "group": "三年级下册(日积月累)",
+    "grade": 3,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_6ad0636b01a9.aspx",
+    "lines": [
+      "江南好，",
+      "风景旧曾谙。",
+      "日出江花红胜火，",
+      "春来江水绿如蓝。",
+      "能不忆江南？"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_6ad0636b01a9.aspx",
+    "audio": "media/poems/p3b-j01.mp3",
+    "lineStarts": [
+      0.065,
+      1.291,
+      3.128,
+      5.364,
+      7.649
+    ]
+  },
+  {
+    "id": "p3b-j02",
+    "title": "滁州西涧",
+    "author": "韦应物",
+    "group": "三年级下册(日积月累)",
+    "grade": 3,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_f6bd6356c843.aspx",
+    "lines": [
+      "独怜幽草涧边生，",
+      "上有黄鹂深树鸣。",
+      "春潮带雨晚来急，",
+      "野渡无人舟自横。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_f6bd6356c843.aspx",
+    "audio": "media/poems/p3b-j02.mp3",
+    "lineStarts": [
+      0.065,
+      2.403,
+      4.692,
+      6.885
+    ]
+  },
+  {
+    "id": "p3b-j03",
+    "title": "大林寺桃花",
+    "author": "白居易",
+    "group": "三年级下册(日积月累)",
+    "grade": 3,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_5e26797704a7.aspx",
+    "lines": [
+      "人间四月芳菲尽，",
+      "山寺桃花始盛开。",
+      "长恨春归无觅处，",
+      "不知转入此中来。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_5e26797704a7.aspx",
+    "audio": "media/poems/p3b-j03.mp3",
+    "lineStarts": [
+      0.065,
+      2.265,
+      4.798,
+      6.956
+    ]
+  },
+  {
+    "id": "p4a-k01",
+    "title": "暮江吟",
+    "author": "白居易",
+    "group": "四年级上册",
+    "grade": 4,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_0daa9748bcb5.aspx",
+    "lines": [
+      "一道残阳铺水中，",
+      "半江瑟瑟半江红。",
+      "可怜九月初三夜，",
+      "露似真珠月似弓。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_0daa9748bcb5.aspx",
+    "audio": "media/poems/p4a-k01.mp3",
+    "lineStarts": [
+      0.065,
+      2.218,
+      4.516,
+      6.657
+    ]
+  },
+  {
+    "id": "p4a-k02",
+    "title": "题西林壁",
+    "author": "苏轼",
+    "group": "四年级上册",
+    "grade": 4,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_f2f5469a6044.aspx",
+    "lines": [
+      "横看成岭侧成峰，",
+      "远近高低各不同。",
+      "不识庐山真面目，",
+      "只缘身在此山中。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_f2f5469a6044.aspx",
+    "audio": "media/poems/p4a-k02.mp3",
+    "lineStarts": [
+      0.065,
+      2.519,
+      4.693,
+      6.608
+    ]
+  },
+  {
+    "id": "p4a-k03",
+    "title": "雪梅",
+    "author": "卢钺",
+    "group": "四年级上册",
+    "grade": 4,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_8f1be8b774c2.aspx",
+    "lines": [
+      "梅雪争春未肯降，",
+      "骚人阁笔费评章。",
+      "梅须逊雪三分白，",
+      "雪却输梅一段香。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_8f1be8b774c2.aspx",
+    "audio": "media/poems/p4a-k03.mp3",
+    "lineStarts": [
+      0.065,
+      2.358,
+      4.694,
+      7.021
+    ]
+  },
+  {
+    "id": "p4a-k04",
+    "title": "精卫填海",
+    "author": "《山海经》",
+    "group": "四年级上册",
+    "grade": 4,
+    "volume": "上",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_1104052ed0fc.aspx",
+    "lines": [
+      "炎帝之少女，名曰女娃。",
+      "女娃游于东海，溺而不返，故为精卫，常衔西山之木石，以堙于东海。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_1104052ed0fc.aspx",
+    "audio": "media/poems/p4a-k04.mp3",
+    "lineStarts": [
+      0.065,
+      2.972
+    ]
+  },
+  {
+    "id": "p4a-k05",
+    "title": "王戎不取道旁李",
+    "author": "刘义庆",
+    "group": "四年级上册",
+    "grade": 4,
+    "volume": "上",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_cfeddc2459c2.aspx",
+    "lines": [
+      "王戎七岁，尝与诸小儿游。",
+      "看道边李树多子折枝，诸儿竞走取之，唯戎不动。",
+      "人问之，答曰：“树在道边而多子，此必苦李。”",
+      "取之，信然。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_cfeddc2459c2.aspx",
+    "audio": "media/poems/p4a-k05.mp3",
+    "lineStarts": [
+      0.065,
+      3.564,
+      9.374,
+      14.858
+    ]
+  },
+  {
+    "id": "p4a-k06",
+    "title": "凉州词",
+    "author": "王翰",
+    "group": "四年级上册",
+    "grade": 4,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_9312f5349cd7.aspx",
+    "lines": [
+      "葡萄美酒夜光杯，",
+      "欲饮琵琶马上催。",
+      "醉卧沙场君莫笑，",
+      "古来征战几人回？"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_9312f5349cd7.aspx",
+    "audio": "media/poems/p4a-k06.mp3",
+    "lineStarts": [
+      0.065,
+      2.089,
+      4.426,
+      6.602
+    ]
+  },
+  {
+    "id": "p4a-k07",
+    "title": "出塞",
+    "author": "王昌龄",
+    "group": "四年级上册",
+    "grade": 4,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_b9e14c6e09aa.aspx",
+    "lines": [
+      "秦时明月汉时关，",
+      "万里长征人未还。",
+      "但使龙城飞将在，",
+      "不教胡马度阴山。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_b9e14c6e09aa.aspx",
+    "audio": "media/poems/p4a-k07.mp3",
+    "lineStarts": [
+      0.065,
+      2.406,
+      4.697,
+      6.919
+    ]
+  },
+  {
+    "id": "p4a-k08",
+    "title": "夏日绝句",
+    "author": "李清照",
+    "group": "四年级上册",
+    "grade": 4,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_e4cd80aceb52.aspx",
+    "lines": [
+      "生当作人杰，",
+      "死亦为鬼雄。",
+      "至今思项羽，",
+      "不肯过江东。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_e4cd80aceb52.aspx",
+    "audio": "media/poems/p4a-k08.mp3",
+    "lineStarts": [
+      0.065,
+      1.728,
+      3.471,
+      5.061
+    ]
+  },
+  {
+    "id": "p4a-j01",
+    "title": "赠刘景文",
+    "author": "苏轼",
+    "group": "四年级上册(日积月累)",
+    "grade": 4,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_c987db20a4d7.aspx",
+    "lines": [
+      "荷尽已无擎雨盖，",
+      "菊残犹有傲霜枝。",
+      "一年好景君须记，",
+      "最是橙黄橘绿时。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_c987db20a4d7.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p4a-j01.mp3",
+    "lineStarts": [
+      0.065,
+      2.117,
+      4.342,
+      6.517
+    ]
+  },
+  {
+    "id": "p4a-j02",
+    "title": "嫦娥",
+    "author": "李商隐",
+    "group": "四年级上册(日积月累)",
+    "grade": 4,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_caef25db347c.aspx",
+    "lines": [
+      "云母屏风烛影深，",
+      "长河渐落晓星沉。",
+      "嫦娥应悔偷灵药，",
+      "碧海青天夜夜心。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_caef25db347c.aspx",
+    "audio": "media/poems/p4a-j02.mp3",
+    "lineStarts": [
+      0.065,
+      2.263,
+      4.722,
+      6.927
+    ]
+  },
+  {
+    "id": "p4a-j03",
+    "title": "别董大",
+    "author": "高适",
+    "group": "四年级上册(日积月累)",
+    "grade": 4,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_4b3ccba01be6.aspx",
+    "lines": [
+      "千里黄云白日曛，",
+      "北风吹雁雪纷纷。",
+      "莫愁前路无知己，",
+      "天下谁人不识君。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_4b3ccba01be6.aspx",
+    "audio": "media/poems/p4a-j03.mp3",
+    "lineStarts": [
+      0.065,
+      2.359,
+      4.762,
+      6.869
+    ]
+  },
+  {
+    "id": "p4b-k01",
+    "title": "四时田园杂兴",
+    "author": "范成大",
+    "group": "四年级下册",
+    "grade": 4,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_6e4b9596b2f3.aspx",
+    "lines": [
+      "梅子金黄杏子肥，",
+      "麦花雪白菜花稀。",
+      "日长篱落无人过，",
+      "惟有蜻蜓蛱蝶飞。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_6e4b9596b2f3.aspx",
+    "note": "篇目表使用简称，链接所指为《四时田园杂兴·其二十五》。",
+    "audio": "media/poems/p4b-k01.mp3",
+    "lineStarts": [
+      0.065,
+      2.242,
+      4.603,
+      6.572
+    ]
+  },
+  {
+    "id": "p4b-k02",
+    "title": "宿新市徐公店",
+    "author": "杨万里",
+    "group": "四年级下册",
+    "grade": 4,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_f92fb36ff846.aspx",
+    "lines": [
+      "篱落疏疏一径深，",
+      "树头新绿未成阴。",
+      "儿童急走追黄蝶，",
+      "飞入菜花无处寻。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_f92fb36ff846.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p4b-k02.mp3",
+    "lineStarts": [
+      0.065,
+      2.149,
+      4.496,
+      6.651
+    ]
+  },
+  {
+    "id": "p4b-k03",
+    "title": "清平乐·村居",
+    "author": "辛弃疾",
+    "group": "四年级下册",
+    "grade": 4,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_03e80e28a0c2.aspx",
+    "lines": [
+      "茅檐低小，",
+      "溪上青青草。",
+      "醉里吴音相媚好，",
+      "白发谁家翁媪？",
+      "大儿锄豆溪东，",
+      "中儿正织鸡笼。",
+      "最喜小儿亡赖，",
+      "溪头卧剥莲蓬。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_03e80e28a0c2.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p4b-k03.mp3",
+    "lineStarts": [
+      0.065,
+      1.464,
+      3.464,
+      5.582,
+      7.613,
+      9.428,
+      11.342,
+      13.205
+    ]
+  },
+  {
+    "id": "p4b-k04",
+    "title": "芙蓉楼送辛渐",
+    "author": "王昌龄",
+    "group": "四年级下册",
+    "grade": 4,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_f433a64dd504.aspx",
+    "lines": [
+      "寒雨连江夜入吴，",
+      "平明送客楚山孤。",
+      "洛阳亲友如相问，",
+      "一片冰心在玉壶。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_f433a64dd504.aspx",
+    "audio": "media/poems/p4b-k04.mp3",
+    "lineStarts": [
+      0.065,
+      2.198,
+      4.548,
+      6.583
+    ]
+  },
+  {
+    "id": "p4b-k05",
+    "title": "塞下曲",
+    "author": "卢纶",
+    "group": "四年级下册",
+    "grade": 4,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_9a9463173105.aspx",
+    "lines": [
+      "月黑雁飞高，",
+      "单于夜遁逃。",
+      "欲将轻骑逐，",
+      "大雪满弓刀。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_9a9463173105.aspx",
+    "audio": "media/poems/p4b-k05.mp3",
+    "lineStarts": [
+      0.065,
+      1.706,
+      3.503,
+      5.26
+    ]
+  },
+  {
+    "id": "p4b-k06",
+    "title": "墨梅",
+    "author": "王冕",
+    "group": "四年级下册",
+    "grade": 4,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_82fd6027caf3.aspx",
+    "lines": [
+      "我家洗砚池头树，",
+      "朵朵花开淡墨痕。",
+      "不要人夸好颜色，",
+      "只留清气满乾坤。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_82fd6027caf3.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p4b-k06.mp3",
+    "lineStarts": [
+      0.065,
+      2.16,
+      4.347,
+      6.495
+    ]
+  },
+  {
+    "id": "p4b-k07",
+    "title": "囊萤夜读",
+    "author": "房玄龄等（《晋书》）",
+    "group": "四年级下册",
+    "grade": 4,
+    "volume": "下",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_a640d462c006.aspx",
+    "lines": [
+      "胤恭勤不倦，博学多通。",
+      "家贫不常得油，夏月则练囊盛数十萤火以照书，以夜继日焉。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_a640d462c006.aspx",
+    "note": "节选自《晋书·车胤传》。",
+    "audio": "media/poems/p4b-k07.mp3",
+    "lineStarts": [
+      0.065,
+      3.237
+    ]
+  },
+  {
+    "id": "p4b-k08",
+    "title": "铁杵成针",
+    "author": "祝穆",
+    "group": "四年级下册",
+    "grade": 4,
+    "volume": "下",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_9236b601a746.aspx",
+    "lines": [
+      "磨针溪，在象耳山下。",
+      "世传李太白读书山中，未成，弃去。",
+      "过是溪，逢老媪方磨铁杵。",
+      "问之，曰：“欲作针。”",
+      "太白感其意，还卒业。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_9236b601a746.aspx",
+    "audio": "media/poems/p4b-k08.mp3",
+    "lineStarts": [
+      0.065,
+      2.926,
+      7.571,
+      10.948,
+      13.773
+    ]
+  },
+  {
+    "id": "p4b-j01",
+    "title": "卜算子·咏梅",
+    "author": "毛泽东",
+    "group": "四年级下册(日积月累)",
+    "grade": 4,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_e8c610c2308b.aspx",
+    "lines": [],
+    "textSource": "",
+    "note": "此处为毛泽东作品，暂收索引。"
+  },
+  {
+    "id": "p4b-j02",
+    "title": "江畔独步寻花",
+    "author": "杜甫",
+    "group": "四年级下册(日积月累)",
+    "grade": 4,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_85e46c4b3dbc.aspx",
+    "lines": [
+      "黄师塔前江水东，",
+      "春光懒困倚微风。",
+      "桃花一簇开无主，",
+      "可爱深红爱浅红？"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_85e46c4b3dbc.aspx",
+    "note": "篇目表使用简称，链接所指为《江畔独步寻花·其五》。",
+    "audio": "media/poems/p4b-j02.mp3",
+    "lineStarts": [
+      0.065,
+      2.479,
+      4.729,
+      6.823
+    ]
+  },
+  {
+    "id": "p4b-j03",
+    "title": "蜂",
+    "author": "罗隐",
+    "group": "四年级下册(日积月累)",
+    "grade": 4,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_0cf974c0b70a.aspx",
+    "lines": [
+      "不论平地与山尖，",
+      "无限风光尽被占。",
+      "采得百花成蜜后，",
+      "为谁辛苦为谁甜？"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_0cf974c0b70a.aspx",
+    "audio": "media/poems/p4b-j03.mp3",
+    "lineStarts": [
+      0.065,
+      2.132,
+      4.354,
+      6.442
+    ]
+  },
+  {
+    "id": "p4b-j04",
+    "title": "独坐敬亭山",
+    "author": "李白",
+    "group": "四年级下册(日积月累)",
+    "grade": 4,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_1da5349ad9e4.aspx",
+    "lines": [
+      "众鸟高飞尽，",
+      "孤云独去闲。",
+      "相看两不厌，",
+      "只有敬亭山。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_1da5349ad9e4.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p4b-j04.mp3",
+    "lineStarts": [
+      0.065,
+      1.724,
+      3.476,
+      5.164
+    ]
+  },
+  {
+    "id": "p5a-k01",
+    "title": "示儿",
+    "author": "陆游",
+    "group": "五年级上册",
+    "grade": 5,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_966c8a76211f.aspx",
+    "lines": [
+      "死去元知万事空，",
+      "但悲不见九州同。",
+      "王师北定中原日，",
+      "家祭无忘告乃翁。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_966c8a76211f.aspx",
+    "audio": "media/poems/p5a-k01.mp3",
+    "lineStarts": [
+      0.065,
+      2.367,
+      4.634,
+      6.753
+    ]
+  },
+  {
+    "id": "p5a-k02",
+    "title": "题临安邸",
+    "author": "林升",
+    "group": "五年级上册",
+    "grade": 5,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_63f2cb1073ff.aspx",
+    "lines": [
+      "山外青山楼外楼，",
+      "西湖歌舞几时休？",
+      "暖风熏得游人醉，",
+      "直把杭州作汴州。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_63f2cb1073ff.aspx",
+    "audio": "media/poems/p5a-k02.mp3",
+    "lineStarts": [
+      0.065,
+      2.366,
+      4.587,
+      6.731
+    ]
+  },
+  {
+    "id": "p5a-k03",
+    "title": "己亥杂诗",
+    "author": "龚自珍",
+    "group": "五年级上册",
+    "grade": 5,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_838d9b401572.aspx",
+    "lines": [
+      "九州生气恃风雷，",
+      "万马齐喑究可哀。",
+      "我劝天公重抖擞，",
+      "不拘一格降人材。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_838d9b401572.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p5a-k03.mp3",
+    "lineStarts": [
+      0.065,
+      2.266,
+      4.511,
+      6.792
+    ]
+  },
+  {
+    "id": "p5a-k04",
+    "title": "少年中国说(节选)",
+    "author": "梁启超",
+    "group": "五年级上册",
+    "grade": 5,
+    "volume": "上",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_9ebe5eef393d.aspx",
+    "lines": [
+      "故今日之责任，不在他人，而全在我少年。",
+      "少年智则国智，少年富则国富；",
+      "少年强则国强，少年独立则国独立；",
+      "少年自由则国自由；",
+      "少年进步则国进步；",
+      "少年胜于欧洲，则国胜于欧洲；",
+      "少年雄于地球，则国雄于地球。",
+      "红日初升，其道大光。",
+      "河出伏流，一泻汪洋。",
+      "潜龙腾渊，鳞爪飞扬。",
+      "乳虎啸谷，百兽震惶。",
+      "鹰隼试翼，风尘吸张。",
+      "奇花初胎，矞矞皇皇。",
+      "干将发硎，有作其芒。",
+      "天戴其苍，地履其黄。",
+      "纵有千古，横有八荒。",
+      "前途似海，来日方长。",
+      "美哉，我少年中国，与天不老！",
+      "壮哉，我中国少年，与国无疆！"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_9ebe5eef393d.aspx",
+    "note": "取梁启超《少年中国说》目录所链接的节选。",
+    "audio": "media/poems/p5a-k04.mp3",
+    "lineStarts": [
+      0.065,
+      5.242,
+      9.145,
+      13.56,
+      15.931,
+      18.267,
+      22.078,
+      26.166,
+      29.164,
+      31.98,
+      35.039,
+      38.007,
+      40.959,
+      44.076,
+      47.163,
+      50.291,
+      53.187,
+      56.292,
+      60.303
+    ]
+  },
+  {
+    "id": "p5a-k05",
+    "title": "山居秋暝",
+    "author": "王维",
+    "group": "五年级上册",
+    "grade": 5,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_44ba4afb80db.aspx",
+    "lines": [
+      "空山新雨后，",
+      "天气晚来秋。",
+      "明月松间照，",
+      "清泉石上流。",
+      "竹喧归浣女，",
+      "莲动下渔舟。",
+      "随意春芳歇，",
+      "王孙自可留。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_44ba4afb80db.aspx",
+    "audio": "media/poems/p5a-k05.mp3",
+    "lineStarts": [
+      0.065,
+      1.717,
+      3.591,
+      5.246,
+      7.202,
+      8.838,
+      10.561,
+      12.283
+    ]
+  },
+  {
+    "id": "p5a-k06",
+    "title": "枫桥夜泊",
+    "author": "张继",
+    "group": "五年级上册",
+    "grade": 5,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_6fb73f607ad3.aspx",
+    "lines": [
+      "月落乌啼霜满天，",
+      "江枫渔火对愁眠。",
+      "姑苏城外寒山寺，",
+      "夜半钟声到客船。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_6fb73f607ad3.aspx",
+    "audio": "media/poems/p5a-k06.mp3",
+    "lineStarts": [
+      0.065,
+      2.38,
+      4.824,
+      6.96
+    ]
+  },
+  {
+    "id": "p5a-k07",
+    "title": "早春呈水部张十八员外",
+    "author": "韩愈",
+    "group": "五年级上册",
+    "grade": 5,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_7e09f12b287c.aspx",
+    "lines": [
+      "天街小雨润如酥，",
+      "草色遥看近却无。",
+      "最是一年春好处，",
+      "绝胜烟柳满皇都。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_7e09f12b287c.aspx",
+    "audio": "media/poems/p5a-k07.mp3",
+    "lineStarts": [
+      0.065,
+      2.242,
+      4.608,
+      6.819
+    ]
+  },
+  {
+    "id": "p5a-k08",
+    "title": "古人谈读书",
+    "author": "《论语》、朱熹",
+    "group": "五年级上册",
+    "grade": 5,
+    "volume": "上",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_04f7c4ccfa13.aspx",
+    "lines": [
+      "知之为知之，不知为不知，是知也。",
+      "敏而好学，不耻下问。",
+      "默而识之，学而不厌，诲人不倦。",
+      "我非生而知之者，好古，敏以求之者也。",
+      "吾尝终日不食，终夜不寝，以思，无益，不如学也。",
+      "余尝谓读书有三到，谓心到、眼到、口到。",
+      "心不在此，则眼不看仔细，心眼既不专一，却只漫浪诵读，决不能记，记亦不能久也。",
+      "三到之中，心到最急。",
+      "心既到矣，眼口岂不到乎？"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_04f7c4ccfa13.aspx",
+    "note": "按链接所列两部分，依次选《论语》及朱熹《训学斋规》。",
+    "audio": "media/poems/p5a-k08.mp3",
+    "lineStarts": [
+      0.065,
+      4.289,
+      7.057,
+      11.101,
+      15.854,
+      22.07,
+      27.425,
+      37.54,
+      40.515
+    ]
+  },
+  {
+    "id": "p5a-j01",
+    "title": "乞巧",
+    "author": "林杰",
+    "group": "五年级上册(日积月累)",
+    "grade": 5,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_e152d043be94.aspx",
+    "lines": [
+      "七夕今宵看碧霄，",
+      "牵牛织女渡河桥。",
+      "家家乞巧望秋月，",
+      "穿尽红丝几万条。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_e152d043be94.aspx",
+    "audio": "media/poems/p5a-j01.mp3",
+    "lineStarts": [
+      0.065,
+      2.348,
+      4.675,
+      6.946
+    ]
+  },
+  {
+    "id": "p5a-j02",
+    "title": "游子吟",
+    "author": "孟郊",
+    "group": "五年级上册(日积月累)",
+    "grade": 5,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_161d06b0b556.aspx",
+    "lines": [
+      "慈母手中线，",
+      "游子身上衣。",
+      "临行密密缝，",
+      "意恐迟迟归。",
+      "谁言寸草心，",
+      "报得三春晖。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_161d06b0b556.aspx",
+    "audio": "media/poems/p5a-j02.mp3",
+    "lineStarts": [
+      0.065,
+      1.758,
+      3.457,
+      5.135,
+      6.868,
+      8.763
+    ]
+  },
+  {
+    "id": "p5a-j03",
+    "title": "渔歌子",
+    "author": "张志和",
+    "group": "五年级上册(日积月累)",
+    "grade": 5,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_ee72baa043c8.aspx",
+    "lines": [
+      "西塞山前白鹭飞，",
+      "桃花流水鳜鱼肥。",
+      "青箬笠，",
+      "绿蓑衣，",
+      "斜风细雨不须归。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_ee72baa043c8.aspx",
+    "note": "篇目表使用简称，链接所指为《渔歌子·西塞山前白鹭飞》。",
+    "audio": "media/poems/p5a-j03.mp3",
+    "lineStarts": [
+      0.065,
+      2.391,
+      4.647,
+      5.722,
+      6.794
+    ]
+  },
+  {
+    "id": "p5a-j04",
+    "title": "观书有感·其一",
+    "author": "朱熹",
+    "group": "五年级上册(日积月累)",
+    "grade": 5,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_4c1364cb1da5.aspx",
+    "lines": [
+      "半亩方塘一鉴开，",
+      "天光云影共徘徊。",
+      "问渠那得清如许？",
+      "为有源头活水来。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_4c1364cb1da5.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p5a-j04.mp3",
+    "lineStarts": [
+      0.065,
+      2.259,
+      4.679,
+      6.819
+    ]
+  },
+  {
+    "id": "p5b-k01",
+    "title": "四时田园杂兴·其三十一",
+    "author": "范成大",
+    "group": "五年级下册",
+    "grade": 5,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_9d5e3f5ee21f.aspx",
+    "lines": [
+      "昼出耘田夜绩麻，",
+      "村庄儿女各当家。",
+      "童孙未解供耕织，",
+      "也傍桑阴学种瓜。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_9d5e3f5ee21f.aspx",
+    "audio": "media/poems/p5b-k01.mp3",
+    "lineStarts": [
+      0.065,
+      2.235,
+      4.427,
+      6.579
+    ]
+  },
+  {
+    "id": "p5b-k02",
+    "title": "稚子弄冰",
+    "author": "杨万里",
+    "group": "五年级下册",
+    "grade": 5,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_4bb194abd528.aspx",
+    "lines": [
+      "稚子金盆脱晓冰，",
+      "彩丝穿取当银钲。",
+      "敲成玉磬穿林响，",
+      "忽作玻璃碎地声。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_4bb194abd528.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p5b-k02.mp3",
+    "lineStarts": [
+      0.065,
+      2.328,
+      4.718,
+      7.116
+    ]
+  },
+  {
+    "id": "p5b-k03",
+    "title": "村晚",
+    "author": "雷震",
+    "group": "五年级下册",
+    "grade": 5,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_be04bba6288c.aspx",
+    "lines": [
+      "草满池塘水满陂，",
+      "山衔落日浸寒漪。",
+      "牧童归去横牛背，",
+      "短笛无腔信口吹。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_be04bba6288c.aspx",
+    "audio": "media/poems/p5b-k03.mp3",
+    "lineStarts": [
+      0.065,
+      2.235,
+      4.57,
+      6.688
+    ]
+  },
+  {
+    "id": "p5b-k04",
+    "title": "从军行七首·其四",
+    "author": "王昌龄",
+    "group": "五年级下册",
+    "grade": 5,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_d1129db241ec.aspx",
+    "lines": [
+      "青海长云暗雪山，",
+      "孤城遥望玉门关。",
+      "黄沙百战穿金甲，",
+      "不破楼兰终不还。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_d1129db241ec.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p5b-k04.mp3",
+    "lineStarts": [
+      0.065,
+      2.522,
+      4.738,
+      6.943
+    ]
+  },
+  {
+    "id": "p5b-k05",
+    "title": "秋夜将晓出篱门迎凉有感",
+    "author": "陆游",
+    "group": "五年级下册",
+    "grade": 5,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_dbabcfab1a1b.aspx",
+    "lines": [
+      "三万里河东入海，",
+      "五千仞岳上摩天。",
+      "遗民泪尽胡尘里，",
+      "南望王师又一年。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_dbabcfab1a1b.aspx",
+    "note": "篇目表使用简称，链接所指为《秋夜将晓出篱门迎凉有感二首·其二》。",
+    "audio": "media/poems/p5b-k05.mp3",
+    "lineStarts": [
+      0.065,
+      2.239,
+      4.554,
+      6.59
+    ]
+  },
+  {
+    "id": "p5b-k06",
+    "title": "闻官军收河南河北",
+    "author": "杜甫",
+    "group": "五年级下册",
+    "grade": 5,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_519029b7355c.aspx",
+    "lines": [
+      "剑外忽传收蓟北，",
+      "初闻涕泪满衣裳。",
+      "却看妻子愁何在，",
+      "漫卷诗书喜欲狂。",
+      "白日放歌须纵酒，",
+      "青春作伴好还乡。",
+      "即从巴峡穿巫峡，",
+      "便下襄阳向洛阳。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_519029b7355c.aspx",
+    "audio": "media/poems/p5b-k06.mp3",
+    "lineStarts": [
+      0.065,
+      2.359,
+      4.47,
+      6.708,
+      9.046,
+      11.112,
+      13.556,
+      15.874
+    ]
+  },
+  {
+    "id": "p5b-k07",
+    "title": "自相矛盾",
+    "author": "韩非",
+    "group": "五年级下册",
+    "grade": 5,
+    "volume": "下",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_d52e05980359.aspx",
+    "lines": [
+      "楚人有鬻盾与矛者，誉之曰：“吾盾之坚，物莫能陷也。”",
+      "又誉其矛曰：“吾矛之利，于物无不陷也。”",
+      "或曰：“以子之矛陷子之盾，何如？”",
+      "其人弗能应也。",
+      "夫不可陷之盾与无不陷之矛，不可同世而立。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_d52e05980359.aspx",
+    "audio": "media/poems/p5b-k07.mp3",
+    "lineStarts": [
+      0.065,
+      6.413,
+      11.13,
+      15.365,
+      17.252
+    ]
+  },
+  {
+    "id": "p5b-k08",
+    "title": "杨氏之子",
+    "author": "刘义庆",
+    "group": "五年级下册",
+    "grade": 5,
+    "volume": "下",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_af4715c0208f.aspx",
+    "lines": [
+      "梁国杨氏子九岁，甚聪惠。",
+      "孔君平诣其父，父不在，乃呼儿出。",
+      "为设果，果有杨梅。",
+      "孔指以示儿曰：“此是君家果。”",
+      "儿应声答曰：“未闻孔雀是夫子家禽。”"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_af4715c0208f.aspx",
+    "audio": "media/poems/p5b-k08.mp3",
+    "lineStarts": [
+      0.065,
+      3.611,
+      8.176,
+      10.734,
+      14.336
+    ]
+  },
+  {
+    "id": "p5b-j01",
+    "title": "游子吟",
+    "author": "孟郊",
+    "group": "五年级下册(日积月累)",
+    "grade": 5,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_161d06b0b556.aspx",
+    "lines": [
+      "慈母手中线，",
+      "游子身上衣。",
+      "临行密密缝，",
+      "意恐迟迟归。",
+      "谁言寸草心，",
+      "报得三春晖。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_161d06b0b556.aspx",
+    "audio": "media/poems/p5b-j01.mp3",
+    "lineStarts": [
+      0.065,
+      1.758,
+      3.457,
+      5.135,
+      6.868,
+      8.763
+    ]
+  },
+  {
+    "id": "p5b-j02",
+    "title": "鸟鸣涧",
+    "author": "王维",
+    "group": "五年级下册(日积月累)",
+    "grade": 5,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_8ec950bd1395.aspx",
+    "lines": [
+      "人闲桂花落，",
+      "夜静春山空。",
+      "月出惊山鸟，",
+      "时鸣春涧中。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_8ec950bd1395.aspx",
+    "audio": "media/poems/p5b-j02.mp3",
+    "lineStarts": [
+      0.065,
+      1.731,
+      3.546,
+      5.234
+    ]
+  },
+  {
+    "id": "p5b-j03",
+    "title": "凉州词二首·其一",
+    "author": "王之涣",
+    "group": "五年级下册(日积月累)",
+    "grade": 5,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_3963afd966bc.aspx",
+    "lines": [
+      "黄河远上白云间，",
+      "一片孤城万仞山。",
+      "羌笛何须怨杨柳，",
+      "春风不度玉门关。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_3963afd966bc.aspx",
+    "audio": "media/poems/p5b-j03.mp3",
+    "lineStarts": [
+      0.065,
+      2.363,
+      4.664,
+      6.935
+    ]
+  },
+  {
+    "id": "p5b-j04",
+    "title": "黄鹤楼送孟浩然之广陵",
+    "author": "李白",
+    "group": "五年级下册(日积月累)",
+    "grade": 5,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_d3f231047aef.aspx",
+    "lines": [
+      "故人西辞黄鹤楼，",
+      "烟花三月下扬州。",
+      "孤帆远影碧空尽，",
+      "唯见长江天际流。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_d3f231047aef.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p5b-j04.mp3",
+    "lineStarts": [
+      0.065,
+      2.236,
+      4.561,
+      6.685
+    ]
+  },
+  {
+    "id": "p5b-j05",
+    "title": "乡村四月",
+    "author": "翁卷",
+    "group": "五年级下册(日积月累)",
+    "grade": 5,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_07f5e3403665.aspx",
+    "lines": [
+      "绿遍山原白满川，",
+      "子规声里雨如烟。",
+      "乡村四月闲人少，",
+      "才了蚕桑又插田。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_07f5e3403665.aspx",
+    "audio": "media/poems/p5b-j05.mp3",
+    "lineStarts": [
+      0.065,
+      2.391,
+      4.531,
+      6.858
+    ]
+  },
+  {
+    "id": "p6a-k01",
+    "title": "宿建德江",
+    "author": "孟浩然",
+    "group": "六年级上册",
+    "grade": 6,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_63d3ff8f6b61.aspx",
+    "lines": [
+      "移舟泊烟渚，",
+      "日暮客愁新。",
+      "野旷天低树，",
+      "江清月近人。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_63d3ff8f6b61.aspx",
+    "audio": "media/poems/p6a-k01.mp3",
+    "lineStarts": [
+      0.065,
+      1.568,
+      3.396,
+      5.062
+    ]
+  },
+  {
+    "id": "p6a-k02",
+    "title": "六月二十七日望湖楼醉书",
+    "author": "苏轼",
+    "group": "六年级上册",
+    "grade": 6,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_0eda7b78250a.aspx",
+    "lines": [
+      "黑云翻墨未遮山，",
+      "白雨跳珠乱入船。",
+      "卷地风来忽吹散，",
+      "望湖楼下水如天。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_0eda7b78250a.aspx",
+    "audio": "media/poems/p6a-k02.mp3",
+    "lineStarts": [
+      0.065,
+      2.244,
+      4.658,
+      6.954
+    ]
+  },
+  {
+    "id": "p6a-k03",
+    "title": "西江月·夜行黄沙道中",
+    "author": "辛弃疾",
+    "group": "六年级上册",
+    "grade": 6,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_f090d65212f4.aspx",
+    "lines": [
+      "明月别枝惊鹊，",
+      "清风半夜鸣蝉。",
+      "稻花香里说丰年，",
+      "听取蛙声一片。",
+      "七八个星天外，",
+      "两三点雨山前。",
+      "旧时茅店社林边，",
+      "路转溪桥忽见。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_f090d65212f4.aspx",
+    "audio": "media/poems/p6a-k03.mp3",
+    "lineStarts": [
+      0.065,
+      1.94,
+      4.036,
+      6.281,
+      8.271,
+      10.17,
+      12.334,
+      14.547
+    ]
+  },
+  {
+    "id": "p6a-k04",
+    "title": "七律·长征",
+    "author": "毛泽东",
+    "group": "六年级上册",
+    "grade": 6,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_a1e7559dada7.aspx",
+    "lines": [],
+    "textSource": "",
+    "note": "近现代作品，暂收索引。"
+  },
+  {
+    "id": "p6a-k05",
+    "title": "浪淘沙·其一",
+    "author": "刘禹锡",
+    "group": "六年级上册",
+    "grade": 6,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_857567307e6a.aspx",
+    "lines": [
+      "九曲黄河万里沙，",
+      "浪淘风簸自天涯。",
+      "如今直上银河去，",
+      "同到牵牛织女家。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_857567307e6a.aspx",
+    "audio": "media/poems/p6a-k05.mp3",
+    "lineStarts": [
+      0.065,
+      2.29,
+      4.626,
+      6.759
+    ]
+  },
+  {
+    "id": "p6a-k06",
+    "title": "江南春",
+    "author": "杜牧",
+    "group": "六年级上册",
+    "grade": 6,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_33cbdb2cf9b3.aspx",
+    "lines": [
+      "千里莺啼绿映红，",
+      "水村山郭酒旗风。",
+      "南朝四百八十寺，",
+      "多少楼台烟雨中。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_33cbdb2cf9b3.aspx",
+    "audio": "media/poems/p6a-k06.mp3",
+    "lineStarts": [
+      0.065,
+      2.255,
+      4.613,
+      6.791
+    ]
+  },
+  {
+    "id": "p6a-k07",
+    "title": "书湖阴先生壁",
+    "author": "王安石",
+    "group": "六年级上册",
+    "grade": 6,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_3d787de04152.aspx",
+    "lines": [
+      "茅檐长扫净无苔，",
+      "花木成畦手自栽。",
+      "一水护田将绿绕，",
+      "两山排闼送青来。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_3d787de04152.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p6a-k07.mp3",
+    "lineStarts": [
+      0.065,
+      2.346,
+      4.701,
+      6.876
+    ]
+  },
+  {
+    "id": "p6a-k08",
+    "title": "两小儿辩日",
+    "author": "列子",
+    "group": "六年级上册",
+    "grade": 6,
+    "volume": "上",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_b4a451fa375a.aspx",
+    "lines": [
+      "孔子东游，见两小儿辩斗，问其故。",
+      "一儿曰：“我以日始出时去人近，而日中时远也。”",
+      "一儿曰：“我以日初出远，而日中时近也。”",
+      "一儿曰：“日初出大如车盖，及日中则如盘盂，此不为远者小而近者大乎？”",
+      "一儿曰：“日初出沧沧凉凉，及其日中如探汤，此不为近者热而远者凉乎？”",
+      "孔子不能决也。",
+      "两小儿笑曰：“孰为汝多知乎？”"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_b4a451fa375a.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p6a-k08.mp3",
+    "lineStarts": [
+      0.065,
+      4.572,
+      10.02,
+      14.737,
+      23.064,
+      31.89,
+      33.716
+    ]
+  },
+  {
+    "id": "p6a-k09",
+    "title": "曹冲称象",
+    "author": "陈寿",
+    "group": "六年级上册",
+    "grade": 6,
+    "volume": "上",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_31b814913b16.aspx",
+    "lines": [
+      "邓哀王冲字仓舒，少聪察岐嶷，生五六岁，智意所及，有若成人之智。",
+      "时孙权曾致巨象，太祖欲知其斤重，访之群下，咸莫能出其理。",
+      "冲曰：“置象大船之上，而刻其水痕所至，称物以载之，则校可知矣。”",
+      "太祖大悦，即施行焉。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_31b814913b16.aspx",
+    "note": "取《三国志·魏书·邓哀王冲传》文言段落。",
+    "audio": "media/poems/p6a-k09.mp3",
+    "lineStarts": [
+      0.065,
+      8.754,
+      16.801,
+      25.239
+    ]
+  },
+  {
+    "id": "p6a-j01",
+    "title": "江畔独步寻花·其五",
+    "author": "杜甫",
+    "group": "六年级上册(日积月累)",
+    "grade": 6,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_85e46c4b3dbc.aspx",
+    "lines": [
+      "黄师塔前江水东，",
+      "春光懒困倚微风。",
+      "桃花一簇开无主，",
+      "可爱深红爱浅红？"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_85e46c4b3dbc.aspx",
+    "audio": "media/poems/p6a-j01.mp3",
+    "lineStarts": [
+      0.065,
+      2.479,
+      4.729,
+      6.823
+    ]
+  },
+  {
+    "id": "p6a-j02",
+    "title": "观书有感·其二",
+    "author": "朱熹",
+    "group": "六年级上册(日积月累)",
+    "grade": 6,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_dd1c97accf6e.aspx",
+    "lines": [
+      "昨夜江边春水生，",
+      "蒙冲巨舰一毛轻。",
+      "向来枉费推移力，",
+      "此日中流自在行。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_dd1c97accf6e.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p6a-j02.mp3",
+    "lineStarts": [
+      0.065,
+      2.415,
+      4.777,
+      6.836
+    ]
+  },
+  {
+    "id": "p6a-j03",
+    "title": "送元二使安西",
+    "author": "王维",
+    "group": "六年级上册(日积月累)",
+    "grade": 6,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_12a2295aa76b.aspx",
+    "lines": [
+      "渭城朝雨浥轻尘，",
+      "客舍青青柳色新。",
+      "劝君更尽一杯酒，",
+      "西出阳关无故人。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_12a2295aa76b.aspx",
+    "audio": "media/poems/p6a-j03.mp3",
+    "lineStarts": [
+      0.065,
+      2.392,
+      4.846,
+      7.096
+    ]
+  },
+  {
+    "id": "p6a-j04",
+    "title": "过故人庄",
+    "author": "孟浩然",
+    "group": "六年级上册(日积月累)",
+    "grade": 6,
+    "volume": "上",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_4a0d548bebb3.aspx",
+    "lines": [
+      "故人具鸡黍，",
+      "邀我至田家。",
+      "绿树村边合，",
+      "青山郭外斜。",
+      "开轩面场圃，",
+      "把酒话桑麻。",
+      "待到重阳日，",
+      "还来就菊花。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_4a0d548bebb3.aspx",
+    "audio": "media/poems/p6a-j04.mp3",
+    "lineStarts": [
+      0.065,
+      1.644,
+      3.401,
+      5.135,
+      6.964,
+      8.792,
+      10.475,
+      12.035
+    ]
+  },
+  {
+    "id": "p6b-k01",
+    "title": "寒食",
+    "author": "韩翃",
+    "group": "六年级下册",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_f26e62f4bfc8.aspx",
+    "lines": [
+      "春城无处不飞花，",
+      "寒食东风御柳斜。",
+      "日暮汉宫传蜡烛，",
+      "轻烟散入五侯家。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_f26e62f4bfc8.aspx",
+    "audio": "media/poems/p6b-k01.mp3",
+    "lineStarts": [
+      0.065,
+      2.316,
+      4.506,
+      6.625
+    ]
+  },
+  {
+    "id": "p6b-k02",
+    "title": "迢迢牵牛星",
+    "author": "佚名",
+    "group": "六年级下册",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_7f09a756c9c0.aspx",
+    "lines": [
+      "迢迢牵牛星，",
+      "皎皎河汉女。",
+      "纤纤擢素手，",
+      "札札弄机杼。",
+      "终日不成章，",
+      "泣涕零如雨。",
+      "河汉清且浅，",
+      "相去复几许。",
+      "盈盈一水间，",
+      "脉脉不得语。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_7f09a756c9c0.aspx",
+    "audio": "media/poems/p6b-k02.mp3",
+    "lineStarts": [
+      0.065,
+      1.94,
+      3.699,
+      5.514,
+      7.068,
+      8.681,
+      10.371,
+      12.237,
+      14.109,
+      15.728
+    ]
+  },
+  {
+    "id": "p6b-k03",
+    "title": "十五夜望月",
+    "author": "王建",
+    "group": "六年级下册",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_2367f5ae6dee.aspx",
+    "lines": [
+      "中庭地白树栖鸦，",
+      "冷露无声湿桂花。",
+      "今夜月明人尽望，",
+      "不知秋思落谁家。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_2367f5ae6dee.aspx",
+    "audio": "media/poems/p6b-k03.mp3",
+    "lineStarts": [
+      0.065,
+      2.235,
+      4.398,
+      6.483
+    ]
+  },
+  {
+    "id": "p6b-k04",
+    "title": "马诗",
+    "author": "李贺",
+    "group": "六年级下册",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_55174e6ebe20.aspx",
+    "lines": [
+      "大漠沙如雪，",
+      "燕山月似钩。",
+      "何当金络脑，",
+      "快走踏清秋。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_55174e6ebe20.aspx",
+    "note": "篇目表使用简称，链接所指为《马诗二十三首·其五》。",
+    "audio": "media/poems/p6b-k04.mp3",
+    "lineStarts": [
+      0.065,
+      1.8,
+      3.545,
+      5.19
+    ]
+  },
+  {
+    "id": "p6b-k05",
+    "title": "石灰吟",
+    "author": "于谦",
+    "group": "六年级下册",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_c6c93895df0a.aspx",
+    "lines": [
+      "千锤万凿出深山，",
+      "烈火焚烧若等闲。",
+      "粉骨碎身浑不怕，",
+      "要留清白在人间。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_c6c93895df0a.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p6b-k05.mp3",
+    "lineStarts": [
+      0.065,
+      2.313,
+      4.652,
+      6.85
+    ]
+  },
+  {
+    "id": "p6b-k06",
+    "title": "竹石",
+    "author": "郑燮",
+    "group": "六年级下册",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_e5c9337524b7.aspx",
+    "lines": [
+      "咬定青山不放松，",
+      "立根原在破岩中。",
+      "千磨万击还坚劲，",
+      "任尔东西南北风。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_e5c9337524b7.aspx",
+    "note": "目录署郑燮，详情署郑板桥，为同一人。",
+    "audio": "media/poems/p6b-k06.mp3",
+    "lineStarts": [
+      0.065,
+      2.311,
+      4.604,
+      6.759
+    ]
+  },
+  {
+    "id": "p6b-k07",
+    "title": "学弈",
+    "author": "孟子",
+    "group": "六年级下册",
+    "grade": 6,
+    "volume": "下",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_7dddb391682f.aspx",
+    "lines": [
+      "弈秋，通国之善弈者也。",
+      "使弈秋诲二人弈，其一人专心致志，惟弈秋之为听；",
+      "一人虽听之，一心以为有鸿鹄将至，思援弓缴而射之。",
+      "虽与之俱学，弗若之矣。",
+      "为是其智弗若与？",
+      "曰：非然也。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_7dddb391682f.aspx",
+    "audio": "media/poems/p6b-k07.mp3",
+    "lineStarts": [
+      0.065,
+      3.098,
+      9.08,
+      15.491,
+      18.559,
+      20.781
+    ]
+  },
+  {
+    "id": "p6b-k08",
+    "title": "两小儿辩日",
+    "author": "列御寇",
+    "group": "六年级下册",
+    "grade": 6,
+    "volume": "下",
+    "kind": "古文",
+    "url": "https://www.guwendao.net/shiwenv_b4a451fa375a.aspx",
+    "lines": [
+      "孔子东游，见两小儿辩斗，问其故。",
+      "一儿曰：“我以日始出时去人近，而日中时远也。”",
+      "一儿曰：“我以日初出远，而日中时近也。”",
+      "一儿曰：“日初出大如车盖，及日中则如盘盂，此不为远者小而近者大乎？”",
+      "一儿曰：“日初出沧沧凉凉，及其日中如探汤，此不为近者热而远者凉乎？”",
+      "孔子不能决也。",
+      "两小儿笑曰：“孰为汝多知乎？”"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_b4a451fa375a.aspx",
+    "note": "目录此处署列御寇，链接与六年级上册同一篇。",
+    "audio": "media/poems/p6b-k08.mp3",
+    "lineStarts": [
+      0.065,
+      4.572,
+      10.02,
+      14.737,
+      23.064,
+      31.89,
+      33.716
+    ]
+  },
+  {
+    "id": "p6b-j01",
+    "title": "长歌行",
+    "author": "汉乐府",
+    "group": "六年级下册(日积月累)",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_183d69f50755.aspx",
+    "lines": [
+      "青青园中葵，",
+      "朝露待日晞。",
+      "阳春布德泽，",
+      "万物生光辉。",
+      "常恐秋节至，",
+      "焜黄华叶衰。",
+      "百川东到海，",
+      "何时复西归？",
+      "少壮不努力，",
+      "老大徒伤悲！"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_183d69f50755.aspx",
+    "audio": "media/poems/p6b-j01.mp3",
+    "lineStarts": [
+      0.065,
+      1.883,
+      3.542,
+      5.229,
+      6.986,
+      8.692,
+      10.623,
+      12.377,
+      14.134,
+      15.692
+    ]
+  },
+  {
+    "id": "p6b-s01",
+    "title": "采薇(节选)",
+    "author": "佚名（《诗经》）",
+    "group": "六年级下册(古诗词诵读)",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_fa087546c81b.aspx",
+    "lines": [
+      "昔我往矣，",
+      "杨柳依依。",
+      "今我来思，",
+      "雨雪霏霏。",
+      "行道迟迟，",
+      "载渴载饥。",
+      "我心伤悲，",
+      "莫知我哀！"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_fa087546c81b.aspx",
+    "note": "选《诗经·小雅·采薇》末章。",
+    "audio": "media/poems/p6b-s01.mp3",
+    "lineStarts": [
+      0.065,
+      1.428,
+      2.825,
+      4.237,
+      5.738,
+      7.286,
+      8.893,
+      10.221
+    ]
+  },
+  {
+    "id": "p6b-s02",
+    "title": "送元二使安西",
+    "author": "王维",
+    "group": "六年级下册(古诗词诵读)",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_12a2295aa76b.aspx",
+    "lines": [
+      "渭城朝雨浥轻尘，",
+      "客舍青青柳色新。",
+      "劝君更尽一杯酒，",
+      "西出阳关无故人。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_12a2295aa76b.aspx",
+    "audio": "media/poems/p6b-s02.mp3",
+    "lineStarts": [
+      0.065,
+      2.392,
+      4.846,
+      7.096
+    ]
+  },
+  {
+    "id": "p6b-s03",
+    "title": "春夜喜雨",
+    "author": "杜甫",
+    "group": "六年级下册(古诗词诵读)",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_d48451f00541.aspx",
+    "lines": [
+      "好雨知时节，",
+      "当春乃发生。",
+      "随风潜入夜，",
+      "润物细无声。",
+      "野径云俱黑，",
+      "江船火独明。",
+      "晓看红湿处，",
+      "花重锦官城。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_d48451f00541.aspx",
+    "audio": "media/poems/p6b-s03.mp3",
+    "lineStarts": [
+      0.065,
+      1.629,
+      3.409,
+      5.119,
+      6.856,
+      8.499,
+      10.409,
+      12.201
+    ]
+  },
+  {
+    "id": "p6b-s04",
+    "title": "早春呈水部张十八员外",
+    "author": "韩愈",
+    "group": "六年级下册(古诗词诵读)",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_7e09f12b287c.aspx",
+    "lines": [
+      "天街小雨润如酥，",
+      "草色遥看近却无。",
+      "最是一年春好处，",
+      "绝胜烟柳满皇都。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_7e09f12b287c.aspx",
+    "audio": "media/poems/p6b-s04.mp3",
+    "lineStarts": [
+      0.065,
+      2.242,
+      4.608,
+      6.819
+    ]
+  },
+  {
+    "id": "p6b-s05",
+    "title": "江上渔者",
+    "author": "范仲淹",
+    "group": "六年级下册(古诗词诵读)",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_4b21381d3a76.aspx",
+    "lines": [
+      "江上往来人，",
+      "但爱鲈鱼美。",
+      "君看一叶舟，",
+      "出没风波里。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_4b21381d3a76.aspx",
+    "audio": "media/poems/p6b-s05.mp3",
+    "lineStarts": [
+      0.065,
+      1.744,
+      3.326,
+      4.949
+    ]
+  },
+  {
+    "id": "p6b-s06",
+    "title": "泊船瓜洲",
+    "author": "王安石",
+    "group": "六年级下册(古诗词诵读)",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_df14e6fd217b.aspx",
+    "lines": [
+      "京口瓜洲一水间，",
+      "钟山只隔数重山。",
+      "春风又绿江南岸，",
+      "明月何时照我还。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_df14e6fd217b.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p6b-s06.mp3",
+    "lineStarts": [
+      0.065,
+      2.301,
+      4.609,
+      6.791
+    ]
+  },
+  {
+    "id": "p6b-s07",
+    "title": "游园不值",
+    "author": "叶绍翁",
+    "group": "六年级下册(古诗词诵读)",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_a31b957aba53.aspx",
+    "lines": [
+      "应怜屐齿印苍苔，",
+      "小扣柴扉久不开。",
+      "春色满园关不住，",
+      "一枝红杏出墙来。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_a31b957aba53.aspx",
+    "audio": "media/poems/p6b-s07.mp3",
+    "lineStarts": [
+      0.065,
+      2.392,
+      4.903,
+      7.027
+    ]
+  },
+  {
+    "id": "p6b-s08",
+    "title": "卜算子·送鲍浩然之浙东",
+    "author": "王观",
+    "group": "六年级下册(古诗词诵读)",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_ee1bd6238d4a.aspx",
+    "lines": [
+      "水是眼波横，",
+      "山是眉峰聚。",
+      "欲问行人去那边？",
+      "眉眼盈盈处。",
+      "才始送春归，",
+      "又送君归去。",
+      "若到江南赶上春，",
+      "千万和春住。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_ee1bd6238d4a.aspx",
+    "audio": "media/poems/p6b-s08.mp3",
+    "lineStarts": [
+      0.065,
+      1.798,
+      3.552,
+      5.795,
+      7.379,
+      9.166,
+      10.923,
+      13.195
+    ]
+  },
+  {
+    "id": "p6b-s09",
+    "title": "浣溪沙·游蕲水清泉寺",
+    "author": "苏轼",
+    "group": "六年级下册(古诗词诵读)",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_a9a16104dd1b.aspx",
+    "lines": [
+      "游蕲水清泉寺，寺临兰溪，溪水西流。",
+      "山下兰芽短浸溪，",
+      "松间沙路净无泥，",
+      "萧萧暮雨子规啼。",
+      "谁道人生无再少？",
+      "门前流水尚能西！",
+      "休将白发唱黄鸡。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_a9a16104dd1b.aspx",
+    "note": "正文开头为苏轼的小序。",
+    "audio": "media/poems/p6b-s09.mp3",
+    "lineStarts": [
+      0.065,
+      5.131,
+      7.375,
+      9.631,
+      11.956,
+      14.21,
+      16.56
+    ]
+  },
+  {
+    "id": "p6b-s10",
+    "title": "清平乐·春归何处",
+    "author": "黄庭坚",
+    "group": "六年级下册(古诗词诵读)",
+    "grade": 6,
+    "volume": "下",
+    "kind": "诗词",
+    "url": "https://www.guwendao.net/shiwenv_315cf2d8892b.aspx",
+    "lines": [
+      "春归何处？",
+      "寂寞无行路。",
+      "若有人知春去处，",
+      "唤取归来同住。",
+      "春无踪迹谁知？",
+      "除非问取黄鹂。",
+      "百啭无人能解，",
+      "因风飞过蔷薇。"
+    ],
+    "textSource": "https://www.guwendao.net/shiwenv_315cf2d8892b.aspx",
+    "note": "正文采用链接页面的主读本，未将异文括注并入朗读。",
+    "audio": "media/poems/p6b-s10.mp3",
+    "lineStarts": [
+      0.065,
+      1.618,
+      3.168,
+      5.29,
+      7.249,
+      9.267,
+      11.285,
+      13.061
+    ]
+  }
+]

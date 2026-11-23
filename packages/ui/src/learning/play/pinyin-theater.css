@@ -1,0 +1,315 @@
+.pinyin-seal .pinyin-grid.is-compact {
+  min-width: 58px;
+  height: 44px;
+  font-size: 22px;
+}
+
+.pinyin-2d-tone-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.pinyin-tone-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pinyin-tone-svg polyline {
+  fill: none;
+  stroke: rgba(255, 246, 198, 0.92);
+  stroke-width: 3.5;
+  stroke-dasharray: 5 7;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+  filter: drop-shadow(0 2px 6px rgba(32, 48, 34, 0.45));
+}
+
+.pinyin-tone-bird {
+  position: absolute;
+  width: 16%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 4px 8px rgba(24, 38, 28, 0.35));
+  transition: left 0.85s cubic-bezier(0.22, 1, 0.36, 1), top 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* === 四线三格 (Four-Line Three-Grid) === */
+.pinyin-grid {
+  position: relative;
+  display: inline-block;
+  min-width: 112px;
+  height: 76px;
+  border-radius: 12px;
+  background: var(--stage-sheet, #fffcf2);
+  border: 1px solid #dfd8be;
+  color: #2b4735;
+  font: 700 32px / 1 Arial, sans-serif;
+}
+
+/* The middle band is one lowercase x-height. The SVG alphabetic baseline
+   and the third rule share the same offset, including in compact previews. */
+.pg-lines, .pg-glyph {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.pg-lines i {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background: #c7d1be;
+}
+.pg-lines i:nth-child(1) { top: calc(50% - 1.5ex); }
+.pg-lines i:nth-child(2) { top: calc(50% - .5ex); background: #9bb192; }
+.pg-lines i:nth-child(3) { top: calc(50% + .5ex); background: #9bb192; }
+.pg-lines i:nth-child(4) { top: calc(50% + 1.5ex); }
+.pg-glyph { fill: currentColor; font: inherit; }
+
+/* === Explore Deck === */
+.pinyin-explore-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.pinyin-card-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: var(--stage-sheet, #f8f4e2);
+  border: 1.5px solid #d5d0b5;
+  text-align: left;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+.pinyin-card-hero:hover {
+  background: var(--stage-selected, #edf2df);
+  border-color: #779569;
+}
+
+.pinyin-hero-meta {
+  display: grid;
+  gap: 3px;
+}
+.pinyin-hero-meta strong {
+  font-size: 20px;
+  color: #264131;
+}
+.pinyin-hero-meta small {
+  font-size: 13px;
+  color: #5b6e52;
+}
+
+.pinyin-blend-card {
+  display: grid;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 14px;
+  background: var(--stage-panel, #eef4e4);
+  border: 1.5px solid #bfd1af;
+  text-align: center;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+.pinyin-blend-card:hover {
+  background: #e3eed4;
+  border-color: #6b915f;
+}
+
+.blend-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #4f6948;
+}
+
+.blend-tiles {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blend-part {
+  display: inline-grid;
+  place-items: center;
+  min-width: 38px;
+  height: 38px;
+  padding-inline: 8px;
+  border-radius: 10px;
+  background: var(--stage-sheet, #fffdf5);
+  border: 1.5px solid #c9c3a8;
+  font: 750 20px / 1 ui-rounded, system-ui, sans-serif;
+  color: #2f4938;
+  transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.pinyin-blend-card.is-blended .blend-part.is-initial {
+  transform: translateX(4px);
+}
+.pinyin-blend-card.is-blended .blend-part.is-final {
+  transform: translateX(-4px);
+}
+
+.blend-op {
+  font-weight: 800;
+  color: #5f7458;
+}
+
+.blend-result {
+  padding: 6px 12px;
+  border-radius: 10px;
+  background: #365e45;
+  color: #fffef4;
+  font: 750 18px / 1.2 "Yuanti SC", system-ui, sans-serif;
+}
+
+.pinyin-explore-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.pinyin-explore-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border-radius: 99px;
+  font-weight: 700;
+}
+.pinyin-explore-actions .child-icon {
+  width: 17px;
+  height: 17px;
+}
+
+/* === Tone Panel === */
+.pinyin-tone-panel {
+  display: grid;
+  gap: 14px;
+}
+
+.pinyin-tone-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.pinyin-tone-btn {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 12px 10px;
+  min-height: 82px;
+  border-radius: 14px;
+  background: var(--stage-sheet, #f8f4e2);
+  border: 1.5px solid #d5d0b5;
+  color: #2d4736;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+.pinyin-tone-btn:hover {
+  background: var(--stage-selected, #ebf2de);
+  border-color: #779569;
+}
+.pinyin-tone-btn.is-active {
+  background: #dcead0;
+  border-color: #467251;
+  box-shadow: 0 0 0 2px rgba(70, 114, 81, 0.2);
+}
+
+.tone-syllable {
+  font: 750 28px / 1.2 "Yuanti SC", "PingFang SC", ui-rounded, system-ui, sans-serif;
+}
+
+.pinyin-tone-btn small {
+  font-size: 12.5px;
+  color: #53694d;
+  font-weight: 700;
+}
+
+.tone-example-tag {
+  padding: 2px 8px;
+  border-radius: 99px;
+  background: #365e45;
+  color: #fffef4;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* === Quiz Panel === */
+.pinyin-quiz-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.pinyin-quiz-prompt {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2c4937;
+  text-align: center;
+}
+
+.pinyin-quiz-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.pinyin-option-card {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 12px 10px;
+  min-height: 92px;
+  border-radius: 15px;
+  background: var(--stage-sheet, #f8f4e2);
+  border: 2px solid #d5d0b5;
+  transition: background-color 150ms ease, border-color 150ms ease, transform 160ms ease;
+}
+.pinyin-option-card:hover:not(:disabled) {
+  background: var(--stage-selected, #ebf2de);
+  border-color: #6b8e5f;
+}
+.pinyin-option-card.is-right {
+  background: #daf0cc;
+  border-color: #3f6e49;
+}
+.pinyin-option-card.is-wrong {
+  background: #fae8e4;
+  border-color: #c96959;
+  outline: 2px dashed #b47b36;
+}
+.pinyin-option-card.is-hinted {
+  outline: 3px solid #d99b26;
+  outline-offset: 2px;
+}
+
+.pinyin-option-word {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2c4e38;
+}
+
+@media (max-width: 640px) {
+  .pinyin-tone-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .pinyin-quiz-options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .pinyin-option-card .pinyin-grid {
+    min-width: 78px;
+    height: 62px;
+    font-size: 26px;
+  }
+}

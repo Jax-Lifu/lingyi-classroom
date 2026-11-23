@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/webp" href="%BASE_URL%art/logo.webp" />
+    <title>01课堂</title>
+    <meta name="description" content="面向儿童的汉字、数学、拼音、古诗和英语启蒙" />
+    <script>
+      (() => {
+        let cache = {};
+        try { cache = JSON.parse(localStorage.getItem("app:theme-cache") || "{}") || {}; } catch {}
+        const root = document.documentElement;
+        root.dataset.theme = ["light", "dark"].includes(cache.theme)
+          ? cache.theme
+          : matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        root.dataset.accent = ["blue", "green", "violet", "orange", "rose"].includes(cache.accent) ? cache.accent : "blue";
+        root.dataset.fontSize = ["sm", "md", "lg"].includes(cache.fontSize) ? cache.fontSize : "md";
+        root.dataset.reduceMotion = String(cache.reduceMotion === true);
+      })();
+    </script>
+    <style>
+      html { color-scheme: light; background: #faf8ef; color: #2a4738; }
+      html[data-theme="dark"] { color-scheme: dark; background: #d8d2be; color: #1d3326; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

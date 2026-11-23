@@ -1,0 +1,26 @@
+{
+  "name": "@lingyi-classroom/content",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./word-scenes": "./src/wordScenes.ts",
+    "./poem-scenes": "./src/poemScenes.ts",
+    "./pinyin-scenes": "./src/pinyinScenes.ts",
+    "./english-scenes": "./src/englishScenes.ts",
+    "./number-pictographs": "./src/numberPictographs.ts",
+    "./strokes": "./src/strokes.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@lingyi-classroom/tsconfig": "workspace:*",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  },
+  "dependencies": {
+    "@lingyi-classroom/shared": "workspace:*"
+  }
+}

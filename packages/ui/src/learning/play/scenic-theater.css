@@ -1,0 +1,513 @@
+/* Shared layout & stage styling for Scenic Story Theaters (Pinyin & English) */
+.scenic-theater {
+  display: grid;
+  gap: 14px;
+}
+
+.scenic-stage {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  border: 2px solid #4d6445;
+  box-shadow: 0 6px 20px -10px rgba(34, 54, 41, 0.38);
+  overflow: hidden;
+  isolation: isolate;
+  container-type: inline-size;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 540px;
+  background: #dce6d2;
+  cursor: pointer;
+}
+
+.pinyin-stage-3d,
+.english-stage-3d {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.scenic-2d-fallback {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.scenic-stage.with-gl3d .scenic-2d-fallback {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.scenic-stage-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -3;
+  user-select: none;
+  pointer-events: none;
+}
+
+.scenic-stage-lighting {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.scenic-stage.time-dawn .scenic-stage-lighting {
+  background: linear-gradient(180deg, rgba(255, 224, 166, 0.22) 0%, transparent 58%);
+}
+.scenic-stage.time-dusk .scenic-stage-lighting {
+  background: linear-gradient(180deg, rgba(235, 148, 86, 0.26) 0%, rgba(72, 46, 52, 0.14) 100%);
+}
+.scenic-stage.time-night .scenic-stage-lighting {
+  background: linear-gradient(180deg, rgba(16, 28, 56, 0.26) 0%, rgba(16, 26, 48, 0.12) 100%);
+}
+.scenic-stage.time-mist .scenic-stage-lighting {
+  background: linear-gradient(180deg, rgba(238, 244, 238, 0.28) 0%, rgba(210, 224, 214, 0.16) 100%);
+}
+
+.scenic-storyboard {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+.scenic-storyboard[hidden] { display: none; }
+.scenic-storyboard.is-soft {
+  opacity: 0.48;
+}
+
+.scenic-slot {
+  position: absolute;
+  width: auto;
+  transform: translate3d(-50%, -50%, 0);
+  pointer-events: none;
+}
+
+.scenic-art {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(30, 40, 22, 0.25));
+}
+
+.scenic-seal {
+  position: absolute;
+  top: 3.4%;
+  left: 2.6%;
+  z-index: 6;
+  pointer-events: none;
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  padding: 7px 14px;
+  border-radius: 12px;
+  background: rgba(255, 248, 224, 0.94);
+  border: 1.5px solid #bfa675;
+  box-shadow: 0 3px 10px -4px rgba(42, 49, 28, 0.35);
+  color: #2c4635;
+}
+.scenic-seal small {
+  font-size: clamp(11px, 1.2vw, 13px);
+  color: #54664a;
+  line-height: 1.2;
+}
+.scenic-seal strong {
+  font-size: clamp(18px, 2.2vw, 26px);
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.scenic-stage-hud {
+  position: absolute;
+  top: 3.4%;
+  right: 2.6%;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.scenic-phase-pill {
+  padding: 6px 12px;
+  border-radius: 99px;
+  background: rgba(255, 249, 232, 0.94);
+  border: 1px solid rgba(164, 152, 118, 0.55);
+  color: #344d3c;
+  font-size: 13px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.scenic-theater .scenic-motion-btn {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 248, 224, 0.72);
+  background: rgba(34, 62, 46, 0.9);
+  color: #fffcee;
+  padding: 0;
+  box-shadow: 0 3px 10px -3px rgba(18, 34, 24, 0.45);
+}
+.scenic-theater .scenic-motion-btn:hover {
+  background: #234632;
+}
+.scenic-motion-btn .child-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.scenic-stage-caption {
+  position: absolute;
+  left: 50%;
+  bottom: 3.6%;
+  transform: translateX(-50%);
+  z-index: 6;
+  max-width: min(90%, 600px);
+  padding: 7px 18px;
+  border-radius: 99px;
+  background: rgba(26, 46, 35, 0.85);
+  border: 1px solid rgba(255, 244, 210, 0.34);
+  color: #fffcf0;
+  font-size: clamp(14px, 1.75vw, 19px);
+  font-weight: 700;
+  line-height: 1.38;
+  text-align: center;
+  pointer-events: none;
+  box-shadow: 0 4px 14px -4px rgba(14, 26, 18, 0.5);
+}
+
+.scenic-controls-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 16px;
+  background: var(--stage-panel, #f5f1e1);
+  border: 1px solid #d9d6be;
+}
+
+.scenic-controls-bar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 8px 14px;
+  border-radius: 99px;
+  font-weight: 700;
+  transition: background-color 150ms ease, border-color 150ms ease, transform 140ms ease;
+}
+
+.scenic-controls-bar .child-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.scenic-primary-btn {
+  background: #365e45;
+  color: #fffef4 !important;
+  border: 1.5px solid #2d503a;
+  box-shadow: 0 3px 10px -4px rgba(34, 58, 42, 0.45);
+}
+.scenic-primary-btn:hover {
+  background: #284b36;
+}
+.scenic-primary-btn:disabled {
+  opacity: 0.55;
+}
+
+.scenic-mode-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.scenic-tool-btn {
+  background: var(--stage-sheet, #fffdf5);
+  color: #2f4b39;
+  border: 1px solid #c9c7ae;
+}
+.scenic-tool-btn:hover {
+  background: var(--stage-selected, #eaf1dd);
+}
+.scenic-tool-btn[aria-pressed="true"] {
+  background: var(--stage-selected, #dcead0);
+  border-color: #5b7e54;
+  color: #213e2c;
+}
+.scenic-tool-btn.icon-only {
+  width: 44px;
+  padding: 0;
+}
+
+.scenic-deck {
+  border-radius: 16px;
+  border: 1.5px solid #d9d6be;
+  background: var(--stage-sheet, #fffdf4);
+  padding: clamp(14px, 2.2vw, 22px);
+  display: grid;
+  gap: 14px;
+}
+
+.scenic-story-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 16px;
+  border-radius: 16px;
+  background: var(--stage-panel, #f5f1e1);
+  border: 1px solid #d9d6be;
+}
+
+.scenic-story-whisper {
+  flex: 1 1 280px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #3d5241;
+}
+.scenic-story-whisper strong {
+  color: #2b4736;
+}
+
+.scenic-finish-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.scenic-finish-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 99px;
+  background: #e1eed3;
+  color: #2c5239;
+  font-size: 14px;
+  font-weight: 700;
+}
+.scenic-finish-badge .child-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.scenic-next-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border-radius: 99px;
+  background: #365e45;
+  color: #fffef4 !important;
+  border: 1.5px solid #2d503a;
+  font-weight: 750;
+}
+.scenic-next-btn:hover {
+  background: #284b36;
+}
+.scenic-next-btn .child-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.scenic-replay-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 44px;
+  padding: 8px 14px;
+  border-radius: 99px;
+  background: var(--stage-sheet, #fffdf5);
+  border: 1px solid #c9c7ae;
+  color: #2f4b39;
+  font-weight: 700;
+}
+.scenic-replay-btn:hover {
+  background: var(--stage-selected, #eaf1dd);
+}
+.scenic-replay-btn .child-icon {
+  width: 16px;
+  height: 16px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .scenic-stage:not(.is-paused) .sb-motion-float { animation: sc-float 3.2s ease-in-out infinite; }
+  .scenic-stage:not(.is-paused) .sb-motion-swim { animation: sc-swim 3.6s ease-in-out infinite; }
+  .scenic-stage:not(.is-paused) .sb-motion-fly { animation: sc-fly 2.8s ease-in-out infinite; }
+  .scenic-stage:not(.is-paused) .sb-motion-sway { animation: sc-sway 3.4s ease-in-out infinite; transform-origin: center bottom; }
+  .scenic-stage:not(.is-paused) .sb-motion-rise { animation: sc-rise 3.5s ease-in-out infinite; }
+  .scenic-stage:not(.is-paused) .sb-motion-fall { animation: sc-fall 3.2s ease-in-out infinite; }
+  .scenic-stage:not(.is-paused) .sb-motion-glow { animation: sc-pulse 3.1s ease-in-out infinite; }
+  .scenic-stage:not(.is-paused) .sb-motion-grow { animation: sc-grow 2.8s ease-in-out infinite; transform-origin: center bottom; }
+  .scenic-stage:not(.is-paused) .sb-motion-hop { animation: sc-hop 2.2s ease-in-out infinite; }
+  .scenic-stage:not(.is-paused) .sb-motion-flutter { animation: sc-flutter 2.4s ease-in-out infinite; }
+  .scenic-stage:not(.is-paused) .sb-motion-drift { animation: sc-drift 4.4s ease-in-out infinite; }
+  .scenic-stage:not(.is-paused) .sb-motion-pulse { animation: sc-pulse 2.6s ease-in-out infinite; }
+  .scenic-stage:not(.is-paused) .sb-motion-glide { animation: sc-swim 4s ease-in-out infinite; }
+
+  .scenic-stage:not(.is-paused) .atm-petals .atm-particle,
+  .scenic-stage:not(.is-paused) .atm-leaves .atm-particle {
+    animation: sc-precipitate var(--p-dur, 5.5s) linear var(--p-delay, 0s) infinite;
+  }
+  .scenic-stage:not(.is-paused) .atm-rain .atm-particle {
+    animation: sc-rain-fall calc(var(--p-dur, 5s) * 0.34) linear var(--p-delay, 0s) infinite;
+  }
+  .scenic-stage:not(.is-paused) .atm-stars .atm-particle,
+  .scenic-stage:not(.is-paused) .atm-fireflies .atm-particle {
+    animation: sc-twinkle var(--p-dur, 4s) ease-in-out var(--p-delay, 0s) infinite;
+  }
+  .scenic-stage:not(.is-paused) .atm-wisp { animation: sc-drift 7.5s ease-in-out infinite; }
+  .scenic-stage:not(.is-paused) .atm-breeze { animation: sc-breeze-sweep 3.2s ease-in-out infinite; }
+  .scenic-stage:not(.is-paused) .atm-shimmer { animation: sc-twinkle 3.2s ease-in-out infinite; }
+}
+
+.scenic-stage .poem-atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  overflow: hidden;
+}
+.scenic-stage .atm-particle { position: absolute; display: block; }
+.scenic-stage .atm-petals .atm-particle {
+  width: 11px; height: 7px; border-radius: 75% 15% 75% 25%;
+  background: rgba(246, 178, 192, 0.88);
+}
+.scenic-stage .atm-rain .atm-particle {
+  width: 2px; height: 16px; border-radius: 2px;
+  background: linear-gradient(180deg, transparent, rgba(218, 240, 255, 0.78));
+  transform: rotate(12deg);
+}
+.scenic-stage .atm-leaves .atm-particle {
+  width: 12px; height: 8px; border-radius: 70% 10%;
+  background: rgba(218, 114, 58, 0.85);
+}
+.scenic-stage .atm-stars .atm-particle {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #fff6c2; box-shadow: 0 0 8px rgba(255, 244, 170, 0.95);
+}
+.scenic-stage .atm-fireflies .atm-particle {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #ffe078; box-shadow: 0 0 11px rgba(255, 224, 110, 0.95);
+}
+.scenic-stage .atm-wisp {
+  position: absolute; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 250, 0.36) 0%, transparent 72%);
+}
+.scenic-stage .atm-wisp.wisp-a { left: 8%; top: 18%; width: 32%; height: 22%; }
+.scenic-stage .atm-wisp.wisp-b { left: 46%; top: 12%; width: 36%; height: 24%; }
+.scenic-stage .atm-wisp.wisp-c { left: 26%; top: 38%; width: 30%; height: 18%; }
+.scenic-stage .atm-shimmer {
+  position: absolute; height: 3px; border-radius: 99px;
+  background: rgba(255, 252, 228, 0.45);
+}
+.scenic-stage .atm-shimmer.shimmer-a { left: 28%; top: 68%; width: 14%; }
+.scenic-stage .atm-shimmer.shimmer-b { left: 54%; top: 75%; width: 18%; }
+.scenic-stage .atm-shimmer.shimmer-c { left: 41%; top: 82%; width: 12%; }
+.scenic-stage .atm-breeze {
+  position: absolute; height: 2px; border-radius: 99px;
+  background: linear-gradient(90deg, transparent, rgba(255, 252, 232, 0.65), transparent);
+}
+.scenic-stage .atm-breeze.breeze-a { left: 10%; top: 30%; width: 28%; }
+.scenic-stage .atm-breeze.breeze-b { left: 42%; top: 44%; width: 32%; }
+.scenic-stage .atm-breeze.breeze-c { left: 22%; top: 58%; width: 24%; }
+
+@keyframes sc-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7%); } }
+@keyframes sc-swim { 0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); } 50% { transform: translate3d(4%, -4%, 0) rotate(2deg); } }
+@keyframes sc-fly { 0%, 100% { transform: translate3d(0, 0, 0) rotate(-3deg); } 50% { transform: translate3d(5%, -8%, 0) rotate(4deg); } }
+@keyframes sc-sway { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(4deg); } }
+@keyframes sc-rise { 0%, 100% { transform: translateY(4%); } 50% { transform: translateY(-6%); } }
+@keyframes sc-fall { 0%, 100% { transform: translateY(-4%); } 50% { transform: translateY(7%); } }
+@keyframes sc-grow { 0%, 100% { transform: scale(0.95); } 50% { transform: scale(1.05); } }
+@keyframes sc-hop { 0%, 100% { transform: translateY(0); } 45% { transform: translateY(-9%); } }
+@keyframes sc-flutter { 0%, 100% { transform: translate3d(0, 0, 0) rotate(-6deg); } 50% { transform: translate3d(5%, -9%, 0) rotate(6deg); } }
+@keyframes sc-drift { 0%, 100% { transform: translateX(-3%); } 50% { transform: translateX(5%); } }
+@keyframes sc-pulse { 0%, 100% { transform: scale(1); opacity: 0.88; } 50% { transform: scale(1.1); opacity: 1; } }
+@keyframes sc-precipitate {
+  0% { transform: translate3d(0, 0, 0) rotate(0deg) scale(var(--p-scale, 1)); opacity: 0; }
+  14% { opacity: 0.92; }
+  86% { opacity: 0.85; }
+  100% { transform: translate3d(var(--p-drift, 16px), 58cqw, 0) rotate(220deg) scale(var(--p-scale, 1)); opacity: 0; }
+}
+@keyframes sc-rain-fall {
+  0% { transform: translate3d(0, 0, 0) rotate(12deg); opacity: 0; }
+  15% { opacity: 0.75; }
+  100% { transform: translate3d(-24px, 60cqw, 0) rotate(12deg); opacity: 0; }
+}
+@keyframes sc-twinkle {
+  0%, 100% { transform: scale(0.85); opacity: 0.38; }
+  50% { transform: scale(1.25); opacity: 1; }
+}
+@keyframes sc-breeze-sweep {
+  0% { transform: translateX(-14%); opacity: 0; }
+  35% { opacity: 0.85; }
+  100% { transform: translateX(26%); opacity: 0; }
+}
+
+.scenic-stage.is-paused *,
+:root[data-reduce-motion="true"] .scenic-stage * {
+  animation: none !important;
+  transition: none !important;
+}
+
+@media (max-width: 640px) {
+  .scenic-stage {
+    aspect-ratio: 16 / 10;
+    border-radius: 16px;
+  }
+  .scenic-seal {
+    padding: 5px 10px;
+  }
+  .scenic-seal strong {
+    font-size: 16px;
+  }
+  .scenic-stage-caption {
+    padding: 5px 12px;
+    font-size: 13.5px;
+    bottom: 3%;
+  }
+  .scenic-controls-bar {
+    gap: 8px;
+  }
+  .scenic-primary-btn {
+    flex: 1 1 100%;
+  }
+}
+
+.quiz-hint-button {
+  justify-self: center;
+  min-height: 44px;
+  padding: 6px 16px;
+  border-radius: 99px;
+  font: inherit;
+}
+
+.quiz-audio-retry {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  color: var(--ink);
+}

@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "hanzi-4e00",
+    "label": "一",
+    "pinyin": "yī",
+    "example": "一朵花",
+    "group": "数字",
+    "audio": "media/hanzi/hanzi-4e00.mp3"
+  },
+  {
+    "id": "hanzi-4e8c",
+    "label": "二",
+    "pinyin": "èr",
+    "example": "第二",
+    "group": "数字",
+    "audio": "media/hanzi/hanzi-4e8c.mp3"
+  },
+  {
+    "id": "hanzi-4e09",
+    "label": "三",
+    "pinyin": "sān",
+    "example": "三角形",
+    "group": "数字",
+    "audio": "media/hanzi/hanzi-4e09.mp3"
+  },
+  {
+    "id": "hanzi-56db",
+    "label": "四",
+    "pinyin": "sì",
+    "example": "四季",
+    "group": "数字",
+    "audio": "media/hanzi/hanzi-56db.mp3"
+  },
+  {
+    "id": "hanzi-4e94",
+    "label": "五",
+    "pinyin": "wǔ",
+    "example": "五颗星",
+    "group": "数字",
+    "audio": "media/hanzi/hanzi-4e94.mp3"
+  },
+  {
+    "id": "hanzi-516d",
+    "label": "六",
+    "pinyin": "liù",
+    "example": "六岁",
+    "group": "数字",
+    "audio": "media/hanzi/hanzi-516d.mp3"
+  },
+  {
+    "id": "hanzi-4e03",
+    "label": "七",
+    "pinyin": "qī",
+    "example": "七天",
+    "group": "数字",
+    "audio": "media/hanzi/hanzi-4e03.mp3"
+  },
+  {
+    "id": "hanzi-516b",
+    "label": "八",
+    "pinyin": "bā",
+    "example": "八爪鱼",
+    "group": "数字",
+    "audio": "media/hanzi/hanzi-516b.mp3"
+  },
+  {
+    "id": "hanzi-4e5d",
+    "label": "九",
+    "pinyin": "jiǔ",
+    "example": "九月",
+    "group": "数字",
+    "audio": "media/hanzi/hanzi-4e5d.mp3"
+  },
+  {
+    "id": "hanzi-5341",
+    "label": "十",
+    "pinyin": "shí",
+    "example": "十根手指",
+    "group": "数字",
+    "audio": "media/hanzi/hanzi-5341.mp3"
+  },
+  {
+    "id": "hanzi-4eba",
+    "label": "人",
+    "pinyin": "rén",
+    "example": "家人",
+    "group": "家人",
+    "audio": "media/hanzi/hanzi-4eba.mp3"
+  },
+  {
+    "id": "hanzi-5bb6",
+    "label": "家",
+    "pinyin": "jiā",
+    "example": "回家",
+    "group": "家人",
+    "audio": "media/hanzi/hanzi-5bb6.mp3"
+  },
+  {
+    "id": "hanzi-7238",
+    "label": "爸",
+    "pinyin": "bà",
+    "example": "爸爸",
+    "group": "家人",
+    "audio": "media/hanzi/hanzi-7238.mp3"
+  },
+  {
+    "id": "hanzi-5988",
+    "label": "妈",
+    "pinyin": "mā",
+    "example": "妈妈",
+    "group": "家人",
+    "audio": "media/hanzi/hanzi-5988.mp3"
+  },
+  {
+    "id": "hanzi-7237",
+    "label": "爷",
+    "pinyin": "yé",
+    "example": "爷爷",
+    "group": "家人",
+    "audio": "media/hanzi/hanzi-7237.mp3"
+  },
+  {
+    "id": "hanzi-5976",
+    "label": "奶",
+    "pinyin": "nǎi",
+    "example": "奶奶",
+    "group": "家人",
+    "audio": "media/hanzi/hanzi-5976.mp3"
+  },
+  {
+    "id": "hanzi-54e5",
+    "label": "哥",
+    "pinyin": "gē",
+    "example": "哥哥",
+    "group": "家人",
+    "audio": "media/hanzi/hanzi-54e5.mp3"
+  },
+  {
+    "id": "hanzi-59d0",
+    "label": "姐",
+    "pinyin": "jiě",
+    "example": "姐姐",
+    "group": "家人",
+    "audio": "media/hanzi/hanzi-59d0.mp3"
+  },
+  {
+    "id": "hanzi-5f1f",
+    "label": "弟",
+    "pinyin": "dì",
+    "example": "弟弟",
+    "group": "家人",
+    "audio": "media/hanzi/hanzi-5f1f.mp3"
+  },
+  {
+    "id": "hanzi-59b9",
+    "label": "妹",
+    "pinyin": "mèi",
+    "example": "妹妹",
+    "group": "家人",
+    "audio": "media/hanzi/hanzi-59b9.mp3"
+  },
+  {
+    "id": "hanzi-624b",
+    "label": "手",
+    "pinyin": "shǒu",
+    "example": "小手",
+    "group": "身体",
+    "audio": "media/hanzi/hanzi-624b.mp3"
+  },
+  {
+    "id": "hanzi-53e3",
+    "label": "口",
+    "pinyin": "kǒu",
+    "example": "张口",
+    "group": "身体",
+    "audio": "media/hanzi/hanzi-53e3.mp3"
+  },
+  {
+    "id": "hanzi-5934",
+    "label": "头",
+    "pinyin": "tóu",
+    "example": "点头",
+    "group": "身体",
+    "audio": "media/hanzi/hanzi-5934.mp3"
+  },
+  {
+    "id": "hanzi-773c",
+    "label": "眼",
+    "pinyin": "yǎn",
+    "example": "眼睛",
+    "group": "身体",
+    "audio": "media/hanzi/hanzi-773c.mp3"
+  },
+  {
+    "id": "hanzi-8033",
+    "label": "耳",
+    "pinyin": "ěr",
+    "example": "耳朵",
+    "group": "身体",
+    "audio": "media/hanzi/hanzi-8033.mp3"
+  },
+  {
+    "id": "hanzi-9f3b",
+    "label": "鼻",
+    "pinyin": "bí",
+    "example": "鼻子",
+    "group": "身体",
+    "audio": "media/hanzi/hanzi-9f3b.mp3"
+  },
+  {
+    "id": "hanzi-7259",
+    "label": "牙",
+    "pinyin": "yá",
+    "example": "牙齿",
+    "group": "身体",
+    "audio": "media/hanzi/hanzi-7259.mp3"
+  },
+  {
+    "id": "hanzi-8138",
+    "label": "脸",
+    "pinyin": "liǎn",
+    "example": "笑脸",
+    "group": "身体",
+    "audio": "media/hanzi/hanzi-8138.mp3"
+  },
+  {
+    "id": "hanzi-811a",
+    "label": "脚",
+    "pinyin": "jiǎo",
+    "example": "小脚",
+    "group": "身体",
+    "audio": "media/hanzi/hanzi-811a.mp3"
+  },
+  {
+    "id": "hanzi-5fc3",
+    "label": "心",
+    "pinyin": "xīn",
+    "example": "爱心",
+    "group": "身体",
+    "audio": "media/hanzi/hanzi-5fc3.mp3"
+  },
+  {
+    "id": "hanzi-65e5",
+    "label": "日",
+    "pinyin": "rì",
+    "example": "日出",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-65e5.mp3"
+  },
+  {
+    "id": "hanzi-6708",
+    "label": "月",
+    "pinyin": "yuè",
+    "example": "月亮",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-6708.mp3"
+  },
+  {
+    "id": "hanzi-5c71",
+    "label": "山",
+    "pinyin": "shān",
+    "example": "爬山",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-5c71.mp3"
+  },
+  {
+    "id": "hanzi-6c34",
+    "label": "水",
+    "pinyin": "shuǐ",
+    "example": "喝水",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-6c34.mp3"
+  },
+  {
+    "id": "hanzi-706b",
+    "label": "火",
+    "pinyin": "huǒ",
+    "example": "火苗",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-706b.mp3"
+  },
+  {
+    "id": "hanzi-6728",
+    "label": "木",
+    "pinyin": "mù",
+    "example": "木头",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-6728.mp3"
+  },
+  {
+    "id": "hanzi-6797",
+    "label": "林",
+    "pinyin": "lín",
+    "example": "树林",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-6797.mp3"
+  },
+  {
+    "id": "hanzi-571f",
+    "label": "土",
+    "pinyin": "tǔ",
+    "example": "泥土",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-571f.mp3"
+  },
+  {
+    "id": "hanzi-77f3",
+    "label": "石",
+    "pinyin": "shí",
+    "example": "石头",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-77f3.mp3"
+  },
+  {
+    "id": "hanzi-7530",
+    "label": "田",
+    "pinyin": "tián",
+    "example": "稻田",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-7530.mp3"
+  },
+  {
+    "id": "hanzi-5929",
+    "label": "天",
+    "pinyin": "tiān",
+    "example": "天空",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-5929.mp3"
+  },
+  {
+    "id": "hanzi-4e91",
+    "label": "云",
+    "pinyin": "yún",
+    "example": "白云",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-4e91.mp3"
+  },
+  {
+    "id": "hanzi-98ce",
+    "label": "风",
+    "pinyin": "fēng",
+    "example": "大风",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-98ce.mp3"
+  },
+  {
+    "id": "hanzi-96e8",
+    "label": "雨",
+    "pinyin": "yǔ",
+    "example": "下雨",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-96e8.mp3"
+  },
+  {
+    "id": "hanzi-96ea",
+    "label": "雪",
+    "pinyin": "xuě",
+    "example": "雪人",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-96ea.mp3"
+  },
+  {
+    "id": "hanzi-6625",
+    "label": "春",
+    "pinyin": "chūn",
+    "example": "春天",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-6625.mp3"
+  },
+  {
+    "id": "hanzi-590f",
+    "label": "夏",
+    "pinyin": "xià",
+    "example": "夏天",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-590f.mp3"
+  },
+  {
+    "id": "hanzi-79cb",
+    "label": "秋",
+    "pinyin": "qiū",
+    "example": "秋天",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-79cb.mp3"
+  },
+  {
+    "id": "hanzi-51ac",
+    "label": "冬",
+    "pinyin": "dōng",
+    "example": "冬天",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-51ac.mp3"
+  },
+  {
+    "id": "hanzi-661f",
+    "label": "星",
+    "pinyin": "xīng",
+    "example": "星星",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-661f.mp3"
+  },
+  {
+    "id": "hanzi-9c7c",
+    "label": "鱼",
+    "pinyin": "yú",
+    "example": "小鱼",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-9c7c.mp3"
+  },
+  {
+    "id": "hanzi-9e1f",
+    "label": "鸟",
+    "pinyin": "niǎo",
+    "example": "小鸟",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-9e1f.mp3"
+  },
+  {
+    "id": "hanzi-732b",
+    "label": "猫",
+    "pinyin": "māo",
+    "example": "小猫",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-732b.mp3"
+  },
+  {
+    "id": "hanzi-72d7",
+    "label": "狗",
+    "pinyin": "gǒu",
+    "example": "小狗",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-72d7.mp3"
+  },
+  {
+    "id": "hanzi-5154",
+    "label": "兔",
+    "pinyin": "tù",
+    "example": "白兔",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-5154.mp3"
+  },
+  {
+    "id": "hanzi-9a6c",
+    "label": "马",
+    "pinyin": "mǎ",
+    "example": "骑马",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-9a6c.mp3"
+  },
+  {
+    "id": "hanzi-725b",
+    "label": "牛",
+    "pinyin": "niú",
+    "example": "水牛",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-725b.mp3"
+  },
+  {
+    "id": "hanzi-7f8a",
+    "label": "羊",
+    "pinyin": "yáng",
+    "example": "绵羊",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-7f8a.mp3"
+  },
+  {
+    "id": "hanzi-9e21",
+    "label": "鸡",
+    "pinyin": "jī",
+    "example": "小鸡",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-9e21.mp3"
+  },
+  {
+    "id": "hanzi-9e2d",
+    "label": "鸭",
+    "pinyin": "yā",
+    "example": "小鸭",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-9e2d.mp3"
+  },
+  {
+    "id": "hanzi-7c73",
+    "label": "米",
+    "pinyin": "mǐ",
+    "example": "大米",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-7c73.mp3"
+  },
+  {
+    "id": "hanzi-996d",
+    "label": "饭",
+    "pinyin": "fàn",
+    "example": "米饭",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-996d.mp3"
+  },
+  {
+    "id": "hanzi-9762",
+    "label": "面",
+    "pinyin": "miàn",
+    "example": "面条",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-9762.mp3"
+  },
+  {
+    "id": "hanzi-86cb",
+    "label": "蛋",
+    "pinyin": "dàn",
+    "example": "鸡蛋",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-86cb.mp3"
+  },
+  {
+    "id": "hanzi-8089",
+    "label": "肉",
+    "pinyin": "ròu",
+    "example": "牛肉",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-8089.mp3"
+  },
+  {
+    "id": "hanzi-83dc",
+    "label": "菜",
+    "pinyin": "cài",
+    "example": "青菜",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-83dc.mp3"
+  },
+  {
+    "id": "hanzi-679c",
+    "label": "果",
+    "pinyin": "guǒ",
+    "example": "水果",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-679c.mp3"
+  },
+  {
+    "id": "hanzi-74dc",
+    "label": "瓜",
+    "pinyin": "guā",
+    "example": "西瓜",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-74dc.mp3"
+  },
+  {
+    "id": "hanzi-8c46",
+    "label": "豆",
+    "pinyin": "dòu",
+    "example": "豆子",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-8c46.mp3"
+  },
+  {
+    "id": "hanzi-997c",
+    "label": "饼",
+    "pinyin": "bǐng",
+    "example": "饼干",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-997c.mp3"
+  },
+  {
+    "id": "hanzi-95e8",
+    "label": "门",
+    "pinyin": "mén",
+    "example": "开门",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-95e8.mp3"
+  },
+  {
+    "id": "hanzi-7a97",
+    "label": "窗",
+    "pinyin": "chuāng",
+    "example": "窗户",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-7a97.mp3"
+  },
+  {
+    "id": "hanzi-5e8a",
+    "label": "床",
+    "pinyin": "chuáng",
+    "example": "小床",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-5e8a.mp3"
+  },
+  {
+    "id": "hanzi-706f",
+    "label": "灯",
+    "pinyin": "dēng",
+    "example": "台灯",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-706f.mp3"
+  },
+  {
+    "id": "hanzi-684c",
+    "label": "桌",
+    "pinyin": "zhuō",
+    "example": "桌子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-684c.mp3"
+  },
+  {
+    "id": "hanzi-6905",
+    "label": "椅",
+    "pinyin": "yǐ",
+    "example": "椅子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-6905.mp3"
+  },
+  {
+    "id": "hanzi-4e66",
+    "label": "书",
+    "pinyin": "shū",
+    "example": "图书",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-4e66.mp3"
+  },
+  {
+    "id": "hanzi-7b14",
+    "label": "笔",
+    "pinyin": "bǐ",
+    "example": "画笔",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-7b14.mp3"
+  },
+  {
+    "id": "hanzi-676f",
+    "label": "杯",
+    "pinyin": "bēi",
+    "example": "水杯",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-676f.mp3"
+  },
+  {
+    "id": "hanzi-7897",
+    "label": "碗",
+    "pinyin": "wǎn",
+    "example": "饭碗",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-7897.mp3"
+  },
+  {
+    "id": "hanzi-8d70",
+    "label": "走",
+    "pinyin": "zǒu",
+    "example": "走路",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-8d70.mp3"
+  },
+  {
+    "id": "hanzi-8dd1",
+    "label": "跑",
+    "pinyin": "pǎo",
+    "example": "跑步",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-8dd1.mp3"
+  },
+  {
+    "id": "hanzi-8df3",
+    "label": "跳",
+    "pinyin": "tiào",
+    "example": "跳高",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-8df3.mp3"
+  },
+  {
+    "id": "hanzi-770b",
+    "label": "看",
+    "pinyin": "kàn",
+    "example": "看书",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-770b.mp3"
+  },
+  {
+    "id": "hanzi-542c",
+    "label": "听",
+    "pinyin": "tīng",
+    "example": "听歌",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-542c.mp3"
+  },
+  {
+    "id": "hanzi-8bf4",
+    "label": "说",
+    "pinyin": "shuō",
+    "example": "说话",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-8bf4.mp3"
+  },
+  {
+    "id": "hanzi-7b11",
+    "label": "笑",
+    "pinyin": "xiào",
+    "example": "微笑",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-7b11.mp3"
+  },
+  {
+    "id": "hanzi-5403",
+    "label": "吃",
+    "pinyin": "chī",
+    "example": "吃饭",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-5403.mp3"
+  },
+  {
+    "id": "hanzi-559d",
+    "label": "喝",
+    "pinyin": "hē",
+    "example": "喝水",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-559d.mp3"
+  },
+  {
+    "id": "hanzi-6d17",
+    "label": "洗",
+    "pinyin": "xǐ",
+    "example": "洗手",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-6d17.mp3"
+  },
+  {
+    "id": "hanzi-5927",
+    "label": "大",
+    "pinyin": "dà",
+    "example": "大象",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-5927.mp3"
+  },
+  {
+    "id": "hanzi-5c0f",
+    "label": "小",
+    "pinyin": "xiǎo",
+    "example": "小手",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-5c0f.mp3"
+  },
+  {
+    "id": "hanzi-4e0a",
+    "label": "上",
+    "pinyin": "shàng",
+    "example": "上楼",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-4e0a.mp3"
+  },
+  {
+    "id": "hanzi-4e0b",
+    "label": "下",
+    "pinyin": "xià",
+    "example": "下楼",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-4e0b.mp3"
+  },
+  {
+    "id": "hanzi-5de6",
+    "label": "左",
+    "pinyin": "zuǒ",
+    "example": "左手",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-5de6.mp3"
+  },
+  {
+    "id": "hanzi-53f3",
+    "label": "右",
+    "pinyin": "yòu",
+    "example": "右手",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-53f3.mp3"
+  },
+  {
+    "id": "hanzi-524d",
+    "label": "前",
+    "pinyin": "qián",
+    "example": "前面",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-524d.mp3"
+  },
+  {
+    "id": "hanzi-540e",
+    "label": "后",
+    "pinyin": "hòu",
+    "example": "后面",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-540e.mp3"
+  },
+  {
+    "id": "hanzi-91cc",
+    "label": "里",
+    "pinyin": "lǐ",
+    "example": "里面",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-91cc.mp3"
+  },
+  {
+    "id": "hanzi-5916",
+    "label": "外",
+    "pinyin": "wài",
+    "example": "外面",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-5916.mp3"
+  },
+  {
+    "id": "hanzi-96f7",
+    "label": "雷",
+    "pinyin": "léi",
+    "example": "打雷",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-96f7.mp3"
+  },
+  {
+    "id": "hanzi-7535",
+    "label": "电",
+    "pinyin": "diàn",
+    "example": "闪电",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-7535.mp3"
+  },
+  {
+    "id": "hanzi-5149",
+    "label": "光",
+    "pinyin": "guāng",
+    "example": "阳光",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-5149.mp3"
+  },
+  {
+    "id": "hanzi-9633",
+    "label": "阳",
+    "pinyin": "yáng",
+    "example": "太阳",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-9633.mp3"
+  },
+  {
+    "id": "hanzi-4eae",
+    "label": "亮",
+    "pinyin": "liàng",
+    "example": "明亮",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-4eae.mp3"
+  },
+  {
+    "id": "hanzi-9ed1",
+    "label": "黑",
+    "pinyin": "hēi",
+    "example": "黑猫",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-9ed1.mp3"
+  },
+  {
+    "id": "hanzi-767d",
+    "label": "白",
+    "pinyin": "bái",
+    "example": "白兔",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-767d.mp3"
+  },
+  {
+    "id": "hanzi-65e9",
+    "label": "早",
+    "pinyin": "zǎo",
+    "example": "早晨",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-65e9.mp3"
+  },
+  {
+    "id": "hanzi-665a",
+    "label": "晚",
+    "pinyin": "wǎn",
+    "example": "晚上",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-665a.mp3"
+  },
+  {
+    "id": "hanzi-591c",
+    "label": "夜",
+    "pinyin": "yè",
+    "example": "夜空",
+    "group": "天气四季",
+    "audio": "media/hanzi/hanzi-591c.mp3"
+  },
+  {
+    "id": "hanzi-82b1",
+    "label": "花",
+    "pinyin": "huā",
+    "example": "开花",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-82b1.mp3"
+  },
+  {
+    "id": "hanzi-8349",
+    "label": "草",
+    "pinyin": "cǎo",
+    "example": "青草",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-8349.mp3"
+  },
+  {
+    "id": "hanzi-6811",
+    "label": "树",
+    "pinyin": "shù",
+    "example": "大树",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-6811.mp3"
+  },
+  {
+    "id": "hanzi-53f6",
+    "label": "叶",
+    "pinyin": "yè",
+    "example": "树叶",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-53f6.mp3"
+  },
+  {
+    "id": "hanzi-7af9",
+    "label": "竹",
+    "pinyin": "zhú",
+    "example": "竹子",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-7af9.mp3"
+  },
+  {
+    "id": "hanzi-82d7",
+    "label": "苗",
+    "pinyin": "miáo",
+    "example": "禾苗",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-82d7.mp3"
+  },
+  {
+    "id": "hanzi-6839",
+    "label": "根",
+    "pinyin": "gēn",
+    "example": "树根",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-6839.mp3"
+  },
+  {
+    "id": "hanzi-679d",
+    "label": "枝",
+    "pinyin": "zhī",
+    "example": "树枝",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-679d.mp3"
+  },
+  {
+    "id": "hanzi-6735",
+    "label": "朵",
+    "pinyin": "duǒ",
+    "example": "一朵花",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-6735.mp3"
+  },
+  {
+    "id": "hanzi-6cb3",
+    "label": "河",
+    "pinyin": "hé",
+    "example": "小河",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-6cb3.mp3"
+  },
+  {
+    "id": "hanzi-6d77",
+    "label": "海",
+    "pinyin": "hǎi",
+    "example": "大海",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-6d77.mp3"
+  },
+  {
+    "id": "hanzi-6c99",
+    "label": "沙",
+    "pinyin": "shā",
+    "example": "沙滩",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-6c99.mp3"
+  },
+  {
+    "id": "hanzi-5730",
+    "label": "地",
+    "pinyin": "dì",
+    "example": "地上",
+    "group": "山水草木",
+    "audio": "media/hanzi/hanzi-5730.mp3"
+  },
+  {
+    "id": "hanzi-866b",
+    "label": "虫",
+    "pinyin": "chóng",
+    "example": "小虫",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-866b.mp3"
+  },
+  {
+    "id": "hanzi-8776",
+    "label": "蝶",
+    "pinyin": "dié",
+    "example": "蝴蝶",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-8776.mp3"
+  },
+  {
+    "id": "hanzi-8702",
+    "label": "蜂",
+    "pinyin": "fēng",
+    "example": "蜜蜂",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-8702.mp3"
+  },
+  {
+    "id": "hanzi-8682",
+    "label": "蚂",
+    "pinyin": "mǎ",
+    "example": "蚂蚁",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-8682.mp3"
+  },
+  {
+    "id": "hanzi-8681",
+    "label": "蚁",
+    "pinyin": "yǐ",
+    "example": "工蚁",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-8681.mp3"
+  },
+  {
+    "id": "hanzi-86c7",
+    "label": "蛇",
+    "pinyin": "shé",
+    "example": "小蛇",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-86c7.mp3"
+  },
+  {
+    "id": "hanzi-9f9f",
+    "label": "龟",
+    "pinyin": "guī",
+    "example": "乌龟",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-9f9f.mp3"
+  },
+  {
+    "id": "hanzi-86d9",
+    "label": "蛙",
+    "pinyin": "wā",
+    "example": "青蛙",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-86d9.mp3"
+  },
+  {
+    "id": "hanzi-8c61",
+    "label": "象",
+    "pinyin": "xiàng",
+    "example": "大象",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-8c61.mp3"
+  },
+  {
+    "id": "hanzi-718a",
+    "label": "熊",
+    "pinyin": "xióng",
+    "example": "小熊",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-718a.mp3"
+  },
+  {
+    "id": "hanzi-864e",
+    "label": "虎",
+    "pinyin": "hǔ",
+    "example": "老虎",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-864e.mp3"
+  },
+  {
+    "id": "hanzi-7334",
+    "label": "猴",
+    "pinyin": "hóu",
+    "example": "猴子",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-7334.mp3"
+  },
+  {
+    "id": "hanzi-9e7f",
+    "label": "鹿",
+    "pinyin": "lù",
+    "example": "小鹿",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-9e7f.mp3"
+  },
+  {
+    "id": "hanzi-732a",
+    "label": "猪",
+    "pinyin": "zhū",
+    "example": "小猪",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-732a.mp3"
+  },
+  {
+    "id": "hanzi-9f20",
+    "label": "鼠",
+    "pinyin": "shǔ",
+    "example": "老鼠",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-9f20.mp3"
+  },
+  {
+    "id": "hanzi-9e45",
+    "label": "鹅",
+    "pinyin": "é",
+    "example": "白鹅",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-9e45.mp3"
+  },
+  {
+    "id": "hanzi-7fbd",
+    "label": "羽",
+    "pinyin": "yǔ",
+    "example": "羽毛",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-7fbd.mp3"
+  },
+  {
+    "id": "hanzi-6bdb",
+    "label": "毛",
+    "pinyin": "máo",
+    "example": "羊毛",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-6bdb.mp3"
+  },
+  {
+    "id": "hanzi-5c3e",
+    "label": "尾",
+    "pinyin": "wěi",
+    "example": "尾巴",
+    "group": "动物",
+    "audio": "media/hanzi/hanzi-5c3e.mp3"
+  },
+  {
+    "id": "hanzi-82f9",
+    "label": "苹",
+    "pinyin": "píng",
+    "example": "苹果",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-82f9.mp3"
+  },
+  {
+    "id": "hanzi-6843",
+    "label": "桃",
+    "pinyin": "táo",
+    "example": "桃子",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-6843.mp3"
+  },
+  {
+    "id": "hanzi-68a8",
+    "label": "梨",
+    "pinyin": "lí",
+    "example": "梨子",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-68a8.mp3"
+  },
+  {
+    "id": "hanzi-9999",
+    "label": "香",
+    "pinyin": "xiāng",
+    "example": "花香",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-9999.mp3"
+  },
+  {
+    "id": "hanzi-8549",
+    "label": "蕉",
+    "pinyin": "jiāo",
+    "example": "香蕉",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-8549.mp3"
+  },
+  {
+    "id": "hanzi-6a59",
+    "label": "橙",
+    "pinyin": "chéng",
+    "example": "橙子",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-6a59.mp3"
+  },
+  {
+    "id": "hanzi-8393",
+    "label": "莓",
+    "pinyin": "méi",
+    "example": "草莓",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-8393.mp3"
+  },
+  {
+    "id": "hanzi-8461",
+    "label": "葡",
+    "pinyin": "pú",
+    "example": "葡萄",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-8461.mp3"
+  },
+  {
+    "id": "hanzi-8404",
+    "label": "萄",
+    "pinyin": "táo",
+    "example": "葡萄干",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-8404.mp3"
+  },
+  {
+    "id": "hanzi-7cd6",
+    "label": "糖",
+    "pinyin": "táng",
+    "example": "糖果",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-7cd6.mp3"
+  },
+  {
+    "id": "hanzi-76d0",
+    "label": "盐",
+    "pinyin": "yán",
+    "example": "食盐",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-76d0.mp3"
+  },
+  {
+    "id": "hanzi-6cb9",
+    "label": "油",
+    "pinyin": "yóu",
+    "example": "食用油",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-6cb9.mp3"
+  },
+  {
+    "id": "hanzi-6c64",
+    "label": "汤",
+    "pinyin": "tāng",
+    "example": "热汤",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-6c64.mp3"
+  },
+  {
+    "id": "hanzi-8336",
+    "label": "茶",
+    "pinyin": "chá",
+    "example": "喝茶",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-8336.mp3"
+  },
+  {
+    "id": "hanzi-997a",
+    "label": "饺",
+    "pinyin": "jiǎo",
+    "example": "饺子",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-997a.mp3"
+  },
+  {
+    "id": "hanzi-5305",
+    "label": "包",
+    "pinyin": "bāo",
+    "example": "面包",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-5305.mp3"
+  },
+  {
+    "id": "hanzi-9971",
+    "label": "饱",
+    "pinyin": "bǎo",
+    "example": "吃饱",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-9971.mp3"
+  },
+  {
+    "id": "hanzi-997f",
+    "label": "饿",
+    "pinyin": "è",
+    "example": "肚子饿",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-997f.mp3"
+  },
+  {
+    "id": "hanzi-751c",
+    "label": "甜",
+    "pinyin": "tián",
+    "example": "甜甜的",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-751c.mp3"
+  },
+  {
+    "id": "hanzi-9178",
+    "label": "酸",
+    "pinyin": "suān",
+    "example": "酸柠檬",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-9178.mp3"
+  },
+  {
+    "id": "hanzi-8fa3",
+    "label": "辣",
+    "pinyin": "là",
+    "example": "辣椒",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-8fa3.mp3"
+  },
+  {
+    "id": "hanzi-51b0",
+    "label": "冰",
+    "pinyin": "bīng",
+    "example": "冰块",
+    "group": "食物",
+    "audio": "media/hanzi/hanzi-51b0.mp3"
+  },
+  {
+    "id": "hanzi-8863",
+    "label": "衣",
+    "pinyin": "yī",
+    "example": "衣服",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-8863.mp3"
+  },
+  {
+    "id": "hanzi-88e4",
+    "label": "裤",
+    "pinyin": "kù",
+    "example": "裤子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-88e4.mp3"
+  },
+  {
+    "id": "hanzi-978b",
+    "label": "鞋",
+    "pinyin": "xié",
+    "example": "鞋子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-978b.mp3"
+  },
+  {
+    "id": "hanzi-889c",
+    "label": "袜",
+    "pinyin": "wà",
+    "example": "袜子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-889c.mp3"
+  },
+  {
+    "id": "hanzi-5e3d",
+    "label": "帽",
+    "pinyin": "mào",
+    "example": "帽子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-5e3d.mp3"
+  },
+  {
+    "id": "hanzi-88d9",
+    "label": "裙",
+    "pinyin": "qún",
+    "example": "裙子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-88d9.mp3"
+  },
+  {
+    "id": "hanzi-5dfe",
+    "label": "巾",
+    "pinyin": "jīn",
+    "example": "围巾",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-5dfe.mp3"
+  },
+  {
+    "id": "hanzi-4f1e",
+    "label": "伞",
+    "pinyin": "sǎn",
+    "example": "雨伞",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-4f1e.mp3"
+  },
+  {
+    "id": "hanzi-88ab",
+    "label": "被",
+    "pinyin": "bèi",
+    "example": "被子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-88ab.mp3"
+  },
+  {
+    "id": "hanzi-6795",
+    "label": "枕",
+    "pinyin": "zhěn",
+    "example": "枕头",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-6795.mp3"
+  },
+  {
+    "id": "hanzi-76c6",
+    "label": "盆",
+    "pinyin": "pén",
+    "example": "脸盆",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-76c6.mp3"
+  },
+  {
+    "id": "hanzi-5237",
+    "label": "刷",
+    "pinyin": "shuā",
+    "example": "刷牙",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-5237.mp3"
+  },
+  {
+    "id": "hanzi-52fa",
+    "label": "勺",
+    "pinyin": "sháo",
+    "example": "勺子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-52fa.mp3"
+  },
+  {
+    "id": "hanzi-7b77",
+    "label": "筷",
+    "pinyin": "kuài",
+    "example": "筷子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-7b77.mp3"
+  },
+  {
+    "id": "hanzi-9505",
+    "label": "锅",
+    "pinyin": "guō",
+    "example": "锅子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-9505.mp3"
+  },
+  {
+    "id": "hanzi-74f6",
+    "label": "瓶",
+    "pinyin": "píng",
+    "example": "瓶子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-74f6.mp3"
+  },
+  {
+    "id": "hanzi-76d2",
+    "label": "盒",
+    "pinyin": "hé",
+    "example": "盒子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-76d2.mp3"
+  },
+  {
+    "id": "hanzi-7eb8",
+    "label": "纸",
+    "pinyin": "zhǐ",
+    "example": "白纸",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-7eb8.mp3"
+  },
+  {
+    "id": "hanzi-5e03",
+    "label": "布",
+    "pinyin": "bù",
+    "example": "花布",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-5e03.mp3"
+  },
+  {
+    "id": "hanzi-955c",
+    "label": "镜",
+    "pinyin": "jìng",
+    "example": "镜子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-955c.mp3"
+  },
+  {
+    "id": "hanzi-949f",
+    "label": "钟",
+    "pinyin": "zhōng",
+    "example": "闹钟",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-949f.mp3"
+  },
+  {
+    "id": "hanzi-94a5",
+    "label": "钥",
+    "pinyin": "yào",
+    "example": "钥匙",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-94a5.mp3"
+  },
+  {
+    "id": "hanzi-9501",
+    "label": "锁",
+    "pinyin": "suǒ",
+    "example": "开锁",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-9501.mp3"
+  },
+  {
+    "id": "hanzi-7bb1",
+    "label": "箱",
+    "pinyin": "xiāng",
+    "example": "箱子",
+    "group": "家里",
+    "audio": "media/hanzi/hanzi-7bb1.mp3"
+  },
+  {
+    "id": "hanzi-8f66",
+    "label": "车",
+    "pinyin": "chē",
+    "example": "汽车",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-8f66.mp3"
+  },
+  {
+    "id": "hanzi-8239",
+    "label": "船",
+    "pinyin": "chuán",
+    "example": "小船",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-8239.mp3"
+  },
+  {
+    "id": "hanzi-98de",
+    "label": "飞",
+    "pinyin": "fēi",
+    "example": "飞机",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-98de.mp3"
+  },
+  {
+    "id": "hanzi-673a",
+    "label": "机",
+    "pinyin": "jī",
+    "example": "飞机",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-673a.mp3"
+  },
+  {
+    "id": "hanzi-8def",
+    "label": "路",
+    "pinyin": "lù",
+    "example": "马路",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-8def.mp3"
+  },
+  {
+    "id": "hanzi-6865",
+    "label": "桥",
+    "pinyin": "qiáo",
+    "example": "小桥",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-6865.mp3"
+  },
+  {
+    "id": "hanzi-7ad9",
+    "label": "站",
+    "pinyin": "zhàn",
+    "example": "车站",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-7ad9.mp3"
+  },
+  {
+    "id": "hanzi-56ed",
+    "label": "园",
+    "pinyin": "yuán",
+    "example": "公园",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-56ed.mp3"
+  },
+  {
+    "id": "hanzi-8857",
+    "label": "街",
+    "pinyin": "jiē",
+    "example": "街道",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-8857.mp3"
+  },
+  {
+    "id": "hanzi-697c",
+    "label": "楼",
+    "pinyin": "lóu",
+    "example": "高楼",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-697c.mp3"
+  },
+  {
+    "id": "hanzi-5e97",
+    "label": "店",
+    "pinyin": "diàn",
+    "example": "商店",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-5e97.mp3"
+  },
+  {
+    "id": "hanzi-94b1",
+    "label": "钱",
+    "pinyin": "qián",
+    "example": "零钱",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-94b1.mp3"
+  },
+  {
+    "id": "hanzi-4e70",
+    "label": "买",
+    "pinyin": "mǎi",
+    "example": "买菜",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-4e70.mp3"
+  },
+  {
+    "id": "hanzi-7968",
+    "label": "票",
+    "pinyin": "piào",
+    "example": "车票",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-7968.mp3"
+  },
+  {
+    "id": "hanzi-8f6e",
+    "label": "轮",
+    "pinyin": "lún",
+    "example": "车轮",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-8f6e.mp3"
+  },
+  {
+    "id": "hanzi-9a91",
+    "label": "骑",
+    "pinyin": "qí",
+    "example": "骑车",
+    "group": "出门",
+    "audio": "media/hanzi/hanzi-9a91.mp3"
+  },
+  {
+    "id": "hanzi-5b66",
+    "label": "学",
+    "pinyin": "xué",
+    "example": "学习",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-5b66.mp3"
+  },
+  {
+    "id": "hanzi-6821",
+    "label": "校",
+    "pinyin": "xiào",
+    "example": "学校",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-6821.mp3"
+  },
+  {
+    "id": "hanzi-5e08",
+    "label": "师",
+    "pinyin": "shī",
+    "example": "老师",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-5e08.mp3"
+  },
+  {
+    "id": "hanzi-73ed",
+    "label": "班",
+    "pinyin": "bān",
+    "example": "班级",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-73ed.mp3"
+  },
+  {
+    "id": "hanzi-8bfe",
+    "label": "课",
+    "pinyin": "kè",
+    "example": "上课",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-8bfe.mp3"
+  },
+  {
+    "id": "hanzi-672c",
+    "label": "本",
+    "pinyin": "běn",
+    "example": "本子",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-672c.mp3"
+  },
+  {
+    "id": "hanzi-5b57",
+    "label": "字",
+    "pinyin": "zì",
+    "example": "写字",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-5b57.mp3"
+  },
+  {
+    "id": "hanzi-753b",
+    "label": "画",
+    "pinyin": "huà",
+    "example": "画画",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-753b.mp3"
+  },
+  {
+    "id": "hanzi-56fe",
+    "label": "图",
+    "pinyin": "tú",
+    "example": "图画",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-56fe.mp3"
+  },
+  {
+    "id": "hanzi-8272",
+    "label": "色",
+    "pinyin": "sè",
+    "example": "颜色",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-8272.mp3"
+  },
+  {
+    "id": "hanzi-7ea2",
+    "label": "红",
+    "pinyin": "hóng",
+    "example": "红色",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-7ea2.mp3"
+  },
+  {
+    "id": "hanzi-9ec4",
+    "label": "黄",
+    "pinyin": "huáng",
+    "example": "黄色",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-9ec4.mp3"
+  },
+  {
+    "id": "hanzi-7eff",
+    "label": "绿",
+    "pinyin": "lǜ",
+    "example": "绿色",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-7eff.mp3"
+  },
+  {
+    "id": "hanzi-84dd",
+    "label": "蓝",
+    "pinyin": "lán",
+    "example": "蓝色",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-84dd.mp3"
+  },
+  {
+    "id": "hanzi-5706",
+    "label": "圆",
+    "pinyin": "yuán",
+    "example": "圆球",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-5706.mp3"
+  },
+  {
+    "id": "hanzi-65b9",
+    "label": "方",
+    "pinyin": "fāng",
+    "example": "方块",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-65b9.mp3"
+  },
+  {
+    "id": "hanzi-7403",
+    "label": "球",
+    "pinyin": "qiú",
+    "example": "皮球",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-7403.mp3"
+  },
+  {
+    "id": "hanzi-73a9",
+    "label": "玩",
+    "pinyin": "wán",
+    "example": "玩耍",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-73a9.mp3"
+  },
+  {
+    "id": "hanzi-6b4c",
+    "label": "歌",
+    "pinyin": "gē",
+    "example": "唱歌",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-6b4c.mp3"
+  },
+  {
+    "id": "hanzi-821e",
+    "label": "舞",
+    "pinyin": "wǔ",
+    "example": "跳舞",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-821e.mp3"
+  },
+  {
+    "id": "hanzi-62cd",
+    "label": "拍",
+    "pinyin": "pāi",
+    "example": "拍手",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-62cd.mp3"
+  },
+  {
+    "id": "hanzi-6392",
+    "label": "排",
+    "pinyin": "pái",
+    "example": "排队",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-6392.mp3"
+  },
+  {
+    "id": "hanzi-961f",
+    "label": "队",
+    "pinyin": "duì",
+    "example": "队伍",
+    "group": "幼儿园",
+    "audio": "media/hanzi/hanzi-961f.mp3"
+  },
+  {
+    "id": "hanzi-5750",
+    "label": "坐",
+    "pinyin": "zuò",
+    "example": "坐下",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-5750.mp3"
+  },
+  {
+    "id": "hanzi-7761",
+    "label": "睡",
+    "pinyin": "shuì",
+    "example": "睡觉",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-7761.mp3"
+  },
+  {
+    "id": "hanzi-9192",
+    "label": "醒",
+    "pinyin": "xǐng",
+    "example": "睡醒",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-9192.mp3"
+  },
+  {
+    "id": "hanzi-7a7f",
+    "label": "穿",
+    "pinyin": "chuān",
+    "example": "穿衣",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-7a7f.mp3"
+  },
+  {
+    "id": "hanzi-8131",
+    "label": "脱",
+    "pinyin": "tuō",
+    "example": "脱帽",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-8131.mp3"
+  },
+  {
+    "id": "hanzi-62ff",
+    "label": "拿",
+    "pinyin": "ná",
+    "example": "拿起",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-62ff.mp3"
+  },
+  {
+    "id": "hanzi-653e",
+    "label": "放",
+    "pinyin": "fàng",
+    "example": "放下",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-653e.mp3"
+  },
+  {
+    "id": "hanzi-62c9",
+    "label": "拉",
+    "pinyin": "lā",
+    "example": "拉车",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-62c9.mp3"
+  },
+  {
+    "id": "hanzi-63a8",
+    "label": "推",
+    "pinyin": "tuī",
+    "example": "推车",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-63a8.mp3"
+  },
+  {
+    "id": "hanzi-5f00",
+    "label": "开",
+    "pinyin": "kāi",
+    "example": "开门",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-5f00.mp3"
+  },
+  {
+    "id": "hanzi-5173",
+    "label": "关",
+    "pinyin": "guān",
+    "example": "关门",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-5173.mp3"
+  },
+  {
+    "id": "hanzi-8fdb",
+    "label": "进",
+    "pinyin": "jìn",
+    "example": "进门",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-8fdb.mp3"
+  },
+  {
+    "id": "hanzi-51fa",
+    "label": "出",
+    "pinyin": "chū",
+    "example": "出门",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-51fa.mp3"
+  },
+  {
+    "id": "hanzi-6765",
+    "label": "来",
+    "pinyin": "lái",
+    "example": "过来",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-6765.mp3"
+  },
+  {
+    "id": "hanzi-53bb",
+    "label": "去",
+    "pinyin": "qù",
+    "example": "去玩",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-53bb.mp3"
+  },
+  {
+    "id": "hanzi-56de",
+    "label": "回",
+    "pinyin": "huí",
+    "example": "回家",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-56de.mp3"
+  },
+  {
+    "id": "hanzi-8d77",
+    "label": "起",
+    "pinyin": "qǐ",
+    "example": "起床",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-8d77.mp3"
+  },
+  {
+    "id": "hanzi-843d",
+    "label": "落",
+    "pinyin": "luò",
+    "example": "落叶",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-843d.mp3"
+  },
+  {
+    "id": "hanzi-722c",
+    "label": "爬",
+    "pinyin": "pá",
+    "example": "爬树",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-722c.mp3"
+  },
+  {
+    "id": "hanzi-6e38",
+    "label": "游",
+    "pinyin": "yóu",
+    "example": "游泳",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-6e38.mp3"
+  },
+  {
+    "id": "hanzi-8e22",
+    "label": "踢",
+    "pinyin": "tī",
+    "example": "踢球",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-8e22.mp3"
+  },
+  {
+    "id": "hanzi-62b1",
+    "label": "抱",
+    "pinyin": "bào",
+    "example": "拥抱",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-62b1.mp3"
+  },
+  {
+    "id": "hanzi-5439",
+    "label": "吹",
+    "pinyin": "chuī",
+    "example": "吹气",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-5439.mp3"
+  },
+  {
+    "id": "hanzi-64e6",
+    "label": "擦",
+    "pinyin": "cā",
+    "example": "擦一擦",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-64e6.mp3"
+  },
+  {
+    "id": "hanzi-626b",
+    "label": "扫",
+    "pinyin": "sǎo",
+    "example": "扫地",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-626b.mp3"
+  },
+  {
+    "id": "hanzi-627e",
+    "label": "找",
+    "pinyin": "zhǎo",
+    "example": "寻找",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-627e.mp3"
+  },
+  {
+    "id": "hanzi-7ed9",
+    "label": "给",
+    "pinyin": "gěi",
+    "example": "送给",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-7ed9.mp3"
+  },
+  {
+    "id": "hanzi-63a5",
+    "label": "接",
+    "pinyin": "jiē",
+    "example": "接球",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-63a5.mp3"
+  },
+  {
+    "id": "hanzi-4e22",
+    "label": "丢",
+    "pinyin": "diū",
+    "example": "丢掉",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-4e22.mp3"
+  },
+  {
+    "id": "hanzi-505c",
+    "label": "停",
+    "pinyin": "tíng",
+    "example": "停车",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-505c.mp3"
+  },
+  {
+    "id": "hanzi-8bfb",
+    "label": "读",
+    "pinyin": "dú",
+    "example": "读书",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-8bfb.mp3"
+  },
+  {
+    "id": "hanzi-5199",
+    "label": "写",
+    "pinyin": "xiě",
+    "example": "写字",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-5199.mp3"
+  },
+  {
+    "id": "hanzi-6570",
+    "label": "数",
+    "pinyin": "shǔ",
+    "example": "数一数",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-6570.mp3"
+  },
+  {
+    "id": "hanzi-70b9",
+    "label": "点",
+    "pinyin": "diǎn",
+    "example": "点一下",
+    "group": "动作",
+    "audio": "media/hanzi/hanzi-70b9.mp3"
+  },
+  {
+    "id": "hanzi-4e2d",
+    "label": "中",
+    "pinyin": "zhōng",
+    "example": "中间",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-4e2d.mp3"
+  },
+  {
+    "id": "hanzi-8fdc",
+    "label": "远",
+    "pinyin": "yuǎn",
+    "example": "远处",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-8fdc.mp3"
+  },
+  {
+    "id": "hanzi-8fd1",
+    "label": "近",
+    "pinyin": "jìn",
+    "example": "近处",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-8fd1.mp3"
+  },
+  {
+    "id": "hanzi-9ad8",
+    "label": "高",
+    "pinyin": "gāo",
+    "example": "长高",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-9ad8.mp3"
+  },
+  {
+    "id": "hanzi-4f4e",
+    "label": "低",
+    "pinyin": "dī",
+    "example": "低头",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-4f4e.mp3"
+  },
+  {
+    "id": "hanzi-957f",
+    "label": "长",
+    "pinyin": "cháng",
+    "example": "长长的",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-957f.mp3"
+  },
+  {
+    "id": "hanzi-77ed",
+    "label": "短",
+    "pinyin": "duǎn",
+    "example": "短铅笔",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-77ed.mp3"
+  },
+  {
+    "id": "hanzi-591a",
+    "label": "多",
+    "pinyin": "duō",
+    "example": "许多",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-591a.mp3"
+  },
+  {
+    "id": "hanzi-5c11",
+    "label": "少",
+    "pinyin": "shǎo",
+    "example": "少了",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-5c11.mp3"
+  },
+  {
+    "id": "hanzi-7a7a",
+    "label": "空",
+    "pinyin": "kōng",
+    "example": "空篮子",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-7a7a.mp3"
+  },
+  {
+    "id": "hanzi-6ee1",
+    "label": "满",
+    "pinyin": "mǎn",
+    "example": "装满",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-6ee1.mp3"
+  },
+  {
+    "id": "hanzi-5feb",
+    "label": "快",
+    "pinyin": "kuài",
+    "example": "快跑",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-5feb.mp3"
+  },
+  {
+    "id": "hanzi-6162",
+    "label": "慢",
+    "pinyin": "màn",
+    "example": "慢慢走",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-6162.mp3"
+  },
+  {
+    "id": "hanzi-8f7b",
+    "label": "轻",
+    "pinyin": "qīng",
+    "example": "轻轻的",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-8f7b.mp3"
+  },
+  {
+    "id": "hanzi-91cd",
+    "label": "重",
+    "pinyin": "zhòng",
+    "example": "很重",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-91cd.mp3"
+  },
+  {
+    "id": "hanzi-70ed",
+    "label": "热",
+    "pinyin": "rè",
+    "example": "热汤",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-70ed.mp3"
+  },
+  {
+    "id": "hanzi-51b7",
+    "label": "冷",
+    "pinyin": "lěng",
+    "example": "好冷",
+    "group": "位置大小",
+    "audio": "media/hanzi/hanzi-51b7.mp3"
+  },
+  {
+    "id": "hanzi-6211",
+    "label": "我",
+    "pinyin": "wǒ",
+    "example": "我自己",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-6211.mp3"
+  },
+  {
+    "id": "hanzi-4f60",
+    "label": "你",
+    "pinyin": "nǐ",
+    "example": "你好",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-4f60.mp3"
+  },
+  {
+    "id": "hanzi-4ed6",
+    "label": "他",
+    "pinyin": "tā",
+    "example": "他来了",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-4ed6.mp3"
+  },
+  {
+    "id": "hanzi-5979",
+    "label": "她",
+    "pinyin": "tā",
+    "example": "她来了",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-5979.mp3"
+  },
+  {
+    "id": "hanzi-4eec",
+    "label": "们",
+    "pinyin": "men",
+    "example": "我们",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-4eec.mp3"
+  },
+  {
+    "id": "hanzi-7684",
+    "label": "的",
+    "pinyin": "de",
+    "example": "我的书包",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-7684.mp3"
+  },
+  {
+    "id": "hanzi-662f",
+    "label": "是",
+    "pinyin": "shì",
+    "example": "这是小猫",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-662f.mp3"
+  },
+  {
+    "id": "hanzi-6709",
+    "label": "有",
+    "pinyin": "yǒu",
+    "example": "有一个",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-6709.mp3"
+  },
+  {
+    "id": "hanzi-5728",
+    "label": "在",
+    "pinyin": "zài",
+    "example": "在这里",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-5728.mp3"
+  },
+  {
+    "id": "hanzi-4e0d",
+    "label": "不",
+    "pinyin": "bù",
+    "example": "不要",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-4e0d.mp3"
+  },
+  {
+    "id": "hanzi-548c",
+    "label": "和",
+    "pinyin": "hé",
+    "example": "我和你",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-548c.mp3"
+  },
+  {
+    "id": "hanzi-4e5f",
+    "label": "也",
+    "pinyin": "yě",
+    "example": "也来玩",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-4e5f.mp3"
+  },
+  {
+    "id": "hanzi-8981",
+    "label": "要",
+    "pinyin": "yào",
+    "example": "想要",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-8981.mp3"
+  },
+  {
+    "id": "hanzi-597d",
+    "label": "好",
+    "pinyin": "hǎo",
+    "example": "真好",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-597d.mp3"
+  },
+  {
+    "id": "hanzi-7231",
+    "label": "爱",
+    "pinyin": "ài",
+    "example": "爱心",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-7231.mp3"
+  },
+  {
+    "id": "hanzi-4f1a",
+    "label": "会",
+    "pinyin": "huì",
+    "example": "学会",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-4f1a.mp3"
+  },
+  {
+    "id": "hanzi-4e86",
+    "label": "了",
+    "pinyin": "le",
+    "example": "开花了",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-4e86.mp3"
+  },
+  {
+    "id": "hanzi-670b",
+    "label": "朋",
+    "pinyin": "péng",
+    "example": "朋友",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-670b.mp3"
+  },
+  {
+    "id": "hanzi-53cb",
+    "label": "友",
+    "pinyin": "yǒu",
+    "example": "友好",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-53cb.mp3"
+  },
+  {
+    "id": "hanzi-8bf7",
+    "label": "请",
+    "pinyin": "qǐng",
+    "example": "请坐",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-8bf7.mp3"
+  },
+  {
+    "id": "hanzi-8c22",
+    "label": "谢",
+    "pinyin": "xiè",
+    "example": "谢谢",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-8c22.mp3"
+  },
+  {
+    "id": "hanzi-5b69",
+    "label": "孩",
+    "pinyin": "hái",
+    "example": "孩子",
+    "group": "一起生活",
+    "audio": "media/hanzi/hanzi-5b69.mp3"
+  }
+]

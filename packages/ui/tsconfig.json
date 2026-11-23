@@ -1,0 +1,7 @@
+{
+  "extends": "@lingyi-classroom/tsconfig/base.json",
+  "compilerOptions": {
+    "paths": { "@lingyi-classroom/ui/*": ["./src/*"] }
+  },
+  "include": ["src"]
+}

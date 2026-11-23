@@ -1,0 +1,22 @@
+.child-icon { display: inline-block; width: 25px; height: 25px; flex-shrink: 0; vertical-align: middle; }
+.child-sr {
+  position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important;
+  margin: -1px !important; clip-path: inset(50%); white-space: nowrap; overflow: hidden; border: 0;
+}
+.lottie-layer { position: absolute; inset: 0; display: block; pointer-events: none; visibility: hidden; }
+.lottie-layer[data-ready] { visibility: visible; }
+.lottie-layer[data-ready] ~ .picture-track, .lottie-layer[data-ready] ~ .cue-poster { visibility: hidden; }
+.lottie-layer[data-ready] ~ .picture-track, .lottie-layer[data-ready] ~ .picture-track * { animation: none !important; }
+.picture-cue {
+  position: relative; display: inline-grid; place-items: center;
+  width: 69px; height: 55px; flex: 0 0 auto; color: #49694c; pointer-events: none;
+}
+.picture-cue .cue-poster { height: 58%; width: 60%; max-width: 100%; object-fit: contain; }
+.cue-route { position: absolute; inset: 0; width: 100%; height: 100%; }
+.child-icon.speaker-mark { width: 25px; height: 25px; }
+.practice-meaning { display: block; width: 95px; height: 72px; object-fit: contain; margin-inline: auto; }
+.learning .practice-guide { display: flex; align-items: center; gap: 8px; color: #466449; }
+.practice-pad .response .picture-cue { width: 37px; height: 29px; vertical-align: middle; }
+.card-actions button, .poem-controls button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 48px; }
+.choice-sequence { display: inline-flex; align-items: center; gap: 4px; color: #4c6749; }
+.choice-sequence .child-icon:nth-child(2) { width: 15px; }
