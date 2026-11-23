@@ -1,0 +1,1 @@
+import{j as t}from"./vendor-BxpfO-MN.js";function n({retry:s}){return t.jsxs("div",{className:"quiz-audio-retry",children:[t.jsx("span",{role:"status",children:"声音没播出来，可以再听一次。"}),t.jsx("button",{type:"button",className:"scenic-tool-btn quiz-hint-button",onClick:s,children:"重新播放录音"})]})}export{n as Q};

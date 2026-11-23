@@ -1,0 +1,75 @@
+name: NAS release
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  container:
+    strategy:
+      matrix:
+        include:
+          - arch: amd64
+            runner: ubuntu-24.04
+          - arch: arm64
+            runner: ubuntu-24.04-arm
+    runs-on: ${{ matrix.runner }}
+    env:
+      VERSION: ${{ github.ref_name }}
+      ARCH: ${{ matrix.arch }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test the universal NAS project
+        run: |
+          docker compose up -d --wait
+          curl -fsS http://localhost:18080/ | cmp - docs/index.html
+          docker compose down
+      - name: Build and test the offline image
+        run: |
+          docker build -t "lingyi-classroom:$VERSION" .
+          mkdir offline
+          cat > offline/compose.yaml <<YAML
+          services:
+            classroom:
+              image: lingyi-classroom:$VERSION
+              pull_policy: never
+              ports:
+                - "18080:80"
+              restart: unless-stopped
+          YAML
+          docker compose -f offline/compose.yaml up -d
+          curl --retry 8 --retry-all-errors -fsS http://localhost:18080/ | cmp - docs/index.html
+          curl -fsS http://localhost:18080/art/logo.webp | cmp - docs/art/logo.webp
+          test "$(curl -fsS -H 'Range: bytes=0-31' -o /dev/null -w '%{http_code}' http://localhost:18080/media/play/lily-notes.wav)" = 206
+          stroke=$(basename "$(ls docs/assets/strokes-*.js)")
+          curl -fsS "http://localhost:18080/assets/$stroke" | cmp - "docs/assets/$stroke"
+          docker compose -f offline/compose.yaml down
+          docker save -o offline/classroom.tar "lingyi-classroom:$VERSION"
+          cp README.md offline/
+          (cd offline && zip -q "../lingyi-classroom-offline-$ARCH.zip" classroom.tar compose.yaml README.md)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: offline-${{ matrix.arch }}
+          path: lingyi-classroom-offline-*.zip
+          retention-days: 1
+  release:
+    needs: container
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: archives
+          merge-multiple: true
+      - name: Publish NAS packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ github.ref_name }}
+        run: |
+          zip -qr archives/lingyi-classroom-nas.zip docs nginx.conf compose.yaml README.md
+          (cd archives && sha256sum *.zip > SHA256SUMS)
+          gh release create "$VERSION" archives/* --verify-tag --title "01课堂 $VERSION" --notes-file README.md
