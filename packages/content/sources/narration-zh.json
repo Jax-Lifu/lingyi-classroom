@@ -1,0 +1,26 @@
+{
+  "selection": "04",
+  "language": "zh-CN",
+  "engine": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+  "modelRevision": "e7dd0585652209fa0d7783659aad4e8a324de11c",
+  "temperature": 0.7,
+  "initialSeed": 4041,
+  "playbackRate": 1,
+  "audio": {
+    "codec": "MP3",
+    "channels": 1,
+    "sampleRateHz": 24000,
+    "bitrateKbps": 56,
+    "targetLoudnessLUFS": -18
+  },
+  "poemLinePauseSeconds": 0.3,
+  "scope": [
+    "hanzi",
+    "wordbook narration",
+    "catalog",
+    "math",
+    "play narration",
+    "explorations",
+    "poems"
+  ]
+}
